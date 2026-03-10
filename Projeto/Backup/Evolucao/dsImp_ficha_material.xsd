@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsImp_ficha_material" targetNamespace="http://tempuri.org/dsImp_ficha_material.xsd" xmlns:mstns="http://tempuri.org/dsImp_ficha_material.xsd" xmlns="http://tempuri.org/dsImp_ficha_material.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="connection_firebird" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="connection_firebird (Settings)" PropertyReference="ApplicationSettings.Evolucao.Properties.Settings.GlobalReference.Default.connection_firebird" Provider="System.Data.Odbc">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="IMP_FICHA_MATERIALTableAdapter" GeneratorDataComponentClassName="IMP_FICHA_MATERIALTableAdapter" Name="IMP_FICHA_MATERIAL" UserDataComponentName="IMP_FICHA_MATERIALTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_firebird (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT * FROM IMP_FICHA_MATERIAL</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="COD_IFM" DataSetColumn="COD_IFM" />
+              <Mapping SourceColumn="PROPRIETARIO_IFM" DataSetColumn="PROPRIETARIO_IFM" />
+              <Mapping SourceColumn="COD_ITEM_IFM" DataSetColumn="COD_ITEM_IFM" />
+              <Mapping SourceColumn="DESCRICAO_ITEM_IFM" DataSetColumn="DESCRICAO_ITEM_IFM" />
+              <Mapping SourceColumn="QTDE_IFM" DataSetColumn="QTDE_IFM" />
+              <Mapping SourceColumn="LOTE_IFM" DataSetColumn="LOTE_IFM" />
+              <Mapping SourceColumn="PROX_OPERACAO_IFM" DataSetColumn="PROX_OPERACAO_IFM" />
+              <Mapping SourceColumn="DIMENSOES_IFM" DataSetColumn="DIMENSOES_IFM" />
+              <Mapping SourceColumn="DATA_LIBERACAO_IFM" DataSetColumn="DATA_LIBERACAO_IFM" />
+              <Mapping SourceColumn="COD_BARRAS_IFM" DataSetColumn="COD_BARRAS_IFM" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsImp_ficha_material" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsImp_ficha_material" msprop:Generator_DataSetName="dsImp_ficha_material">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IMP_FICHA_MATERIAL" msprop:Generator_UserTableName="IMP_FICHA_MATERIAL" msprop:Generator_RowDeletedName="IMP_FICHA_MATERIALRowDeleted" msprop:Generator_RowChangedName="IMP_FICHA_MATERIALRowChanged" msprop:Generator_RowClassName="IMP_FICHA_MATERIALRow" msprop:Generator_RowChangingName="IMP_FICHA_MATERIALRowChanging" msprop:Generator_RowEvArgName="IMP_FICHA_MATERIALRowChangeEvent" msprop:Generator_RowEvHandlerName="IMP_FICHA_MATERIALRowChangeEventHandler" msprop:Generator_TableClassName="IMP_FICHA_MATERIALDataTable" msprop:Generator_TableVarName="tableIMP_FICHA_MATERIAL" msprop:Generator_RowDeletingName="IMP_FICHA_MATERIALRowDeleting" msprop:Generator_TablePropName="IMP_FICHA_MATERIAL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COD_IFM" msprop:Generator_UserColumnName="COD_IFM" msprop:Generator_ColumnPropNameInRow="COD_IFM" msprop:Generator_ColumnVarNameInTable="columnCOD_IFM" msprop:Generator_ColumnPropNameInTable="COD_IFMColumn" type="xs:int" />
+              <xs:element name="PROPRIETARIO_IFM" msprop:Generator_UserColumnName="PROPRIETARIO_IFM" msprop:Generator_ColumnPropNameInRow="PROPRIETARIO_IFM" msprop:Generator_ColumnVarNameInTable="columnPROPRIETARIO_IFM" msprop:Generator_ColumnPropNameInTable="PROPRIETARIO_IFMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COD_ITEM_IFM" msprop:Generator_UserColumnName="COD_ITEM_IFM" msprop:Generator_ColumnPropNameInRow="COD_ITEM_IFM" msprop:Generator_ColumnVarNameInTable="columnCOD_ITEM_IFM" msprop:Generator_ColumnPropNameInTable="COD_ITEM_IFMColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DESCRICAO_ITEM_IFM" msprop:Generator_UserColumnName="DESCRICAO_ITEM_IFM" msprop:Generator_ColumnPropNameInRow="DESCRICAO_ITEM_IFM" msprop:Generator_ColumnVarNameInTable="columnDESCRICAO_ITEM_IFM" msprop:Generator_ColumnPropNameInTable="DESCRICAO_ITEM_IFMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QTDE_IFM" msprop:Generator_UserColumnName="QTDE_IFM" msprop:Generator_ColumnPropNameInRow="QTDE_IFM" msprop:Generator_ColumnVarNameInTable="columnQTDE_IFM" msprop:Generator_ColumnPropNameInTable="QTDE_IFMColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="LOTE_IFM" msprop:Generator_UserColumnName="LOTE_IFM" msprop:Generator_ColumnPropNameInRow="LOTE_IFM" msprop:Generator_ColumnVarNameInTable="columnLOTE_IFM" msprop:Generator_ColumnPropNameInTable="LOTE_IFMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROX_OPERACAO_IFM" msprop:Generator_UserColumnName="PROX_OPERACAO_IFM" msprop:Generator_ColumnPropNameInRow="PROX_OPERACAO_IFM" msprop:Generator_ColumnVarNameInTable="columnPROX_OPERACAO_IFM" msprop:Generator_ColumnPropNameInTable="PROX_OPERACAO_IFMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DIMENSOES_IFM" msprop:Generator_UserColumnName="DIMENSOES_IFM" msprop:Generator_ColumnPropNameInRow="DIMENSOES_IFM" msprop:Generator_ColumnVarNameInTable="columnDIMENSOES_IFM" msprop:Generator_ColumnPropNameInTable="DIMENSOES_IFMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATA_LIBERACAO_IFM" msprop:Generator_UserColumnName="DATA_LIBERACAO_IFM" msprop:Generator_ColumnPropNameInRow="DATA_LIBERACAO_IFM" msprop:Generator_ColumnVarNameInTable="columnDATA_LIBERACAO_IFM" msprop:Generator_ColumnPropNameInTable="DATA_LIBERACAO_IFMColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="COD_BARRAS_IFM" msprop:Generator_UserColumnName="COD_BARRAS_IFM" msprop:Generator_ColumnPropNameInRow="COD_BARRAS_IFM" msprop:Generator_ColumnVarNameInTable="columnCOD_BARRAS_IFM" msprop:Generator_ColumnPropNameInTable="COD_BARRAS_IFMColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="RASTREAMENTO_IFM" msprop:Generator_UserColumnName="RASTREAMENTO_IFM" msprop:Generator_ColumnVarNameInTable="columnRASTREAMENTO_IFM" msprop:Generator_ColumnPropNameInRow="RASTREAMENTO_IFM" msprop:Generator_ColumnPropNameInTable="RASTREAMENTO_IFMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TIPO_MATERIAL_IFM" msprop:Generator_UserColumnName="TIPO_MATERIAL_IFM" msprop:Generator_ColumnPropNameInRow="TIPO_MATERIAL_IFM" msprop:Generator_ColumnVarNameInTable="columnTIPO_MATERIAL_IFM" msprop:Generator_ColumnPropNameInTable="TIPO_MATERIAL_IFMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NF_IFM" msprop:Generator_UserColumnName="NF_IFM" msprop:Generator_ColumnVarNameInTable="columnNF_IFM" msprop:Generator_ColumnPropNameInRow="NF_IFM" msprop:Generator_ColumnPropNameInTable="NF_IFMColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:IMP_FICHA_MATERIAL" />
+      <xs:field xpath="mstns:COD_IFM" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

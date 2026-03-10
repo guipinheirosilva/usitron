@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsClientesxVendas" targetNamespace="http://tempuri.org/dsClientesxVendas.xsd" xmlns:mstns="http://tempuri.org/dsClientesxVendas.xsd" xmlns="http://tempuri.org/dsClientesxVendas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="connection_firebird" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connection_firebird (Settings)" PropertyReference="ApplicationSettings.Evolucao.Properties.Settings.GlobalReference.Default.connection_firebird" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsClientesxVendas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsClientesxVendas" msprop:Generator_UserDSName="dsClientesxVendas">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ClientesxNF" msprop:Generator_TableClassName="ClientesxNFDataTable" msprop:Generator_TableVarName="tableClientesxNF" msprop:Generator_RowChangedName="ClientesxNFRowChanged" msprop:Generator_TablePropName="ClientesxNF" msprop:Generator_RowDeletingName="ClientesxNFRowDeleting" msprop:Generator_RowChangingName="ClientesxNFRowChanging" msprop:Generator_RowEvHandlerName="ClientesxNFRowChangeEventHandler" msprop:Generator_RowDeletedName="ClientesxNFRowDeleted" msprop:Generator_RowClassName="ClientesxNFRow" msprop:Generator_UserTableName="ClientesxNF" msprop:Generator_RowEvArgName="ClientesxNFRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CNPJ" msprop:Generator_ColumnVarNameInTable="columnCNPJ" msprop:Generator_ColumnPropNameInRow="CNPJ" msprop:Generator_ColumnPropNameInTable="CNPJColumn" msprop:Generator_UserColumnName="CNPJ" type="xs:string" minOccurs="0" />
+              <xs:element name="Cliente" msprop:Generator_ColumnVarNameInTable="columnCliente" msprop:Generator_ColumnPropNameInRow="Cliente" msprop:Generator_ColumnPropNameInTable="ClienteColumn" msprop:Generator_UserColumnName="Cliente" type="xs:string" minOccurs="0" />
+              <xs:element name="NF" msprop:Generator_ColumnVarNameInTable="columnNF" msprop:Generator_ColumnPropNameInRow="NF" msprop:Generator_ColumnPropNameInTable="NFColumn" msprop:Generator_UserColumnName="NF" type="xs:int" minOccurs="0" />
+              <xs:element name="Data" msprop:Generator_ColumnVarNameInTable="columnData" msprop:Generator_ColumnPropNameInRow="Data" msprop:Generator_ColumnPropNameInTable="DataColumn" msprop:Generator_UserColumnName="Data" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Valor" msprop:Generator_ColumnVarNameInTable="columnValor" msprop:Generator_ColumnPropNameInRow="Valor" msprop:Generator_ColumnPropNameInTable="ValorColumn" msprop:Generator_UserColumnName="Valor" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Vendedor" msprop:Generator_ColumnVarNameInTable="columnVendedor" msprop:Generator_ColumnPropNameInRow="Vendedor" msprop:Generator_ColumnPropNameInTable="VendedorColumn" msprop:Generator_UserColumnName="Vendedor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Informacoes" msprop:Generator_TableClassName="InformacoesDataTable" msprop:Generator_TableVarName="tableInformacoes" msprop:Generator_RowChangedName="InformacoesRowChanged" msprop:Generator_TablePropName="Informacoes" msprop:Generator_RowDeletingName="InformacoesRowDeleting" msprop:Generator_RowChangingName="InformacoesRowChanging" msprop:Generator_RowEvHandlerName="InformacoesRowChangeEventHandler" msprop:Generator_RowDeletedName="InformacoesRowDeleted" msprop:Generator_RowClassName="InformacoesRow" msprop:Generator_UserTableName="Informacoes" msprop:Generator_RowEvArgName="InformacoesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Data_x0020_Inicio" msprop:Generator_ColumnVarNameInTable="columnData_Inicio" msprop:Generator_ColumnPropNameInRow="Data_Inicio" msprop:Generator_ColumnPropNameInTable="Data_InicioColumn" msprop:Generator_UserColumnName="Data Inicio" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Data_x0020_Fim" msprop:Generator_ColumnVarNameInTable="columnData_Fim" msprop:Generator_ColumnPropNameInRow="Data_Fim" msprop:Generator_ColumnPropNameInTable="Data_FimColumn" msprop:Generator_UserColumnName="Data Fim" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Vendedor" msprop:Generator_ColumnVarNameInTable="columnVendedor" msprop:Generator_ColumnPropNameInRow="Vendedor" msprop:Generator_ColumnPropNameInTable="VendedorColumn" msprop:Generator_UserColumnName="Vendedor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MOTIVO_NAO_VENDA" msprop:Generator_TableClassName="MOTIVO_NAO_VENDADataTable" msprop:Generator_TableVarName="tableMOTIVO_NAO_VENDA" msprop:Generator_TablePropName="MOTIVO_NAO_VENDA" msprop:Generator_RowDeletingName="MOTIVO_NAO_VENDARowDeleting" msprop:Generator_RowChangingName="MOTIVO_NAO_VENDARowChanging" msprop:Generator_RowEvHandlerName="MOTIVO_NAO_VENDARowChangeEventHandler" msprop:Generator_RowDeletedName="MOTIVO_NAO_VENDARowDeleted" msprop:Generator_UserTableName="MOTIVO_NAO_VENDA" msprop:Generator_RowChangedName="MOTIVO_NAO_VENDARowChanged" msprop:Generator_RowEvArgName="MOTIVO_NAO_VENDARowChangeEvent" msprop:Generator_RowClassName="MOTIVO_NAO_VENDARow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COD_MNV" msprop:Generator_ColumnVarNameInTable="columnCOD_MNV" msprop:Generator_ColumnPropNameInRow="COD_MNV" msprop:Generator_ColumnPropNameInTable="COD_MNVColumn" msprop:Generator_UserColumnName="COD_MNV" type="xs:int" />
+              <xs:element name="DATA_MNV" msprop:Generator_ColumnVarNameInTable="columnDATA_MNV" msprop:Generator_ColumnPropNameInRow="DATA_MNV" msprop:Generator_ColumnPropNameInTable="DATA_MNVColumn" msprop:Generator_UserColumnName="DATA_MNV" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ID_WEB_MNV" msprop:Generator_ColumnVarNameInTable="columnID_WEB_MNV" msprop:Generator_ColumnPropNameInRow="ID_WEB_MNV" msprop:Generator_ColumnPropNameInTable="ID_WEB_MNVColumn" msprop:Generator_UserColumnName="ID_WEB_MNV" type="xs:int" minOccurs="0" />
+              <xs:element name="COD_VENDEDOR_MNV" msprop:Generator_ColumnVarNameInTable="columnCOD_VENDEDOR_MNV" msprop:Generator_ColumnPropNameInRow="COD_VENDEDOR_MNV" msprop:Generator_ColumnPropNameInTable="COD_VENDEDOR_MNVColumn" msprop:Generator_UserColumnName="COD_VENDEDOR_MNV" type="xs:int" minOccurs="0" />
+              <xs:element name="NOME_VENDEDOR_MNV" msprop:Generator_ColumnVarNameInTable="columnNOME_VENDEDOR_MNV" msprop:Generator_ColumnPropNameInRow="NOME_VENDEDOR_MNV" msprop:Generator_ColumnPropNameInTable="NOME_VENDEDOR_MNVColumn" msprop:Generator_UserColumnName="NOME_VENDEDOR_MNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MOTIVO_NAO_VENDA_MNV" msprop:Generator_ColumnVarNameInTable="columnMOTIVO_NAO_VENDA_MNV" msprop:Generator_ColumnPropNameInRow="MOTIVO_NAO_VENDA_MNV" msprop:Generator_ColumnPropNameInTable="MOTIVO_NAO_VENDA_MNVColumn" msprop:Generator_UserColumnName="MOTIVO_NAO_VENDA_MNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONTATO_MNV" msprop:Generator_ColumnVarNameInTable="columnCONTATO_MNV" msprop:Generator_ColumnPropNameInRow="CONTATO_MNV" msprop:Generator_ColumnPropNameInTable="CONTATO_MNVColumn" msprop:Generator_UserColumnName="CONTATO_MNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OBSERVACOES_MNV" msprop:Generator_ColumnVarNameInTable="columnOBSERVACOES_MNV" msprop:Generator_ColumnPropNameInRow="OBSERVACOES_MNV" msprop:Generator_ColumnPropNameInTable="OBSERVACOES_MNVColumn" msprop:Generator_UserColumnName="OBSERVACOES_MNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CNPJ_CLIENTE_MNV" msprop:Generator_ColumnVarNameInTable="columnCNPJ_CLIENTE_MNV" msprop:Generator_ColumnPropNameInRow="CNPJ_CLIENTE_MNV" msprop:Generator_ColumnPropNameInTable="CNPJ_CLIENTE_MNVColumn" msprop:Generator_UserColumnName="CNPJ_CLIENTE_MNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HORA_MNV" msprop:Generator_ColumnVarNameInTable="columnHORA_MNV" msprop:Generator_ColumnPropNameInRow="HORA_MNV" msprop:Generator_ColumnPropNameInTable="HORA_MNVColumn" msprop:Generator_UserColumnName="HORA_MNV" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RAZAO_SOCIAL_CLIENTE_MNV" msprop:Generator_ColumnVarNameInTable="columnRAZAO_SOCIAL_CLIENTE_MNV" msprop:Generator_ColumnPropNameInRow="RAZAO_SOCIAL_CLIENTE_MNV" msprop:Generator_ColumnPropNameInTable="RAZAO_SOCIAL_CLIENTE_MNVColumn" msprop:Generator_UserColumnName="RAZAO_SOCIAL_CLIENTE_MNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Produtos" msprop:Generator_TableClassName="ProdutosDataTable" msprop:Generator_TableVarName="tableProdutos" msprop:Generator_RowChangedName="ProdutosRowChanged" msprop:Generator_TablePropName="Produtos" msprop:Generator_RowDeletingName="ProdutosRowDeleting" msprop:Generator_RowChangingName="ProdutosRowChanging" msprop:Generator_RowEvHandlerName="ProdutosRowChangeEventHandler" msprop:Generator_RowDeletedName="ProdutosRowDeleted" msprop:Generator_RowClassName="ProdutosRow" msprop:Generator_UserTableName="Produtos" msprop:Generator_RowEvArgName="ProdutosRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod" msprop:Generator_ColumnVarNameInTable="columnCod" msprop:Generator_ColumnPropNameInRow="Cod" msprop:Generator_ColumnPropNameInTable="CodColumn" msprop:Generator_UserColumnName="Cod" type="xs:string" minOccurs="0" />
+              <xs:element name="Descricao" msprop:Generator_ColumnVarNameInTable="columnDescricao" msprop:Generator_ColumnPropNameInRow="Descricao" msprop:Generator_ColumnPropNameInTable="DescricaoColumn" msprop:Generator_UserColumnName="Descricao" type="xs:string" minOccurs="0" />
+              <xs:element name="Familia" msprop:Generator_ColumnVarNameInTable="columnFamilia" msprop:Generator_ColumnPropNameInRow="Familia" msprop:Generator_ColumnPropNameInTable="FamiliaColumn" msprop:Generator_UserColumnName="Familia" type="xs:string" minOccurs="0" />
+              <xs:element name="Fornecedor" msprop:Generator_ColumnVarNameInTable="columnFornecedor" msprop:Generator_ColumnPropNameInRow="Fornecedor" msprop:Generator_ColumnPropNameInTable="FornecedorColumn" msprop:Generator_UserColumnName="Fornecedor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MOTIVO_NAO_VENDA" />
+      <xs:field xpath="mstns:COD_MNV" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

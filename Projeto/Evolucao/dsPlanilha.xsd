@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPlanilha" targetNamespace="http://tempuri.org/dsPlanilha.xsd" xmlns:mstns="http://tempuri.org/dsPlanilha.xsd" xmlns="http://tempuri.org/dsPlanilha.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPlanilha" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsPlanilha" msprop:Generator_UserDSName="dsPlanilha">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OPERACAO" msprop:Generator_TableClassName="OPERACAODataTable" msprop:Generator_TableVarName="tableOPERACAO" msprop:Generator_TablePropName="OPERACAO" msprop:Generator_RowDeletingName="OPERACAORowDeleting" msprop:Generator_RowChangingName="OPERACAORowChanging" msprop:Generator_RowEvHandlerName="OPERACAORowChangeEventHandler" msprop:Generator_RowDeletedName="OPERACAORowDeleted" msprop:Generator_UserTableName="OPERACAO" msprop:Generator_RowChangedName="OPERACAORowChanged" msprop:Generator_RowEvArgName="OPERACAORowChangeEvent" msprop:Generator_RowClassName="OPERACAORow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nome" msprop:Generator_ColumnVarNameInTable="columnNome" msprop:Generator_ColumnPropNameInRow="Nome" msprop:Generator_ColumnPropNameInTable="NomeColumn" msprop:Generator_UserColumnName="Nome" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Horas_x002F_Valor_x0020_Unit_x0020_Previstas" msprop:Generator_ColumnVarNameInTable="_columnHoras_Valor_Unit_Previstas" msprop:Generator_ColumnPropNameInRow="_Horas_Valor_Unit_Previstas" msprop:Generator_ColumnPropNameInTable="_Horas_Valor_Unit_PrevistasColumn" msprop:Generator_UserColumnName="Horas/Valor Unit Previstas" type="xs:double" minOccurs="0" />
+              <xs:element name="Valor_x0020_Previstas" msprop:Generator_ColumnVarNameInTable="columnValor_Previstas" msprop:Generator_ColumnPropNameInRow="Valor_Previstas" msprop:Generator_ColumnPropNameInTable="Valor_PrevistasColumn" msprop:Generator_UserColumnName="Valor Previstas" type="xs:double" minOccurs="0" />
+              <xs:element name="Horas_x002F_Valor_x0020_Prev_x0020_Pos" msprop:Generator_ColumnVarNameInTable="_columnHoras_Valor_Prev_Pos" msprop:Generator_ColumnPropNameInRow="_Horas_Valor_Prev_Pos" msprop:Generator_ColumnPropNameInTable="_Horas_Valor_Prev_PosColumn" msprop:Generator_UserColumnName="Horas/Valor Prev Pos" type="xs:double" minOccurs="0" />
+              <xs:element name="Valor_x0020_Prev_x0020_Pos" msprop:Generator_ColumnVarNameInTable="columnValor_Prev_Pos" msprop:Generator_ColumnPropNameInRow="Valor_Prev_Pos" msprop:Generator_ColumnPropNameInTable="Valor_Prev_PosColumn" msprop:Generator_UserColumnName="Valor Prev Pos" type="xs:double" minOccurs="0" />
+              <xs:element name="Horas_x002F_Valor_x0020_Unit_x0020_Reais" msprop:Generator_ColumnVarNameInTable="_columnHoras_Valor_Unit_Reais" msprop:Generator_ColumnPropNameInRow="_Horas_Valor_Unit_Reais" msprop:Generator_ColumnPropNameInTable="_Horas_Valor_Unit_ReaisColumn" msprop:Generator_UserColumnName="Horas/Valor Unit Reais" type="xs:double" minOccurs="0" />
+              <xs:element name="Valor_x0020_Reais" msprop:Generator_ColumnVarNameInTable="columnValor_Reais" msprop:Generator_ColumnPropNameInRow="Valor_Reais" msprop:Generator_ColumnPropNameInTable="Valor_ReaisColumn" msprop:Generator_UserColumnName="Valor Reais" type="xs:double" minOccurs="0" />
+              <xs:element name="Tipo" msprop:Generator_ColumnVarNameInTable="columnTipo" msprop:Generator_ColumnPropNameInRow="Tipo" msprop:Generator_ColumnPropNameInTable="TipoColumn" msprop:Generator_UserColumnName="Tipo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Informações" msprop:Generator_TableClassName="InformaçõesDataTable" msprop:Generator_TableVarName="tableInformações" msprop:Generator_RowChangedName="InformaçõesRowChanged" msprop:Generator_TablePropName="Informações" msprop:Generator_RowDeletingName="InformaçõesRowDeleting" msprop:Generator_RowChangingName="InformaçõesRowChanging" msprop:Generator_RowEvHandlerName="InformaçõesRowChangeEventHandler" msprop:Generator_RowDeletedName="InformaçõesRowDeleted" msprop:Generator_RowClassName="InformaçõesRow" msprop:Generator_UserTableName="Informações" msprop:Generator_RowEvArgName="InformaçõesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OS" msprop:Generator_ColumnVarNameInTable="columnOS" msprop:Generator_ColumnPropNameInRow="OS" msprop:Generator_ColumnPropNameInTable="OSColumn" msprop:Generator_UserColumnName="OS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

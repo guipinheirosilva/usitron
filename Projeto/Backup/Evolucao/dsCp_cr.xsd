@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCp_cr" targetNamespace="http://tempuri.org/dsCp_cr.xsd" xmlns:mstns="http://tempuri.org/dsCp_cr.xsd" xmlns="http://tempuri.org/dsCp_cr.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="connection_firebird" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="connection_firebird (Settings)" PropertyReference="ApplicationSettings.Evolucao.Properties.Settings.GlobalReference.Default.connection_firebird" Provider="System.Data.Odbc">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CONTAS_A_PAGARTableAdapter" GeneratorDataComponentClassName="CONTAS_A_PAGARTableAdapter" Name="CONTAS_A_PAGAR" UserDataComponentName="CONTAS_A_PAGARTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_firebird (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>select * from contas_a_pagar</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="COD_CP" DataSetColumn="COD_CP" />
+              <Mapping SourceColumn="VALOR_CP" DataSetColumn="VALOR_CP" />
+              <Mapping SourceColumn="DATA_PREVISTA_CP" DataSetColumn="DATA_PREVISTA_CP" />
+              <Mapping SourceColumn="DATA_PAGAMENTO_CP" DataSetColumn="DATA_PAGAMENTO_CP" />
+              <Mapping SourceColumn="COD_FORNECEDOR_CP" DataSetColumn="COD_FORNECEDOR_CP" />
+              <Mapping SourceColumn="RAZAO_FORNECEDOR_CP" DataSetColumn="RAZAO_FORNECEDOR_CP" />
+              <Mapping SourceColumn="DESCRICAO_CP" DataSetColumn="DESCRICAO_CP" />
+              <Mapping SourceColumn="DUPLICATA_CP" DataSetColumn="DUPLICATA_CP" />
+              <Mapping SourceColumn="PLANO_CP" DataSetColumn="PLANO_CP" />
+              <Mapping SourceColumn="PAGO_CP" DataSetColumn="PAGO_CP" />
+              <Mapping SourceColumn="NF_CP" DataSetColumn="NF_CP" />
+              <Mapping SourceColumn="COD_CAIXA_CP" DataSetColumn="COD_CAIXA_CP" />
+              <Mapping SourceColumn="CARTEIRA_CP" DataSetColumn="CARTEIRA_CP" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CONTAS_A_RECEBERTableAdapter" GeneratorDataComponentClassName="CONTAS_A_RECEBERTableAdapter" Name="CONTAS_A_RECEBER" UserDataComponentName="CONTAS_A_RECEBERTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_firebird (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT * FROM CONTAS_A_RECEBER</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="COD_CR" DataSetColumn="COD_CR" />
+              <Mapping SourceColumn="VALOR_CR" DataSetColumn="VALOR_CR" />
+              <Mapping SourceColumn="DATA_PREVISTA_CR" DataSetColumn="DATA_PREVISTA_CR" />
+              <Mapping SourceColumn="DATA_RECEBIMENTO_CR" DataSetColumn="DATA_RECEBIMENTO_CR" />
+              <Mapping SourceColumn="COD_CLIENTE_CR" DataSetColumn="COD_CLIENTE_CR" />
+              <Mapping SourceColumn="RAZAO_CLIENTE_CR" DataSetColumn="RAZAO_CLIENTE_CR" />
+              <Mapping SourceColumn="DESCRICAO_CR" DataSetColumn="DESCRICAO_CR" />
+              <Mapping SourceColumn="DUPLICATA_CR" DataSetColumn="DUPLICATA_CR" />
+              <Mapping SourceColumn="NF_CR" DataSetColumn="NF_CR" />
+              <Mapping SourceColumn="RECEBIDO_CR" DataSetColumn="RECEBIDO_CR" />
+              <Mapping SourceColumn="COD_CAIXA_CR" DataSetColumn="COD_CAIXA_CR" />
+              <Mapping SourceColumn="PLANO_CR" DataSetColumn="PLANO_CR" />
+              <Mapping SourceColumn="CARTEIRA_CR" DataSetColumn="CARTEIRA_CR" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="IMP_CP_CRTableAdapter" GeneratorDataComponentClassName="IMP_CP_CRTableAdapter" Name="IMP_CP_CR" UserDataComponentName="IMP_CP_CRTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_firebird (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>select * from imp_cp_cr</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DATA_INICIAL_IMP_CP_CR" DataSetColumn="DATA_INICIAL_IMP_CP_CR" />
+              <Mapping SourceColumn="DATA_FINAL_IMP_CP_CR" DataSetColumn="DATA_FINAL_IMP_CP_CR" />
+              <Mapping SourceColumn="PLANO_IMP_CP_CR" DataSetColumn="PLANO_IMP_CP_CR" />
+              <Mapping SourceColumn="FORNECEDOR_IMP_CP_CR" DataSetColumn="FORNECEDOR_IMP_CP_CR" />
+              <Mapping SourceColumn="CLIENTE_IMP_CP_CR" DataSetColumn="CLIENTE_IMP_CP_CR" />
+              <Mapping SourceColumn="CARTEIRA_IMP_CP_CR" DataSetColumn="CARTEIRA_IMP_CP_CR" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCp_cr" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsCp_cr" msprop:Generator_DataSetName="dsCp_cr">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CONTAS_A_PAGAR" msprop:Generator_UserTableName="CONTAS_A_PAGAR" msprop:Generator_RowDeletedName="CONTAS_A_PAGARRowDeleted" msprop:Generator_RowChangedName="CONTAS_A_PAGARRowChanged" msprop:Generator_RowClassName="CONTAS_A_PAGARRow" msprop:Generator_RowChangingName="CONTAS_A_PAGARRowChanging" msprop:Generator_RowEvArgName="CONTAS_A_PAGARRowChangeEvent" msprop:Generator_RowEvHandlerName="CONTAS_A_PAGARRowChangeEventHandler" msprop:Generator_TableClassName="CONTAS_A_PAGARDataTable" msprop:Generator_TableVarName="tableCONTAS_A_PAGAR" msprop:Generator_RowDeletingName="CONTAS_A_PAGARRowDeleting" msprop:Generator_TablePropName="CONTAS_A_PAGAR">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COD_CP" msprop:Generator_UserColumnName="COD_CP" msprop:Generator_ColumnPropNameInRow="COD_CP" msprop:Generator_ColumnVarNameInTable="columnCOD_CP" msprop:Generator_ColumnPropNameInTable="COD_CPColumn" type="xs:int" />
+              <xs:element name="VALOR_CP" msprop:Generator_UserColumnName="VALOR_CP" msprop:Generator_ColumnPropNameInRow="VALOR_CP" msprop:Generator_ColumnVarNameInTable="columnVALOR_CP" msprop:Generator_ColumnPropNameInTable="VALOR_CPColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DATA_PREVISTA_CP" msprop:Generator_UserColumnName="DATA_PREVISTA_CP" msprop:Generator_ColumnPropNameInRow="DATA_PREVISTA_CP" msprop:Generator_ColumnVarNameInTable="columnDATA_PREVISTA_CP" msprop:Generator_ColumnPropNameInTable="DATA_PREVISTA_CPColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATA_PAGAMENTO_CP" msprop:Generator_UserColumnName="DATA_PAGAMENTO_CP" msprop:Generator_ColumnPropNameInRow="DATA_PAGAMENTO_CP" msprop:Generator_ColumnVarNameInTable="columnDATA_PAGAMENTO_CP" msprop:Generator_ColumnPropNameInTable="DATA_PAGAMENTO_CPColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="COD_FORNECEDOR_CP" msprop:Generator_UserColumnName="COD_FORNECEDOR_CP" msprop:Generator_ColumnPropNameInRow="COD_FORNECEDOR_CP" msprop:Generator_ColumnVarNameInTable="columnCOD_FORNECEDOR_CP" msprop:Generator_ColumnPropNameInTable="COD_FORNECEDOR_CPColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RAZAO_FORNECEDOR_CP" msprop:Generator_UserColumnName="RAZAO_FORNECEDOR_CP" msprop:Generator_ColumnPropNameInRow="RAZAO_FORNECEDOR_CP" msprop:Generator_ColumnVarNameInTable="columnRAZAO_FORNECEDOR_CP" msprop:Generator_ColumnPropNameInTable="RAZAO_FORNECEDOR_CPColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESCRICAO_CP" msprop:Generator_UserColumnName="DESCRICAO_CP" msprop:Generator_ColumnPropNameInRow="DESCRICAO_CP" msprop:Generator_ColumnVarNameInTable="columnDESCRICAO_CP" msprop:Generator_ColumnPropNameInTable="DESCRICAO_CPColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DUPLICATA_CP" msprop:Generator_UserColumnName="DUPLICATA_CP" msprop:Generator_ColumnPropNameInRow="DUPLICATA_CP" msprop:Generator_ColumnVarNameInTable="columnDUPLICATA_CP" msprop:Generator_ColumnPropNameInTable="DUPLICATA_CPColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PLANO_CP" msprop:Generator_UserColumnName="PLANO_CP" msprop:Generator_ColumnPropNameInRow="PLANO_CP" msprop:Generator_ColumnVarNameInTable="columnPLANO_CP" msprop:Generator_ColumnPropNameInTable="PLANO_CPColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PAGO_CP" msprop:Generator_UserColumnName="PAGO_CP" msprop:Generator_ColumnPropNameInRow="PAGO_CP" msprop:Generator_ColumnVarNameInTable="columnPAGO_CP" msprop:Generator_ColumnPropNameInTable="PAGO_CPColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="NF_CP" msprop:Generator_UserColumnName="NF_CP" msprop:Generator_ColumnPropNameInRow="NF_CP" msprop:Generator_ColumnVarNameInTable="columnNF_CP" msprop:Generator_ColumnPropNameInTable="NF_CPColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COD_CAIXA_CP" msprop:Generator_UserColumnName="COD_CAIXA_CP" msprop:Generator_ColumnPropNameInRow="COD_CAIXA_CP" msprop:Generator_ColumnVarNameInTable="columnCOD_CAIXA_CP" msprop:Generator_ColumnPropNameInTable="COD_CAIXA_CPColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CARTEIRA_CP" msprop:Generator_UserColumnName="CARTEIRA_CP" msprop:Generator_ColumnPropNameInRow="CARTEIRA_CP" msprop:Generator_ColumnVarNameInTable="columnCARTEIRA_CP" msprop:Generator_ColumnPropNameInTable="CARTEIRA_CPColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CONTAS_A_RECEBER" msprop:Generator_UserTableName="CONTAS_A_RECEBER" msprop:Generator_RowDeletedName="CONTAS_A_RECEBERRowDeleted" msprop:Generator_RowChangedName="CONTAS_A_RECEBERRowChanged" msprop:Generator_RowClassName="CONTAS_A_RECEBERRow" msprop:Generator_RowChangingName="CONTAS_A_RECEBERRowChanging" msprop:Generator_RowEvArgName="CONTAS_A_RECEBERRowChangeEvent" msprop:Generator_RowEvHandlerName="CONTAS_A_RECEBERRowChangeEventHandler" msprop:Generator_TableClassName="CONTAS_A_RECEBERDataTable" msprop:Generator_TableVarName="tableCONTAS_A_RECEBER" msprop:Generator_RowDeletingName="CONTAS_A_RECEBERRowDeleting" msprop:Generator_TablePropName="CONTAS_A_RECEBER">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COD_CR" msprop:Generator_UserColumnName="COD_CR" msprop:Generator_ColumnPropNameInRow="COD_CR" msprop:Generator_ColumnVarNameInTable="columnCOD_CR" msprop:Generator_ColumnPropNameInTable="COD_CRColumn" type="xs:int" />
+              <xs:element name="VALOR_CR" msprop:Generator_UserColumnName="VALOR_CR" msprop:Generator_ColumnPropNameInRow="VALOR_CR" msprop:Generator_ColumnVarNameInTable="columnVALOR_CR" msprop:Generator_ColumnPropNameInTable="VALOR_CRColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DATA_PREVISTA_CR" msprop:Generator_UserColumnName="DATA_PREVISTA_CR" msprop:Generator_ColumnPropNameInRow="DATA_PREVISTA_CR" msprop:Generator_ColumnVarNameInTable="columnDATA_PREVISTA_CR" msprop:Generator_ColumnPropNameInTable="DATA_PREVISTA_CRColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATA_RECEBIMENTO_CR" msprop:Generator_UserColumnName="DATA_RECEBIMENTO_CR" msprop:Generator_ColumnPropNameInRow="DATA_RECEBIMENTO_CR" msprop:Generator_ColumnVarNameInTable="columnDATA_RECEBIMENTO_CR" msprop:Generator_ColumnPropNameInTable="DATA_RECEBIMENTO_CRColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="COD_CLIENTE_CR" msprop:Generator_UserColumnName="COD_CLIENTE_CR" msprop:Generator_ColumnPropNameInRow="COD_CLIENTE_CR" msprop:Generator_ColumnVarNameInTable="columnCOD_CLIENTE_CR" msprop:Generator_ColumnPropNameInTable="COD_CLIENTE_CRColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RAZAO_CLIENTE_CR" msprop:Generator_UserColumnName="RAZAO_CLIENTE_CR" msprop:Generator_ColumnPropNameInRow="RAZAO_CLIENTE_CR" msprop:Generator_ColumnVarNameInTable="columnRAZAO_CLIENTE_CR" msprop:Generator_ColumnPropNameInTable="RAZAO_CLIENTE_CRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESCRICAO_CR" msprop:Generator_UserColumnName="DESCRICAO_CR" msprop:Generator_ColumnPropNameInRow="DESCRICAO_CR" msprop:Generator_ColumnVarNameInTable="columnDESCRICAO_CR" msprop:Generator_ColumnPropNameInTable="DESCRICAO_CRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DUPLICATA_CR" msprop:Generator_UserColumnName="DUPLICATA_CR" msprop:Generator_ColumnPropNameInRow="DUPLICATA_CR" msprop:Generator_ColumnVarNameInTable="columnDUPLICATA_CR" msprop:Generator_ColumnPropNameInTable="DUPLICATA_CRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NF_CR" msprop:Generator_UserColumnName="NF_CR" msprop:Generator_ColumnPropNameInRow="NF_CR" msprop:Generator_ColumnVarNameInTable="columnNF_CR" msprop:Generator_ColumnPropNameInTable="NF_CRColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RECEBIDO_CR" msprop:Generator_UserColumnName="RECEBIDO_CR" msprop:Generator_ColumnPropNameInRow="RECEBIDO_CR" msprop:Generator_ColumnVarNameInTable="columnRECEBIDO_CR" msprop:Generator_ColumnPropNameInTable="RECEBIDO_CRColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="COD_CAIXA_CR" msprop:Generator_UserColumnName="COD_CAIXA_CR" msprop:Generator_ColumnPropNameInRow="COD_CAIXA_CR" msprop:Generator_ColumnVarNameInTable="columnCOD_CAIXA_CR" msprop:Generator_ColumnPropNameInTable="COD_CAIXA_CRColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="PLANO_CR" msprop:Generator_UserColumnName="PLANO_CR" msprop:Generator_ColumnPropNameInRow="PLANO_CR" msprop:Generator_ColumnVarNameInTable="columnPLANO_CR" msprop:Generator_ColumnPropNameInTable="PLANO_CRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CARTEIRA_CR" msprop:Generator_UserColumnName="CARTEIRA_CR" msprop:Generator_ColumnPropNameInRow="CARTEIRA_CR" msprop:Generator_ColumnVarNameInTable="columnCARTEIRA_CR" msprop:Generator_ColumnPropNameInTable="CARTEIRA_CRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IMP_CP_CR" msprop:Generator_UserTableName="IMP_CP_CR" msprop:Generator_RowDeletedName="IMP_CP_CRRowDeleted" msprop:Generator_RowChangedName="IMP_CP_CRRowChanged" msprop:Generator_RowClassName="IMP_CP_CRRow" msprop:Generator_RowChangingName="IMP_CP_CRRowChanging" msprop:Generator_RowEvArgName="IMP_CP_CRRowChangeEvent" msprop:Generator_RowEvHandlerName="IMP_CP_CRRowChangeEventHandler" msprop:Generator_TableClassName="IMP_CP_CRDataTable" msprop:Generator_TableVarName="tableIMP_CP_CR" msprop:Generator_RowDeletingName="IMP_CP_CRRowDeleting" msprop:Generator_TablePropName="IMP_CP_CR">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DATA_INICIAL_IMP_CP_CR" msprop:Generator_UserColumnName="DATA_INICIAL_IMP_CP_CR" msprop:Generator_ColumnVarNameInTable="columnDATA_INICIAL_IMP_CP_CR" msprop:Generator_ColumnPropNameInRow="DATA_INICIAL_IMP_CP_CR" msprop:Generator_ColumnPropNameInTable="DATA_INICIAL_IMP_CP_CRColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATA_FINAL_IMP_CP_CR" msprop:Generator_UserColumnName="DATA_FINAL_IMP_CP_CR" msprop:Generator_ColumnVarNameInTable="columnDATA_FINAL_IMP_CP_CR" msprop:Generator_ColumnPropNameInRow="DATA_FINAL_IMP_CP_CR" msprop:Generator_ColumnPropNameInTable="DATA_FINAL_IMP_CP_CRColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PLANO_IMP_CP_CR" msprop:Generator_UserColumnName="PLANO_IMP_CP_CR" msprop:Generator_ColumnVarNameInTable="columnPLANO_IMP_CP_CR" msprop:Generator_ColumnPropNameInRow="PLANO_IMP_CP_CR" msprop:Generator_ColumnPropNameInTable="PLANO_IMP_CP_CRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FORNECEDOR_IMP_CP_CR" msprop:Generator_UserColumnName="FORNECEDOR_IMP_CP_CR" msprop:Generator_ColumnVarNameInTable="columnFORNECEDOR_IMP_CP_CR" msprop:Generator_ColumnPropNameInRow="FORNECEDOR_IMP_CP_CR" msprop:Generator_ColumnPropNameInTable="FORNECEDOR_IMP_CP_CRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENTE_IMP_CP_CR" msprop:Generator_UserColumnName="CLIENTE_IMP_CP_CR" msprop:Generator_ColumnVarNameInTable="columnCLIENTE_IMP_CP_CR" msprop:Generator_ColumnPropNameInRow="CLIENTE_IMP_CP_CR" msprop:Generator_ColumnPropNameInTable="CLIENTE_IMP_CP_CRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CARTEIRA_IMP_CP_CR" msprop:Generator_UserColumnName="CARTEIRA_IMP_CP_CR" msprop:Generator_ColumnVarNameInTable="columnCARTEIRA_IMP_CP_CR" msprop:Generator_ColumnPropNameInRow="CARTEIRA_IMP_CP_CR" msprop:Generator_ColumnPropNameInTable="CARTEIRA_IMP_CP_CRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CONTAS_A_PAGAR" />
+      <xs:field xpath="mstns:COD_CP" />
+    </xs:unique>
+    <xs:unique name="CONTAS_A_RECEBER_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CONTAS_A_RECEBER" />
+      <xs:field xpath="mstns:COD_CR" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

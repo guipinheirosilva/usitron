@@ -1,0 +1,50 @@
+23/09/2008
+- Todas as OS por tempo
+- Botão refazer automático Consulta OS
+
+03/10
+- Acertar as horas manuais para que elas sejam inseridas nas semanas OK
+- Mudar nas OS o nome do DESENHO_OP_ATUAL, para que fique apenas o numero do molde OK
+- Falta acertar criação de eletrodos OK
+
+04/10
+- Estudar uma maneira das inserções feita pelos operadores já inserirem nas semanas
+	(IDEIA: CRIAR UM ACERTAR HORAS NO TERMINAL OU UMA TELA DE ROTAS NO TERMINAL)
+	
+- Arrumar o excluir posição para não sair da tela
+
+- Tratar no gráfico para qdo ñão tiver data não aparecer nada
+
+09/10
+
+- SOBRA DE HORAS NAS SEMANAS
+- COR AQUA NAS SEMANAS
+
+- VERIFICAR TODAS AS OS EM ANDAMENTO PARA ACERTAR AS HORAS
+- verificar em relação a beta e aphatec, c vai criar uma posicão para cada
+ou os B9999 OU A9999 PARA ISSO
+
+
+20/10
+No caso de porcentagem das operações finalizadas, pegar o total de horas executadas
+levando em conta o total de horas previstas, isso de semanas pra frente. Verificar 
+com Marcelo a informação correta
+
+22/10
+Transformar horas previstas de int para double
+Iniciar retrabalho pela rota
+
+12/11
+Acertar detalhes no cronograma detalhado (expandir e excel)
+Não permitir exclusão por linha da rota nem na OP nem na consulta
+aTUALIZAR SISTEMA DS TERMINAIS
+
+
+17/11
+ACERTAR RETRABALHO PARADA PQ FICA ROXO NAS SEMANAS
+
+26/11
+VERIFICAR PQ QDO É DADO RETRABALHO MANUAL AS HORAS NAUM ENTRAM DE PRIMEIRO
+
+05/01/09
+QUANDO INICIAR EM UMA MÁQUINA, SÓ PODE PARAR AQUELA MAQUINA

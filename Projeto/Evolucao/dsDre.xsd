@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsDre" targetNamespace="http://tempuri.org/dsDre.xsd" xmlns:mstns="http://tempuri.org/dsDre.xsd" xmlns="http://tempuri.org/dsDre.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsDre" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsDre" msprop:Generator_UserDSName="dsDre">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ITENS_DRE" msprop:Generator_TableClassName="ITENS_DREDataTable" msprop:Generator_TableVarName="tableITENS_DRE" msprop:Generator_TablePropName="ITENS_DRE" msprop:Generator_RowDeletingName="ITENS_DRERowDeleting" msprop:Generator_RowChangingName="ITENS_DRERowChanging" msprop:Generator_RowEvHandlerName="ITENS_DRERowChangeEventHandler" msprop:Generator_RowDeletedName="ITENS_DRERowDeleted" msprop:Generator_UserTableName="ITENS_DRE" msprop:Generator_RowChangedName="ITENS_DRERowChanged" msprop:Generator_RowEvArgName="ITENS_DRERowChangeEvent" msprop:Generator_RowClassName="ITENS_DRERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GRUPO" msprop:Generator_ColumnVarNameInTable="columnGRUPO" msprop:Generator_ColumnPropNameInRow="GRUPO" msprop:Generator_ColumnPropNameInTable="GRUPOColumn" msprop:Generator_UserColumnName="GRUPO" type="xs:string" minOccurs="0" />
+              <xs:element name="PLANO" msprop:Generator_ColumnVarNameInTable="columnPLANO" msprop:Generator_ColumnPropNameInRow="PLANO" msprop:Generator_ColumnPropNameInTable="PLANOColumn" msprop:Generator_UserColumnName="PLANO" type="xs:string" minOccurs="0" />
+              <xs:element name="VALOR" msprop:Generator_ColumnVarNameInTable="columnVALOR" msprop:Generator_ColumnPropNameInRow="VALOR" msprop:Generator_ColumnPropNameInTable="VALORColumn" msprop:Generator_UserColumnName="VALOR" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="INFORMACOES" msprop:Generator_TableClassName="INFORMACOESDataTable" msprop:Generator_TableVarName="tableINFORMACOES" msprop:Generator_TablePropName="INFORMACOES" msprop:Generator_RowDeletingName="INFORMACOESRowDeleting" msprop:Generator_RowChangingName="INFORMACOESRowChanging" msprop:Generator_RowEvHandlerName="INFORMACOESRowChangeEventHandler" msprop:Generator_RowDeletedName="INFORMACOESRowDeleted" msprop:Generator_UserTableName="INFORMACOES" msprop:Generator_RowChangedName="INFORMACOESRowChanged" msprop:Generator_RowEvArgName="INFORMACOESRowChangeEvent" msprop:Generator_RowClassName="INFORMACOESRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DATA_x0020_INICIAL" msprop:Generator_ColumnVarNameInTable="columnDATA_INICIAL" msprop:Generator_ColumnPropNameInRow="DATA_INICIAL" msprop:Generator_ColumnPropNameInTable="DATA_INICIALColumn" msprop:Generator_UserColumnName="DATA INICIAL" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATA_x0020_FINAL" msprop:Generator_ColumnVarNameInTable="columnDATA_FINAL" msprop:Generator_ColumnPropNameInRow="DATA_FINAL" msprop:Generator_ColumnPropNameInTable="DATA_FINALColumn" msprop:Generator_UserColumnName="DATA FINAL" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsAgenda" targetNamespace="http://tempuri.org/dsAgenda.xsd" xmlns:mstns="http://tempuri.org/dsAgenda.xsd" xmlns="http://tempuri.org/dsAgenda.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.Evolucao.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.Odbc">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AGENDA_OSTableAdapter" GeneratorDataComponentClassName="AGENDA_OSTableAdapter" Name="AGENDA_OS" UserDataComponentName="AGENDA_OSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>select * from agenda_os</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="COD_AGENDA_OS" DataSetColumn="COD_AGENDA_OS" />
+              <Mapping SourceColumn="OS_AGENDA_OS" DataSetColumn="OS_AGENDA_OS" />
+              <Mapping SourceColumn="CLIENTE_AGENDA_OS" DataSetColumn="CLIENTE_AGENDA_OS" />
+              <Mapping SourceColumn="DESCRICAO_AGENDA_OS" DataSetColumn="DESCRICAO_AGENDA_OS" />
+              <Mapping SourceColumn="DATA_AGENDA_OS" DataSetColumn="DATA_AGENDA_OS" />
+              <Mapping SourceColumn="TIPO_OCORRENCIA_AGENDA_OS" DataSetColumn="TIPO_OCORRENCIA_AGENDA_OS" />
+              <Mapping SourceColumn="FINALIZADO_AGENDA_OS" DataSetColumn="FINALIZADO_AGENDA_OS" />
+              <Mapping SourceColumn="HORA_AGENDA_OS" DataSetColumn="HORA_AGENDA_OS" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsAgenda" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsAgenda" msprop:Generator_DataSetName="dsAgenda">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AGENDA_OS" msprop:Generator_UserTableName="AGENDA_OS" msprop:Generator_RowDeletedName="AGENDA_OSRowDeleted" msprop:Generator_TableClassName="AGENDA_OSDataTable" msprop:Generator_RowChangedName="AGENDA_OSRowChanged" msprop:Generator_RowClassName="AGENDA_OSRow" msprop:Generator_RowChangingName="AGENDA_OSRowChanging" msprop:Generator_RowEvArgName="AGENDA_OSRowChangeEvent" msprop:Generator_RowEvHandlerName="AGENDA_OSRowChangeEventHandler" msprop:Generator_TablePropName="AGENDA_OS" msprop:Generator_TableVarName="tableAGENDA_OS" msprop:Generator_RowDeletingName="AGENDA_OSRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COD_AGENDA_OS" msprop:Generator_UserColumnName="COD_AGENDA_OS" msprop:Generator_ColumnPropNameInRow="COD_AGENDA_OS" msprop:Generator_ColumnVarNameInTable="columnCOD_AGENDA_OS" msprop:Generator_ColumnPropNameInTable="COD_AGENDA_OSColumn" type="xs:int" />
+              <xs:element name="OS_AGENDA_OS" msprop:Generator_UserColumnName="OS_AGENDA_OS" msprop:Generator_ColumnPropNameInRow="OS_AGENDA_OS" msprop:Generator_ColumnVarNameInTable="columnOS_AGENDA_OS" msprop:Generator_ColumnPropNameInTable="OS_AGENDA_OSColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENTE_AGENDA_OS" msprop:Generator_UserColumnName="CLIENTE_AGENDA_OS" msprop:Generator_ColumnPropNameInRow="CLIENTE_AGENDA_OS" msprop:Generator_ColumnVarNameInTable="columnCLIENTE_AGENDA_OS" msprop:Generator_ColumnPropNameInTable="CLIENTE_AGENDA_OSColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESCRICAO_AGENDA_OS" msprop:Generator_UserColumnName="DESCRICAO_AGENDA_OS" msprop:Generator_ColumnPropNameInRow="DESCRICAO_AGENDA_OS" msprop:Generator_ColumnVarNameInTable="columnDESCRICAO_AGENDA_OS" msprop:Generator_ColumnPropNameInTable="DESCRICAO_AGENDA_OSColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATA_AGENDA_OS" msprop:Generator_UserColumnName="DATA_AGENDA_OS" msprop:Generator_ColumnPropNameInRow="DATA_AGENDA_OS" msprop:Generator_ColumnVarNameInTable="columnDATA_AGENDA_OS" msprop:Generator_ColumnPropNameInTable="DATA_AGENDA_OSColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TIPO_OCORRENCIA_AGENDA_OS" msprop:Generator_UserColumnName="TIPO_OCORRENCIA_AGENDA_OS" msprop:Generator_ColumnPropNameInRow="TIPO_OCORRENCIA_AGENDA_OS" msprop:Generator_ColumnVarNameInTable="columnTIPO_OCORRENCIA_AGENDA_OS" msprop:Generator_ColumnPropNameInTable="TIPO_OCORRENCIA_AGENDA_OSColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FINALIZADO_AGENDA_OS" msprop:Generator_UserColumnName="FINALIZADO_AGENDA_OS" msprop:Generator_ColumnPropNameInRow="FINALIZADO_AGENDA_OS" msprop:Generator_ColumnVarNameInTable="columnFINALIZADO_AGENDA_OS" msprop:Generator_ColumnPropNameInTable="FINALIZADO_AGENDA_OSColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="HORA_AGENDA_OS" msprop:Generator_UserColumnName="HORA_AGENDA_OS" msprop:Generator_ColumnPropNameInRow="HORA_AGENDA_OS" msprop:Generator_ColumnVarNameInTable="columnHORA_AGENDA_OS" msprop:Generator_ColumnPropNameInTable="HORA_AGENDA_OSColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AGENDA_OS" />
+      <xs:field xpath="mstns:COD_AGENDA_OS" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

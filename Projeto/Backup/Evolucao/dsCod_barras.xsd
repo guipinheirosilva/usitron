@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCod_barras" targetNamespace="http://tempuri.org/dsCod_barras.xsd" xmlns:mstns="http://tempuri.org/dsCod_barras.xsd" xmlns="http://tempuri.org/dsCod_barras.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.Evolucao.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.Odbc">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ESTOQUETableAdapter" GeneratorDataComponentClassName="ESTOQUETableAdapter" Name="ESTOQUE" UserDataComponentName="ESTOQUETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>select * from estoque</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="COD_ESTOQUE" DataSetColumn="COD_ESTOQUE" />
+              <Mapping SourceColumn="ITEM_ESTOQUE" DataSetColumn="ITEM_ESTOQUE" />
+              <Mapping SourceColumn="DESCRICAO_ESTOQUE" DataSetColumn="DESCRICAO_ESTOQUE" />
+              <Mapping SourceColumn="GRUPO_ESTOQUE" DataSetColumn="GRUPO_ESTOQUE" />
+              <Mapping SourceColumn="CLIENTE_ESTOQUE" DataSetColumn="CLIENTE_ESTOQUE" />
+              <Mapping SourceColumn="MATERIAL_ESTOQUE" DataSetColumn="MATERIAL_ESTOQUE" />
+              <Mapping SourceColumn="DIMENSAO_ESTOQUE" DataSetColumn="DIMENSAO_ESTOQUE" />
+              <Mapping SourceColumn="PRAZO_MEDIO_ESTOQUE" DataSetColumn="PRAZO_MEDIO_ESTOQUE" />
+              <Mapping SourceColumn="LOCALIZACAO_ESTOQUE" DataSetColumn="LOCALIZACAO_ESTOQUE" />
+              <Mapping SourceColumn="ESPESSURA_ESTOQUE" DataSetColumn="ESPESSURA_ESTOQUE" />
+              <Mapping SourceColumn="ESTOQUE_MINIMO_ESTOQUE" DataSetColumn="ESTOQUE_MINIMO_ESTOQUE" />
+              <Mapping SourceColumn="ESTOQUE_ATUAL_ESTOQUE" DataSetColumn="ESTOQUE_ATUAL_ESTOQUE" />
+              <Mapping SourceColumn="CHAPA_ESTOQUE" DataSetColumn="CHAPA_ESTOQUE" />
+              <Mapping SourceColumn="COD_BARRAS_ITEM_FABRICANTE" DataSetColumn="COD_BARRAS_ITEM_FABRICANTE" />
+              <Mapping SourceColumn="MARCA_ESTOQUE" DataSetColumn="MARCA_ESTOQUE" />
+              <Mapping SourceColumn="OBSERVACOES_ESTOQUE" DataSetColumn="OBSERVACOES_ESTOQUE" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCod_barras" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsCod_barras" msprop:Generator_DataSetName="dsCod_barras">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ESTOQUE" msprop:Generator_UserTableName="ESTOQUE" msprop:Generator_RowDeletedName="ESTOQUERowDeleted" msprop:Generator_RowChangedName="ESTOQUERowChanged" msprop:Generator_RowClassName="ESTOQUERow" msprop:Generator_RowChangingName="ESTOQUERowChanging" msprop:Generator_RowEvArgName="ESTOQUERowChangeEvent" msprop:Generator_RowEvHandlerName="ESTOQUERowChangeEventHandler" msprop:Generator_TableClassName="ESTOQUEDataTable" msprop:Generator_TableVarName="tableESTOQUE" msprop:Generator_RowDeletingName="ESTOQUERowDeleting" msprop:Generator_TablePropName="ESTOQUE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COD_ESTOQUE" msprop:Generator_UserColumnName="COD_ESTOQUE" msprop:Generator_ColumnVarNameInTable="columnCOD_ESTOQUE" msprop:Generator_ColumnPropNameInRow="COD_ESTOQUE" msprop:Generator_ColumnPropNameInTable="COD_ESTOQUEColumn" type="xs:int" />
+              <xs:element name="ITEM_ESTOQUE" msprop:Generator_UserColumnName="ITEM_ESTOQUE" msprop:Generator_ColumnVarNameInTable="columnITEM_ESTOQUE" msprop:Generator_ColumnPropNameInRow="ITEM_ESTOQUE" msprop:Generator_ColumnPropNameInTable="ITEM_ESTOQUEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCRICAO_ESTOQUE" msprop:Generator_UserColumnName="DESCRICAO_ESTOQUE" msprop:Generator_ColumnVarNameInTable="columnDESCRICAO_ESTOQUE" msprop:Generator_ColumnPropNameInRow="DESCRICAO_ESTOQUE" msprop:Generator_ColumnPropNameInTable="DESCRICAO_ESTOQUEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="GRUPO_ESTOQUE" msprop:Generator_UserColumnName="GRUPO_ESTOQUE" msprop:Generator_ColumnVarNameInTable="columnGRUPO_ESTOQUE" msprop:Generator_ColumnPropNameInRow="GRUPO_ESTOQUE" msprop:Generator_ColumnPropNameInTable="GRUPO_ESTOQUEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CLIENTE_ESTOQUE" msprop:Generator_UserColumnName="CLIENTE_ESTOQUE" msprop:Generator_ColumnVarNameInTable="columnCLIENTE_ESTOQUE" msprop:Generator_ColumnPropNameInRow="CLIENTE_ESTOQUE" msprop:Generator_ColumnPropNameInTable="CLIENTE_ESTOQUEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MATERIAL_ESTOQUE" msprop:Generator_UserColumnName="MATERIAL_ESTOQUE" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_ESTOQUE" msprop:Generator_ColumnPropNameInRow="MATERIAL_ESTOQUE" msprop:Generator_ColumnPropNameInTable="MATERIAL_ESTOQUEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DIMENSAO_ESTOQUE" msprop:Generator_UserColumnName="DIMENSAO_ESTOQUE" msprop:Generator_ColumnVarNameInTable="columnDIMENSAO_ESTOQUE" msprop:Generator_ColumnPropNameInRow="DIMENSAO_ESTOQUE" msprop:Generator_ColumnPropNameInTable="DIMENSAO_ESTOQUEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PRAZO_MEDIO_ESTOQUE" msprop:Generator_UserColumnName="PRAZO_MEDIO_ESTOQUE" msprop:Generator_ColumnVarNameInTable="columnPRAZO_MEDIO_ESTOQUE" msprop:Generator_ColumnPropNameInRow="PRAZO_MEDIO_ESTOQUE" msprop:Generator_ColumnPropNameInTable="PRAZO_MEDIO_ESTOQUEColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LOCALIZACAO_ESTOQUE" msprop:Generator_UserColumnName="LOCALIZACAO_ESTOQUE" msprop:Generator_ColumnVarNameInTable="columnLOCALIZACAO_ESTOQUE" msprop:Generator_ColumnPropNameInRow="LOCALIZACAO_ESTOQUE" msprop:Generator_ColumnPropNameInTable="LOCALIZACAO_ESTOQUEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ESPESSURA_ESTOQUE" msprop:Generator_UserColumnName="ESPESSURA_ESTOQUE" msprop:Generator_ColumnVarNameInTable="columnESPESSURA_ESTOQUE" msprop:Generator_ColumnPropNameInRow="ESPESSURA_ESTOQUE" msprop:Generator_ColumnPropNameInTable="ESPESSURA_ESTOQUEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ESTOQUE_MINIMO_ESTOQUE" msprop:Generator_UserColumnName="ESTOQUE_MINIMO_ESTOQUE" msprop:Generator_ColumnVarNameInTable="columnESTOQUE_MINIMO_ESTOQUE" msprop:Generator_ColumnPropNameInRow="ESTOQUE_MINIMO_ESTOQUE" msprop:Generator_ColumnPropNameInTable="ESTOQUE_MINIMO_ESTOQUEColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ESTOQUE_ATUAL_ESTOQUE" msprop:Generator_UserColumnName="ESTOQUE_ATUAL_ESTOQUE" msprop:Generator_ColumnVarNameInTable="columnESTOQUE_ATUAL_ESTOQUE" msprop:Generator_ColumnPropNameInRow="ESTOQUE_ATUAL_ESTOQUE" msprop:Generator_ColumnPropNameInTable="ESTOQUE_ATUAL_ESTOQUEColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CHAPA_ESTOQUE" msprop:Generator_UserColumnName="CHAPA_ESTOQUE" msprop:Generator_ColumnVarNameInTable="columnCHAPA_ESTOQUE" msprop:Generator_ColumnPropNameInRow="CHAPA_ESTOQUE" msprop:Generator_ColumnPropNameInTable="CHAPA_ESTOQUEColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="COD_BARRAS_ITEM_FABRICANTE" msprop:Generator_UserColumnName="COD_BARRAS_ITEM_FABRICANTE" msprop:Generator_ColumnVarNameInTable="columnCOD_BARRAS_ITEM_FABRICANTE" msprop:Generator_ColumnPropNameInRow="COD_BARRAS_ITEM_FABRICANTE" msprop:Generator_ColumnPropNameInTable="COD_BARRAS_ITEM_FABRICANTEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MARCA_ESTOQUE" msprop:Generator_UserColumnName="MARCA_ESTOQUE" msprop:Generator_ColumnVarNameInTable="columnMARCA_ESTOQUE" msprop:Generator_ColumnPropNameInRow="MARCA_ESTOQUE" msprop:Generator_ColumnPropNameInTable="MARCA_ESTOQUEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OBSERVACOES_ESTOQUE" msprop:Generator_UserColumnName="OBSERVACOES_ESTOQUE" msprop:Generator_ColumnVarNameInTable="columnOBSERVACOES_ESTOQUE" msprop:Generator_ColumnPropNameInRow="OBSERVACOES_ESTOQUE" msprop:Generator_ColumnPropNameInTable="OBSERVACOES_ESTOQUEColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ESTOQUE" />
+      <xs:field xpath="mstns:COD_ESTOQUE" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

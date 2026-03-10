@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsMalote" targetNamespace="http://tempuri.org/dsMalote.xsd" xmlns:mstns="http://tempuri.org/dsMalote.xsd" xmlns="http://tempuri.org/dsMalote.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="connection_firebird" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="connection_firebird (Settings)" PropertyReference="ApplicationSettings.Evolucao.Properties.Settings.GlobalReference.Default.connection_firebird" Provider="System.Data.Odbc">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MALOTESTableAdapter" GeneratorDataComponentClassName="MALOTESTableAdapter" Name="MALOTES" UserDataComponentName="MALOTESTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_firebird (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>select * from malotes</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="COD_MALOTE" DataSetColumn="COD_MALOTE" />
+              <Mapping SourceColumn="DESCRICAO_MALOTE" DataSetColumn="DESCRICAO_MALOTE" />
+              <Mapping SourceColumn="COD_CC_MALOTE" DataSetColumn="COD_CC_MALOTE" />
+              <Mapping SourceColumn="DESCRICAO_CC_MALOTE" DataSetColumn="DESCRICAO_CC_MALOTE" />
+              <Mapping SourceColumn="DATA_MALOTE" DataSetColumn="DATA_MALOTE" />
+              <Mapping SourceColumn="VALOR_TOTAL_MALOTE" DataSetColumn="VALOR_TOTAL_MALOTE" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CAIXATableAdapter" GeneratorDataComponentClassName="CAIXATableAdapter" Name="CAIXA" UserDataComponentName="CAIXATableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_firebird (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT * FROM CAIXA</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="COD_CAIXA" DataSetColumn="COD_CAIXA" />
+              <Mapping SourceColumn="DESCRICAO_CAIXA" DataSetColumn="DESCRICAO_CAIXA" />
+              <Mapping SourceColumn="CC_CAIXA" DataSetColumn="CC_CAIXA" />
+              <Mapping SourceColumn="COD_CP_CR_CAIXA" DataSetColumn="COD_CP_CR_CAIXA" />
+              <Mapping SourceColumn="DESCRICAO_CC_CAIXA" DataSetColumn="DESCRICAO_CC_CAIXA" />
+              <Mapping SourceColumn="VALOR_CAIXA" DataSetColumn="VALOR_CAIXA" />
+              <Mapping SourceColumn="DATA_CAIXA" DataSetColumn="DATA_CAIXA" />
+              <Mapping SourceColumn="COD_EXTRATO_CAIXA" DataSetColumn="COD_EXTRATO_CAIXA" />
+              <Mapping SourceColumn="COD_FORN_CLI_CAIXA" DataSetColumn="COD_FORN_CLI_CAIXA" />
+              <Mapping SourceColumn="RAZAO_CLI_FORN_CAIXA" DataSetColumn="RAZAO_CLI_FORN_CAIXA" />
+              <Mapping SourceColumn="DUPLICATA_CAIXA" DataSetColumn="DUPLICATA_CAIXA" />
+              <Mapping SourceColumn="NF_CAIXA" DataSetColumn="NF_CAIXA" />
+              <Mapping SourceColumn="PLANO_CAIXA" DataSetColumn="PLANO_CAIXA" />
+              <Mapping SourceColumn="CARTEIRA_CAIXA" DataSetColumn="CARTEIRA_CAIXA" />
+              <Mapping SourceColumn="DEBITO_CAIXA" DataSetColumn="DEBITO_CAIXA" />
+              <Mapping SourceColumn="CREDITO_CAIXA" DataSetColumn="CREDITO_CAIXA" />
+              <Mapping SourceColumn="MALOTE_CAIXA" DataSetColumn="MALOTE_CAIXA" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="IMP_CAIXATableAdapter" GeneratorDataComponentClassName="IMP_CAIXATableAdapter" Name="IMP_CAIXA" UserDataComponentName="IMP_CAIXATableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_firebird (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>select * from imp_caixa</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="COD_IMP_CAIXA" DataSetColumn="COD_IMP_CAIXA" />
+              <Mapping SourceColumn="VALOR_DEBITOS_CAIXA" DataSetColumn="VALOR_DEBITOS_CAIXA" />
+              <Mapping SourceColumn="VALOR_CREDITO_CAIXA" DataSetColumn="VALOR_CREDITO_CAIXA" />
+              <Mapping SourceColumn="BALANCO_CAIXA" DataSetColumn="BALANCO_CAIXA" />
+              <Mapping SourceColumn="DATA_INICIAL_CAIXA" DataSetColumn="DATA_INICIAL_CAIXA" />
+              <Mapping SourceColumn="DATA_FINAL_CAIXA" DataSetColumn="DATA_FINAL_CAIXA" />
+              <Mapping SourceColumn="CONTA_CORRENTE_CAIXA" DataSetColumn="CONTA_CORRENTE_CAIXA" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsMalote" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsMalote" msprop:Generator_DataSetName="dsMalote">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MALOTES" msprop:Generator_UserTableName="MALOTES" msprop:Generator_RowDeletedName="MALOTESRowDeleted" msprop:Generator_RowChangedName="MALOTESRowChanged" msprop:Generator_RowClassName="MALOTESRow" msprop:Generator_RowChangingName="MALOTESRowChanging" msprop:Generator_RowEvArgName="MALOTESRowChangeEvent" msprop:Generator_RowEvHandlerName="MALOTESRowChangeEventHandler" msprop:Generator_TableClassName="MALOTESDataTable" msprop:Generator_TableVarName="tableMALOTES" msprop:Generator_RowDeletingName="MALOTESRowDeleting" msprop:Generator_TablePropName="MALOTES">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COD_MALOTE" msprop:Generator_UserColumnName="COD_MALOTE" msprop:Generator_ColumnPropNameInRow="COD_MALOTE" msprop:Generator_ColumnVarNameInTable="columnCOD_MALOTE" msprop:Generator_ColumnPropNameInTable="COD_MALOTEColumn" type="xs:int" />
+              <xs:element name="DESCRICAO_MALOTE" msprop:Generator_UserColumnName="DESCRICAO_MALOTE" msprop:Generator_ColumnPropNameInRow="DESCRICAO_MALOTE" msprop:Generator_ColumnVarNameInTable="columnDESCRICAO_MALOTE" msprop:Generator_ColumnPropNameInTable="DESCRICAO_MALOTEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COD_CC_MALOTE" msprop:Generator_UserColumnName="COD_CC_MALOTE" msprop:Generator_ColumnPropNameInRow="COD_CC_MALOTE" msprop:Generator_ColumnVarNameInTable="columnCOD_CC_MALOTE" msprop:Generator_ColumnPropNameInTable="COD_CC_MALOTEColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DESCRICAO_CC_MALOTE" msprop:Generator_UserColumnName="DESCRICAO_CC_MALOTE" msprop:Generator_ColumnPropNameInRow="DESCRICAO_CC_MALOTE" msprop:Generator_ColumnVarNameInTable="columnDESCRICAO_CC_MALOTE" msprop:Generator_ColumnPropNameInTable="DESCRICAO_CC_MALOTEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATA_MALOTE" msprop:Generator_UserColumnName="DATA_MALOTE" msprop:Generator_ColumnPropNameInRow="DATA_MALOTE" msprop:Generator_ColumnVarNameInTable="columnDATA_MALOTE" msprop:Generator_ColumnPropNameInTable="DATA_MALOTEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="VALOR_TOTAL_MALOTE" msprop:Generator_UserColumnName="VALOR_TOTAL_MALOTE" msprop:Generator_ColumnPropNameInRow="VALOR_TOTAL_MALOTE" msprop:Generator_ColumnVarNameInTable="columnVALOR_TOTAL_MALOTE" msprop:Generator_ColumnPropNameInTable="VALOR_TOTAL_MALOTEColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CAIXA" msprop:Generator_UserTableName="CAIXA" msprop:Generator_RowDeletedName="CAIXARowDeleted" msprop:Generator_RowChangedName="CAIXARowChanged" msprop:Generator_RowClassName="CAIXARow" msprop:Generator_RowChangingName="CAIXARowChanging" msprop:Generator_RowEvArgName="CAIXARowChangeEvent" msprop:Generator_RowEvHandlerName="CAIXARowChangeEventHandler" msprop:Generator_TableClassName="CAIXADataTable" msprop:Generator_TableVarName="tableCAIXA" msprop:Generator_RowDeletingName="CAIXARowDeleting" msprop:Generator_TablePropName="CAIXA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COD_CAIXA" msprop:Generator_UserColumnName="COD_CAIXA" msprop:Generator_ColumnPropNameInRow="COD_CAIXA" msprop:Generator_ColumnVarNameInTable="columnCOD_CAIXA" msprop:Generator_ColumnPropNameInTable="COD_CAIXAColumn" type="xs:int" />
+              <xs:element name="DESCRICAO_CAIXA" msprop:Generator_UserColumnName="DESCRICAO_CAIXA" msprop:Generator_ColumnPropNameInRow="DESCRICAO_CAIXA" msprop:Generator_ColumnVarNameInTable="columnDESCRICAO_CAIXA" msprop:Generator_ColumnPropNameInTable="DESCRICAO_CAIXAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CC_CAIXA" msprop:Generator_UserColumnName="CC_CAIXA" msprop:Generator_ColumnPropNameInRow="CC_CAIXA" msprop:Generator_ColumnVarNameInTable="columnCC_CAIXA" msprop:Generator_ColumnPropNameInTable="CC_CAIXAColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="COD_CP_CR_CAIXA" msprop:Generator_UserColumnName="COD_CP_CR_CAIXA" msprop:Generator_ColumnPropNameInRow="COD_CP_CR_CAIXA" msprop:Generator_ColumnVarNameInTable="columnCOD_CP_CR_CAIXA" msprop:Generator_ColumnPropNameInTable="COD_CP_CR_CAIXAColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DESCRICAO_CC_CAIXA" msprop:Generator_UserColumnName="DESCRICAO_CC_CAIXA" msprop:Generator_ColumnPropNameInRow="DESCRICAO_CC_CAIXA" msprop:Generator_ColumnVarNameInTable="columnDESCRICAO_CC_CAIXA" msprop:Generator_ColumnPropNameInTable="DESCRICAO_CC_CAIXAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VALOR_CAIXA" msprop:Generator_UserColumnName="VALOR_CAIXA" msprop:Generator_ColumnPropNameInRow="VALOR_CAIXA" msprop:Generator_ColumnVarNameInTable="columnVALOR_CAIXA" msprop:Generator_ColumnPropNameInTable="VALOR_CAIXAColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DATA_CAIXA" msprop:Generator_UserColumnName="DATA_CAIXA" msprop:Generator_ColumnPropNameInRow="DATA_CAIXA" msprop:Generator_ColumnVarNameInTable="columnDATA_CAIXA" msprop:Generator_ColumnPropNameInTable="DATA_CAIXAColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="COD_EXTRATO_CAIXA" msprop:Generator_UserColumnName="COD_EXTRATO_CAIXA" msprop:Generator_ColumnPropNameInRow="COD_EXTRATO_CAIXA" msprop:Generator_ColumnVarNameInTable="columnCOD_EXTRATO_CAIXA" msprop:Generator_ColumnPropNameInTable="COD_EXTRATO_CAIXAColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="COD_FORN_CLI_CAIXA" msprop:Generator_UserColumnName="COD_FORN_CLI_CAIXA" msprop:Generator_ColumnPropNameInRow="COD_FORN_CLI_CAIXA" msprop:Generator_ColumnVarNameInTable="columnCOD_FORN_CLI_CAIXA" msprop:Generator_ColumnPropNameInTable="COD_FORN_CLI_CAIXAColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RAZAO_CLI_FORN_CAIXA" msprop:Generator_UserColumnName="RAZAO_CLI_FORN_CAIXA" msprop:Generator_ColumnPropNameInRow="RAZAO_CLI_FORN_CAIXA" msprop:Generator_ColumnVarNameInTable="columnRAZAO_CLI_FORN_CAIXA" msprop:Generator_ColumnPropNameInTable="RAZAO_CLI_FORN_CAIXAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DUPLICATA_CAIXA" msprop:Generator_UserColumnName="DUPLICATA_CAIXA" msprop:Generator_ColumnPropNameInRow="DUPLICATA_CAIXA" msprop:Generator_ColumnVarNameInTable="columnDUPLICATA_CAIXA" msprop:Generator_ColumnPropNameInTable="DUPLICATA_CAIXAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NF_CAIXA" msprop:Generator_UserColumnName="NF_CAIXA" msprop:Generator_ColumnPropNameInRow="NF_CAIXA" msprop:Generator_ColumnVarNameInTable="columnNF_CAIXA" msprop:Generator_ColumnPropNameInTable="NF_CAIXAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PLANO_CAIXA" msprop:Generator_UserColumnName="PLANO_CAIXA" msprop:Generator_ColumnPropNameInRow="PLANO_CAIXA" msprop:Generator_ColumnVarNameInTable="columnPLANO_CAIXA" msprop:Generator_ColumnPropNameInTable="PLANO_CAIXAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CARTEIRA_CAIXA" msprop:Generator_UserColumnName="CARTEIRA_CAIXA" msprop:Generator_ColumnPropNameInRow="CARTEIRA_CAIXA" msprop:Generator_ColumnVarNameInTable="columnCARTEIRA_CAIXA" msprop:Generator_ColumnPropNameInTable="CARTEIRA_CAIXAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEBITO_CAIXA" msprop:Generator_UserColumnName="DEBITO_CAIXA" msprop:Generator_ColumnPropNameInRow="DEBITO_CAIXA" msprop:Generator_ColumnVarNameInTable="columnDEBITO_CAIXA" msprop:Generator_ColumnPropNameInTable="DEBITO_CAIXAColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CREDITO_CAIXA" msprop:Generator_UserColumnName="CREDITO_CAIXA" msprop:Generator_ColumnPropNameInRow="CREDITO_CAIXA" msprop:Generator_ColumnVarNameInTable="columnCREDITO_CAIXA" msprop:Generator_ColumnPropNameInTable="CREDITO_CAIXAColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="MALOTE_CAIXA" msprop:Generator_UserColumnName="MALOTE_CAIXA" msprop:Generator_ColumnPropNameInRow="MALOTE_CAIXA" msprop:Generator_ColumnVarNameInTable="columnMALOTE_CAIXA" msprop:Generator_ColumnPropNameInTable="MALOTE_CAIXAColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IMP_CAIXA" msprop:Generator_UserTableName="IMP_CAIXA" msprop:Generator_RowDeletedName="IMP_CAIXARowDeleted" msprop:Generator_TableClassName="IMP_CAIXADataTable" msprop:Generator_RowChangedName="IMP_CAIXARowChanged" msprop:Generator_RowClassName="IMP_CAIXARow" msprop:Generator_RowChangingName="IMP_CAIXARowChanging" msprop:Generator_RowEvArgName="IMP_CAIXARowChangeEvent" msprop:Generator_RowEvHandlerName="IMP_CAIXARowChangeEventHandler" msprop:Generator_TablePropName="IMP_CAIXA" msprop:Generator_TableVarName="tableIMP_CAIXA" msprop:Generator_RowDeletingName="IMP_CAIXARowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COD_IMP_CAIXA" msprop:Generator_UserColumnName="COD_IMP_CAIXA" msprop:Generator_ColumnPropNameInRow="COD_IMP_CAIXA" msprop:Generator_ColumnVarNameInTable="columnCOD_IMP_CAIXA" msprop:Generator_ColumnPropNameInTable="COD_IMP_CAIXAColumn" type="xs:int" />
+              <xs:element name="VALOR_DEBITOS_CAIXA" msprop:Generator_UserColumnName="VALOR_DEBITOS_CAIXA" msprop:Generator_ColumnPropNameInRow="VALOR_DEBITOS_CAIXA" msprop:Generator_ColumnVarNameInTable="columnVALOR_DEBITOS_CAIXA" msprop:Generator_ColumnPropNameInTable="VALOR_DEBITOS_CAIXAColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="VALOR_CREDITO_CAIXA" msprop:Generator_UserColumnName="VALOR_CREDITO_CAIXA" msprop:Generator_ColumnPropNameInRow="VALOR_CREDITO_CAIXA" msprop:Generator_ColumnVarNameInTable="columnVALOR_CREDITO_CAIXA" msprop:Generator_ColumnPropNameInTable="VALOR_CREDITO_CAIXAColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="BALANCO_CAIXA" msprop:Generator_UserColumnName="BALANCO_CAIXA" msprop:Generator_ColumnPropNameInRow="BALANCO_CAIXA" msprop:Generator_ColumnVarNameInTable="columnBALANCO_CAIXA" msprop:Generator_ColumnPropNameInTable="BALANCO_CAIXAColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DATA_INICIAL_CAIXA" msprop:Generator_UserColumnName="DATA_INICIAL_CAIXA" msprop:Generator_ColumnPropNameInRow="DATA_INICIAL_CAIXA" msprop:Generator_ColumnVarNameInTable="columnDATA_INICIAL_CAIXA" msprop:Generator_ColumnPropNameInTable="DATA_INICIAL_CAIXAColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATA_FINAL_CAIXA" msprop:Generator_UserColumnName="DATA_FINAL_CAIXA" msprop:Generator_ColumnPropNameInRow="DATA_FINAL_CAIXA" msprop:Generator_ColumnVarNameInTable="columnDATA_FINAL_CAIXA" msprop:Generator_ColumnPropNameInTable="DATA_FINAL_CAIXAColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CONTA_CORRENTE_CAIXA" msprop:Generator_UserColumnName="CONTA_CORRENTE_CAIXA" msprop:Generator_ColumnPropNameInRow="CONTA_CORRENTE_CAIXA" msprop:Generator_ColumnVarNameInTable="columnCONTA_CORRENTE_CAIXA" msprop:Generator_ColumnPropNameInTable="CONTA_CORRENTE_CAIXAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MALOTES" />
+      <xs:field xpath="mstns:COD_MALOTE" />
+    </xs:unique>
+    <xs:unique name="CAIXA_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CAIXA" />
+      <xs:field xpath="mstns:COD_CAIXA" />
+    </xs:unique>
+    <xs:unique name="IMP_CAIXA_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:IMP_CAIXA" />
+      <xs:field xpath="mstns:COD_IMP_CAIXA" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

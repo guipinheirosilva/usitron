@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://177.66.168.159/soap/LunetRemessa" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://177.66.168.159/soap/LunetRemessa" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://177.66.168.159/soap/LunetRemessa">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="receberdadosRequest">
+    <wsdl:part name="EMP_CGCCPF" type="xsd:string" />
+    <wsdl:part name="EMP_TOKEN" type="xsd:string" />
+    <wsdl:part name="VERSAO_LAYOUT" type="xsd:string" />
+    <wsdl:part name="TIPO_RETORNO" type="xsd:string" />
+    <wsdl:part name="PERIODO_INICIAL" type="xsd:string" />
+    <wsdl:part name="PERIODO_FINAL" type="xsd:string" />
+    <wsdl:part name="MARCAR_COMOSINCRONIZADO" type="xsd:string" />
+    <wsdl:part name="ID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="receberdadosResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="setdadosaguardandoRequest">
+    <wsdl:part name="EMP_CGCCPF" type="xsd:string" />
+    <wsdl:part name="EMP_TOKEN" type="xsd:string" />
+    <wsdl:part name="dados" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="setdadosaguardandoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="setdadossincronizadoRequest">
+    <wsdl:part name="EMP_CGCCPF" type="xsd:string" />
+    <wsdl:part name="EMP_TOKEN" type="xsd:string" />
+    <wsdl:part name="dados" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="setdadossincronizadoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="LunetRemessaPortType">
+    <wsdl:operation name="receberdados">
+      <documentation>API para Receber Dados do WebService Lunet</documentation>
+      <wsdl:input message="tns:receberdadosRequest" />
+      <wsdl:output message="tns:receberdadosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="setdadosaguardando">
+      <documentation>API para Marcar o Registro como Aguardando Sincronizacao</documentation>
+      <wsdl:input message="tns:setdadosaguardandoRequest" />
+      <wsdl:output message="tns:setdadosaguardandoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="setdadossincronizado">
+      <documentation>API para Marcar o Registro como Sincronizado</documentation>
+      <wsdl:input message="tns:setdadossincronizadoRequest" />
+      <wsdl:output message="tns:setdadossincronizadoResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LunetRemessaBinding" type="tns:LunetRemessaPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="receberdados">
+      <soap:operation soapAction="http://177.66.168.159/funcoes/func_android/webservice_lunetretornowsdl.php/receberdados" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://www.lunet.com.br/funcoes/func_android/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://www.lunet.com.br/funcoes/func_android/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setdadosaguardando">
+      <soap:operation soapAction="http://177.66.168.159/funcoes/func_android/webservice_lunetretornowsdl.php/setdadosaguardando" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://www.lunet.com.br/funcoes/func_android/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://www.lunet.com.br/funcoes/func_android/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setdadossincronizado">
+      <soap:operation soapAction="http://177.66.168.159/funcoes/func_android/webservice_lunetretornowsdl.php/setdadossincronizado" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://www.lunet.com.br/funcoes/func_android/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://www.lunet.com.br/funcoes/func_android/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LunetRemessa">
+    <wsdl:port name="LunetRemessaPort" binding="tns:LunetRemessaBinding">
+      <soap:address location="http://177.66.168.159/funcoes/func_android/webservice_lunetretornowsdl.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

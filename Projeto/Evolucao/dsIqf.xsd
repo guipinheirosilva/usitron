@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsIqf" targetNamespace="http://tempuri.org/dsIqf.xsd" xmlns:mstns="http://tempuri.org/dsIqf.xsd" xmlns="http://tempuri.org/dsIqf.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsIqf" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsIqf" msprop:Generator_DataSetName="dsIqf">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IQF" msprop:Generator_UserTableName="IQF" msprop:Generator_RowDeletedName="IQFRowDeleted" msprop:Generator_RowChangedName="IQFRowChanged" msprop:Generator_RowClassName="IQFRow" msprop:Generator_RowChangingName="IQFRowChanging" msprop:Generator_RowEvArgName="IQFRowChangeEvent" msprop:Generator_RowEvHandlerName="IQFRowChangeEventHandler" msprop:Generator_TableClassName="IQFDataTable" msprop:Generator_TableVarName="tableIQF" msprop:Generator_RowDeletingName="IQFRowDeleting" msprop:Generator_TablePropName="IQF">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CNPJ" msprop:Generator_UserColumnName="CNPJ" msprop:Generator_ColumnVarNameInTable="columnCNPJ" msprop:Generator_ColumnPropNameInRow="CNPJ" msprop:Generator_ColumnPropNameInTable="CNPJColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nome" msprop:Generator_UserColumnName="Nome" msprop:Generator_ColumnVarNameInTable="columnNome" msprop:Generator_ColumnPropNameInRow="Nome" msprop:Generator_ColumnPropNameInTable="NomeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Lotes_x0020_no_x0020_prazo" msprop:Generator_UserColumnName="Lotes no prazo" msprop:Generator_ColumnVarNameInTable="columnLotes_no_prazo" msprop:Generator_ColumnPropNameInRow="Lotes_no_prazo" msprop:Generator_ColumnPropNameInTable="Lotes_no_prazoColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Lotes_x0020_atrasados" msprop:Generator_UserColumnName="Lotes atrasados" msprop:Generator_ColumnVarNameInTable="columnLotes_atrasados" msprop:Generator_ColumnPropNameInRow="Lotes_atrasados" msprop:Generator_ColumnPropNameInTable="Lotes_atrasadosColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Lotes_x0020_aprovados" msprop:Generator_UserColumnName="Lotes aprovados" msprop:Generator_ColumnVarNameInTable="columnLotes_aprovados" msprop:Generator_ColumnPropNameInRow="Lotes_aprovados" msprop:Generator_ColumnPropNameInTable="Lotes_aprovadosColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Lotes_x0020_Reprovados" msprop:Generator_UserColumnName="Lotes Reprovados" msprop:Generator_ColumnVarNameInTable="columnLotes_Reprovados" msprop:Generator_ColumnPropNameInRow="Lotes_Reprovados" msprop:Generator_ColumnPropNameInTable="Lotes_ReprovadosColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IQF" msprop:Generator_UserColumnName="IQF" msprop:Generator_ColumnVarNameInTable="columnIQF" msprop:Generator_ColumnPropNameInRow="IQF" msprop:Generator_ColumnPropNameInTable="IQFColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Periodo" msprop:Generator_UserTableName="Periodo" msprop:Generator_RowDeletedName="PeriodoRowDeleted" msprop:Generator_RowChangedName="PeriodoRowChanged" msprop:Generator_RowClassName="PeriodoRow" msprop:Generator_RowChangingName="PeriodoRowChanging" msprop:Generator_RowEvArgName="PeriodoRowChangeEvent" msprop:Generator_RowEvHandlerName="PeriodoRowChangeEventHandler" msprop:Generator_TableClassName="PeriodoDataTable" msprop:Generator_TableVarName="tablePeriodo" msprop:Generator_RowDeletingName="PeriodoRowDeleting" msprop:Generator_TablePropName="Periodo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Inicio" msprop:Generator_UserColumnName="Inicio" msprop:Generator_ColumnVarNameInTable="columnInicio" msprop:Generator_ColumnPropNameInRow="Inicio" msprop:Generator_ColumnPropNameInTable="InicioColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Fim" msprop:Generator_UserColumnName="Fim" msprop:Generator_ColumnVarNameInTable="columnFim" msprop:Generator_ColumnPropNameInRow="Fim" msprop:Generator_ColumnPropNameInTable="FimColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="trimestre" msprop:Generator_UserColumnName="trimestre" msprop:Generator_ColumnPropNameInRow="trimestre" msprop:Generator_ColumnVarNameInTable="columntrimestre" msprop:Generator_ColumnPropNameInTable="trimestreColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ano" msprop:Generator_UserColumnName="ano" msprop:Generator_ColumnPropNameInRow="ano" msprop:Generator_ColumnVarNameInTable="columnano" msprop:Generator_ColumnPropNameInTable="anoColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:IQF" />
+      <xs:field xpath="mstns:CNPJ" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

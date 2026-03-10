@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRomaneio_transporte" targetNamespace="http://tempuri.org/dsRomaneio_transporte.xsd" xmlns:mstns="http://tempuri.org/dsRomaneio_transporte.xsd" xmlns="http://tempuri.org/dsRomaneio_transporte.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="connection_firebird" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="connection_firebird (Settings)" PropertyReference="ApplicationSettings.Evolucao.Properties.Settings.GlobalReference.Default.connection_firebird" Provider="System.Data.Odbc">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ROMANEIOTableAdapter" GeneratorDataComponentClassName="ROMANEIOTableAdapter" Name="ROMANEIO" UserDataComponentName="ROMANEIOTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_firebird (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>select * from romaneio</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="COD_ROMANEIO" DataSetColumn="COD_ROMANEIO" />
+              <Mapping SourceColumn="DATA_ROMANEIO" DataSetColumn="DATA_ROMANEIO" />
+              <Mapping SourceColumn="PLACA_VEICULO_ROMANEIO" DataSetColumn="PLACA_VEICULO_ROMANEIO" />
+              <Mapping SourceColumn="COD_MOTORISTA_ROMANEIO" DataSetColumn="COD_MOTORISTA_ROMANEIO" />
+              <Mapping SourceColumn="KM_INCIAL_ROMANEIO" DataSetColumn="KM_INCIAL_ROMANEIO" />
+              <Mapping SourceColumn="KM_FINAL_ROMANEIO" DataSetColumn="KM_FINAL_ROMANEIO" />
+              <Mapping SourceColumn="ROTEIRO_ROMANEIO" DataSetColumn="ROTEIRO_ROMANEIO" />
+              <Mapping SourceColumn="MOTORISTA_ROMANEIO" DataSetColumn="MOTORISTA_ROMANEIO" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ITENS_ROMANEIOTableAdapter" GeneratorDataComponentClassName="ITENS_ROMANEIOTableAdapter" Name="ITENS_ROMANEIO" UserDataComponentName="ITENS_ROMANEIOTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_firebird (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT * FROM ITENS_ROMANEIO</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="COD_ITEM_ROMANEIO" DataSetColumn="COD_ITEM_ROMANEIO" />
+              <Mapping SourceColumn="COD_CTE_COLETA_IR" DataSetColumn="COD_CTE_COLETA_IR" />
+              <Mapping SourceColumn="COD_ROMANEIO_IR" DataSetColumn="COD_ROMANEIO_IR" />
+              <Mapping SourceColumn="JUSTIFICATIVA_RETORNO_IR" DataSetColumn="JUSTIFICATIVA_RETORNO_IR" />
+              <Mapping SourceColumn="DATA_ENTREGA_IR" DataSetColumn="DATA_ENTREGA_IR" />
+              <Mapping SourceColumn="HORA_ENTREGA_IR" DataSetColumn="HORA_ENTREGA_IR" />
+              <Mapping SourceColumn="DESTINATARIO_IR" DataSetColumn="DESTINATARIO_IR" />
+              <Mapping SourceColumn="CNPJ_DESTINATARIO_IR" DataSetColumn="CNPJ_DESTINATARIO_IR" />
+              <Mapping SourceColumn="RECEBEDOR_IR" DataSetColumn="RECEBEDOR_IR" />
+              <Mapping SourceColumn="CNPJ_RECEBEDOR_IR" DataSetColumn="CNPJ_RECEBEDOR_IR" />
+              <Mapping SourceColumn="ENDERECO_REC_IR" DataSetColumn="ENDERECO_REC_IR" />
+              <Mapping SourceColumn="N_REC_IR" DataSetColumn="N_REC_IR" />
+              <Mapping SourceColumn="COMPLEMENTO_REC_IR" DataSetColumn="COMPLEMENTO_REC_IR" />
+              <Mapping SourceColumn="BAIRRO_REC_IR" DataSetColumn="BAIRRO_REC_IR" />
+              <Mapping SourceColumn="CIDADE_REC_IR" DataSetColumn="CIDADE_REC_IR" />
+              <Mapping SourceColumn="CEP_REC_IR" DataSetColumn="CEP_REC_IR" />
+              <Mapping SourceColumn="PESO_IR" DataSetColumn="PESO_IR" />
+              <Mapping SourceColumn="VOLUMES_IR" DataSetColumn="VOLUMES_IR" />
+              <Mapping SourceColumn="CUBAGEM_IR" DataSetColumn="CUBAGEM_IR" />
+              <Mapping SourceColumn="VALOR_CTE_IR" DataSetColumn="VALOR_CTE_IR" />
+              <Mapping SourceColumn="VALOR_CARGA_IR" DataSetColumn="VALOR_CARGA_IR" />
+              <Mapping SourceColumn="ORDEM_ENTREGA_IR" DataSetColumn="ORDEM_ENTREGA_IR" />
+              <Mapping SourceColumn="TIPO_IR" DataSetColumn="TIPO_IR" />
+              <Mapping SourceColumn="ESTADO_REC_IR" DataSetColumn="ESTADO_REC_IR" />
+              <Mapping SourceColumn="DATA_CTE_COLETA_IR" DataSetColumn="DATA_CTE_COLETA_IR" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRomaneio_transporte" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsRomaneio_transporte" msprop:Generator_DataSetName="dsRomaneio_transporte">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ROMANEIO" msprop:Generator_UserTableName="ROMANEIO" msprop:Generator_RowDeletedName="ROMANEIORowDeleted" msprop:Generator_RowChangedName="ROMANEIORowChanged" msprop:Generator_RowClassName="ROMANEIORow" msprop:Generator_RowChangingName="ROMANEIORowChanging" msprop:Generator_RowEvArgName="ROMANEIORowChangeEvent" msprop:Generator_RowEvHandlerName="ROMANEIORowChangeEventHandler" msprop:Generator_TableClassName="ROMANEIODataTable" msprop:Generator_TableVarName="tableROMANEIO" msprop:Generator_RowDeletingName="ROMANEIORowDeleting" msprop:Generator_TablePropName="ROMANEIO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COD_ROMANEIO" msprop:Generator_UserColumnName="COD_ROMANEIO" msprop:Generator_ColumnPropNameInRow="COD_ROMANEIO" msprop:Generator_ColumnVarNameInTable="columnCOD_ROMANEIO" msprop:Generator_ColumnPropNameInTable="COD_ROMANEIOColumn" type="xs:int" />
+              <xs:element name="DATA_ROMANEIO" msprop:Generator_UserColumnName="DATA_ROMANEIO" msprop:Generator_ColumnPropNameInRow="DATA_ROMANEIO" msprop:Generator_ColumnVarNameInTable="columnDATA_ROMANEIO" msprop:Generator_ColumnPropNameInTable="DATA_ROMANEIOColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PLACA_VEICULO_ROMANEIO" msprop:Generator_UserColumnName="PLACA_VEICULO_ROMANEIO" msprop:Generator_ColumnPropNameInRow="PLACA_VEICULO_ROMANEIO" msprop:Generator_ColumnVarNameInTable="columnPLACA_VEICULO_ROMANEIO" msprop:Generator_ColumnPropNameInTable="PLACA_VEICULO_ROMANEIOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COD_MOTORISTA_ROMANEIO" msprop:Generator_UserColumnName="COD_MOTORISTA_ROMANEIO" msprop:Generator_ColumnPropNameInRow="COD_MOTORISTA_ROMANEIO" msprop:Generator_ColumnVarNameInTable="columnCOD_MOTORISTA_ROMANEIO" msprop:Generator_ColumnPropNameInTable="COD_MOTORISTA_ROMANEIOColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="KM_INCIAL_ROMANEIO" msprop:Generator_UserColumnName="KM_INCIAL_ROMANEIO" msprop:Generator_ColumnPropNameInRow="KM_INCIAL_ROMANEIO" msprop:Generator_ColumnVarNameInTable="columnKM_INCIAL_ROMANEIO" msprop:Generator_ColumnPropNameInTable="KM_INCIAL_ROMANEIOColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="KM_FINAL_ROMANEIO" msprop:Generator_UserColumnName="KM_FINAL_ROMANEIO" msprop:Generator_ColumnPropNameInRow="KM_FINAL_ROMANEIO" msprop:Generator_ColumnVarNameInTable="columnKM_FINAL_ROMANEIO" msprop:Generator_ColumnPropNameInTable="KM_FINAL_ROMANEIOColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ROTEIRO_ROMANEIO" msprop:Generator_UserColumnName="ROTEIRO_ROMANEIO" msprop:Generator_ColumnPropNameInRow="ROTEIRO_ROMANEIO" msprop:Generator_ColumnVarNameInTable="columnROTEIRO_ROMANEIO" msprop:Generator_ColumnPropNameInTable="ROTEIRO_ROMANEIOColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="MOTORISTA_ROMANEIO" msprop:Generator_UserColumnName="MOTORISTA_ROMANEIO" msprop:Generator_ColumnVarNameInTable="columnMOTORISTA_ROMANEIO" msprop:Generator_ColumnPropNameInRow="MOTORISTA_ROMANEIO" msprop:Generator_ColumnPropNameInTable="MOTORISTA_ROMANEIOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ITENS_ROMANEIO" msprop:Generator_UserTableName="ITENS_ROMANEIO" msprop:Generator_RowDeletedName="ITENS_ROMANEIORowDeleted" msprop:Generator_RowChangedName="ITENS_ROMANEIORowChanged" msprop:Generator_RowClassName="ITENS_ROMANEIORow" msprop:Generator_RowChangingName="ITENS_ROMANEIORowChanging" msprop:Generator_RowEvArgName="ITENS_ROMANEIORowChangeEvent" msprop:Generator_RowEvHandlerName="ITENS_ROMANEIORowChangeEventHandler" msprop:Generator_TableClassName="ITENS_ROMANEIODataTable" msprop:Generator_TableVarName="tableITENS_ROMANEIO" msprop:Generator_RowDeletingName="ITENS_ROMANEIORowDeleting" msprop:Generator_TablePropName="ITENS_ROMANEIO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COD_ITEM_ROMANEIO" msprop:Generator_UserColumnName="COD_ITEM_ROMANEIO" msprop:Generator_ColumnPropNameInRow="COD_ITEM_ROMANEIO" msprop:Generator_ColumnVarNameInTable="columnCOD_ITEM_ROMANEIO" msprop:Generator_ColumnPropNameInTable="COD_ITEM_ROMANEIOColumn" type="xs:int" />
+              <xs:element name="COD_CTE_COLETA_IR" msprop:Generator_UserColumnName="COD_CTE_COLETA_IR" msprop:Generator_ColumnPropNameInRow="COD_CTE_COLETA_IR" msprop:Generator_ColumnVarNameInTable="columnCOD_CTE_COLETA_IR" msprop:Generator_ColumnPropNameInTable="COD_CTE_COLETA_IRColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="COD_ROMANEIO_IR" msprop:Generator_UserColumnName="COD_ROMANEIO_IR" msprop:Generator_ColumnPropNameInRow="COD_ROMANEIO_IR" msprop:Generator_ColumnVarNameInTable="columnCOD_ROMANEIO_IR" msprop:Generator_ColumnPropNameInTable="COD_ROMANEIO_IRColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="JUSTIFICATIVA_RETORNO_IR" msprop:Generator_UserColumnName="JUSTIFICATIVA_RETORNO_IR" msprop:Generator_ColumnPropNameInRow="JUSTIFICATIVA_RETORNO_IR" msprop:Generator_ColumnVarNameInTable="columnJUSTIFICATIVA_RETORNO_IR" msprop:Generator_ColumnPropNameInTable="JUSTIFICATIVA_RETORNO_IRColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="DATA_ENTREGA_IR" msprop:Generator_UserColumnName="DATA_ENTREGA_IR" msprop:Generator_ColumnPropNameInRow="DATA_ENTREGA_IR" msprop:Generator_ColumnVarNameInTable="columnDATA_ENTREGA_IR" msprop:Generator_ColumnPropNameInTable="DATA_ENTREGA_IRColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HORA_ENTREGA_IR" msprop:Generator_UserColumnName="HORA_ENTREGA_IR" msprop:Generator_ColumnPropNameInRow="HORA_ENTREGA_IR" msprop:Generator_ColumnVarNameInTable="columnHORA_ENTREGA_IR" msprop:Generator_ColumnPropNameInTable="HORA_ENTREGA_IRColumn" type="xs:duration" minOccurs="0" />
+              <xs:element name="DESTINATARIO_IR" msprop:Generator_UserColumnName="DESTINATARIO_IR" msprop:Generator_ColumnPropNameInRow="DESTINATARIO_IR" msprop:Generator_ColumnVarNameInTable="columnDESTINATARIO_IR" msprop:Generator_ColumnPropNameInTable="DESTINATARIO_IRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CNPJ_DESTINATARIO_IR" msprop:Generator_UserColumnName="CNPJ_DESTINATARIO_IR" msprop:Generator_ColumnPropNameInRow="CNPJ_DESTINATARIO_IR" msprop:Generator_ColumnVarNameInTable="columnCNPJ_DESTINATARIO_IR" msprop:Generator_ColumnPropNameInTable="CNPJ_DESTINATARIO_IRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RECEBEDOR_IR" msprop:Generator_UserColumnName="RECEBEDOR_IR" msprop:Generator_ColumnPropNameInRow="RECEBEDOR_IR" msprop:Generator_ColumnVarNameInTable="columnRECEBEDOR_IR" msprop:Generator_ColumnPropNameInTable="RECEBEDOR_IRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CNPJ_RECEBEDOR_IR" msprop:Generator_UserColumnName="CNPJ_RECEBEDOR_IR" msprop:Generator_ColumnPropNameInRow="CNPJ_RECEBEDOR_IR" msprop:Generator_ColumnVarNameInTable="columnCNPJ_RECEBEDOR_IR" msprop:Generator_ColumnPropNameInTable="CNPJ_RECEBEDOR_IRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ENDERECO_REC_IR" msprop:Generator_UserColumnName="ENDERECO_REC_IR" msprop:Generator_ColumnPropNameInRow="ENDERECO_REC_IR" msprop:Generator_ColumnVarNameInTable="columnENDERECO_REC_IR" msprop:Generator_ColumnPropNameInTable="ENDERECO_REC_IRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="N_REC_IR" msprop:Generator_UserColumnName="N_REC_IR" msprop:Generator_ColumnPropNameInRow="N_REC_IR" msprop:Generator_ColumnVarNameInTable="columnN_REC_IR" msprop:Generator_ColumnPropNameInTable="N_REC_IRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPLEMENTO_REC_IR" msprop:Generator_UserColumnName="COMPLEMENTO_REC_IR" msprop:Generator_ColumnPropNameInRow="COMPLEMENTO_REC_IR" msprop:Generator_ColumnVarNameInTable="columnCOMPLEMENTO_REC_IR" msprop:Generator_ColumnPropNameInTable="COMPLEMENTO_REC_IRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAIRRO_REC_IR" msprop:Generator_UserColumnName="BAIRRO_REC_IR" msprop:Generator_ColumnPropNameInRow="BAIRRO_REC_IR" msprop:Generator_ColumnVarNameInTable="columnBAIRRO_REC_IR" msprop:Generator_ColumnPropNameInTable="BAIRRO_REC_IRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CIDADE_REC_IR" msprop:Generator_UserColumnName="CIDADE_REC_IR" msprop:Generator_ColumnPropNameInRow="CIDADE_REC_IR" msprop:Generator_ColumnVarNameInTable="columnCIDADE_REC_IR" msprop:Generator_ColumnPropNameInTable="CIDADE_REC_IRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CEP_REC_IR" msprop:Generator_UserColumnName="CEP_REC_IR" msprop:Generator_ColumnPropNameInRow="CEP_REC_IR" msprop:Generator_ColumnVarNameInTable="columnCEP_REC_IR" msprop:Generator_ColumnPropNameInTable="CEP_REC_IRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PESO_IR" msprop:Generator_UserColumnName="PESO_IR" msprop:Generator_ColumnPropNameInRow="PESO_IR" msprop:Generator_ColumnVarNameInTable="columnPESO_IR" msprop:Generator_ColumnPropNameInTable="PESO_IRColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="VOLUMES_IR" msprop:Generator_UserColumnName="VOLUMES_IR" msprop:Generator_ColumnPropNameInRow="VOLUMES_IR" msprop:Generator_ColumnVarNameInTable="columnVOLUMES_IR" msprop:Generator_ColumnPropNameInTable="VOLUMES_IRColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CUBAGEM_IR" msprop:Generator_UserColumnName="CUBAGEM_IR" msprop:Generator_ColumnPropNameInRow="CUBAGEM_IR" msprop:Generator_ColumnVarNameInTable="columnCUBAGEM_IR" msprop:Generator_ColumnPropNameInTable="CUBAGEM_IRColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="VALOR_CTE_IR" msprop:Generator_UserColumnName="VALOR_CTE_IR" msprop:Generator_ColumnPropNameInRow="VALOR_CTE_IR" msprop:Generator_ColumnVarNameInTable="columnVALOR_CTE_IR" msprop:Generator_ColumnPropNameInTable="VALOR_CTE_IRColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="VALOR_CARGA_IR" msprop:Generator_UserColumnName="VALOR_CARGA_IR" msprop:Generator_ColumnPropNameInRow="VALOR_CARGA_IR" msprop:Generator_ColumnVarNameInTable="columnVALOR_CARGA_IR" msprop:Generator_ColumnPropNameInTable="VALOR_CARGA_IRColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ORDEM_ENTREGA_IR" msprop:Generator_UserColumnName="ORDEM_ENTREGA_IR" msprop:Generator_ColumnPropNameInRow="ORDEM_ENTREGA_IR" msprop:Generator_ColumnVarNameInTable="columnORDEM_ENTREGA_IR" msprop:Generator_ColumnPropNameInTable="ORDEM_ENTREGA_IRColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TIPO_IR" msprop:Generator_UserColumnName="TIPO_IR" msprop:Generator_ColumnPropNameInRow="TIPO_IR" msprop:Generator_ColumnVarNameInTable="columnTIPO_IR" msprop:Generator_ColumnPropNameInTable="TIPO_IRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ESTADO_REC_IR" msprop:Generator_UserColumnName="ESTADO_REC_IR" msprop:Generator_ColumnPropNameInRow="ESTADO_REC_IR" msprop:Generator_ColumnVarNameInTable="columnESTADO_REC_IR" msprop:Generator_ColumnPropNameInTable="ESTADO_REC_IRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATA_CTE_COLETA_IR" msprop:Generator_UserColumnName="DATA_CTE_COLETA_IR" msprop:Generator_ColumnPropNameInRow="DATA_CTE_COLETA_IR" msprop:Generator_ColumnVarNameInTable="columnDATA_CTE_COLETA_IR" msprop:Generator_ColumnPropNameInTable="DATA_CTE_COLETA_IRColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CNPJ_REMETENTE_IR" msprop:Generator_UserColumnName="CNPJ_REMETENTE_IR" msprop:Generator_ColumnVarNameInTable="columnCNPJ_REMETENTE_IR" msprop:Generator_ColumnPropNameInRow="CNPJ_REMETENTE_IR" msprop:Generator_ColumnPropNameInTable="CNPJ_REMETENTE_IRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="REMETENTE_IR" msprop:Generator_UserColumnName="REMETENTE_IR" msprop:Generator_ColumnVarNameInTable="columnREMETENTE_IR" msprop:Generator_ColumnPropNameInRow="REMETENTE_IR" msprop:Generator_ColumnPropNameInTable="REMETENTE_IRColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ROMANEIO" />
+      <xs:field xpath="mstns:COD_ROMANEIO" />
+    </xs:unique>
+    <xs:unique name="ITENS_ROMANEIO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ITENS_ROMANEIO" />
+      <xs:field xpath="mstns:COD_ITEM_ROMANEIO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

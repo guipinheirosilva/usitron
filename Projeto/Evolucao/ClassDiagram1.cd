@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Evolucao.crOp" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>crOp.cs</FileName>
+      <HashCode>AAgAAABBAAAQQAAAAAAIAAAAAAAAAAAADAAAAAAABAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evolucao.CachedcrOp" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>crOp.cs</FileName>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Evolucao.form_crOp" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>form_crOp.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAEAAACAAAACAAAAAAAAAAAQAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evolucao.form_clientes" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>form_clientes.cs</FileName>
+      <HashCode>/2AfKAgIgaDAEBaBMBCQAhQCYgAoJCIEELQhACIYQrA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evolucao.form_maquinas" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>form_maquinas.cs</FileName>
+      <HashCode>FGAJAAgACCAAABQAEACACARCaECIBCIAAAIhIiAIYgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evolucao.form_op" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>form_op.cs</FileName>
+      <HashCode>/+CfMYgNNXyhbF0AmICTI6SXW1QYZXIt7MktaKPsSjg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evolucao.form_operadores" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>form_operadores.cs</FileName>
+      <HashCode>2eAJAAoAACAgwBUAMUCAQAQCQgAMRGIAAAQhACgIQgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evolucao.form_peca" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>form_peca.cs</FileName>
+      <HashCode>+/rfrSwJ9/zovP/7PN/dI/7fWphJ//d/XcX/af//2ig=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evolucao.form_principal" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>form_principal.cs</FileName>
+      <HashCode>AQEAAAUAhCAAIAATAAiCAAAyAAQAFQAAgAAACwBFFQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evolucao.form_sub" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>form_sub.cs</FileName>
+      <HashCode>2vjfLQwI9zjIuF8LPBDREOTfWppp9XtvHYS3aa9+wCg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evolucao.form_tipos_operacoes" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>form_tipos_operacoes.cs</FileName>
+      <HashCode>FGCfAQwAACAAAFQAMAKAAGQCQAAIBSIAAACxBCEMQiA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evolucao.form_tipos_parada" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>form_tipos_parada.cs</FileName>
+      <HashCode>EGAJAAgACiAQAJQAMACAABQCQAApBCIAAAAjACAIwgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evolucao.form_tipos_refugo" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>form_tipos_refugo.cs</FileName>
+      <HashCode>EGAJABgAQDAIAFQAMACAAAQCQAAoBCIAAIAhACAYQgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evolucao.Program" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Program.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evolucao.Properties.Resources" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evolucao.Properties.Settings" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

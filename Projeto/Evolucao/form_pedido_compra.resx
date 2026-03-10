@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="dsPedido_compra.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>325, 20</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bt_localizar_forn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhAQHvAIcAAAAAAIAAAACAAICAAAAAgIAAgACAgMDAwCo//ypfACpfVSpfqipf/yp/ACp/VSp/
+        qip//yqfACqfVSqfqiqf/yq/ACq/VSq/qiq//yrfACrfVSrfqirf/yr/ACr/VSr/qir//1UAAFUAVVUA
+        qlUA/1UfAFUfVVUfqlUf/1U/AFU/VVU/qlU//1VfAFVfVVVfqlVf/1V/AFV/VVV/qlV//1WfAFWfVVWf
+        qlWf/1W/AFW/VVW/qlW//1XfAFXfVVXfqlXf/1X/AFX/VVX/qlX//38AAH8AVX8Aqn8A/38fAH8fVX8f
+        qn8f/38/AH8/VX8/qn8//39fAH9fVX9fqn9f/39/AH9/VX9/qn9//3+fAH+fVX+fqn+f/3+/AH+/VX+/
+        qn+//3/fAH/fVX/fqn/f/3//AH//VX//qn///6oAAKoAVaoAqqoA/6ofAKofVaofqqof/6o/AKo/Vao/
+        qqo//6pfAKpfVapfqqpf/6p/AKp/Vap/qqp//6qfAKqfVaqfqqqf/6q/AKq/Vaq/qqq//6rfAKrfVarf
+        qqrf/6r/AKr/Var/qqr//9QAANQAVdQAqtQA/9QfANQfVdQfqtQf/9Q/ANQ/VdQ/qtQ//9RfANRfVdRf
+        qtRf/9R/ANR/VdR/qtR//9SfANSfVdSfqtSf/9S/ANS/VdS/qtS//9TfANTfVdTfqtTf/9T/ANT/VdT/
+        qtT///8AVf8Aqv8fAP8fVf8fqv8f//8/AP8/Vf8/qv8///9fAP9fVf9fqv9f//9/AP9/Vf9/qv9///+f
+        AP+fVf+fqv+f//+/AP+/Vf+/qv+////fAP/fVf/fqv/f////Vf//qszM///M/zP//2b//5n//8z//wB/
+        AAB/VQB/qgB//wCfAACfVQCfqgCf/wC/AAC/VQC/qgC//wDfAADfVQDfqgDf/wD/VQD/qioAACoAVSoA
+        qioA/yofACofVSofqiof/yo/ACo/VQAAAP/78P8AAAD/AP//AAAA//8A/wD//5WXj///////////////
+        /yH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAD7ACwAAAAAAQHvAAAI/wD3CRxIsKDBgwgTKlzIsKHDhxAj
+        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
+</value>
+  </data>
+  <metadata name="datPedido_compra.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="fbCommand4.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand2.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand1.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>193, 20</value>
+  </metadata>
+  <data name="fbConnection1.ConnectionString" xml:space="preserve">
+    <value>User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0</value>
+  </data>
+  <metadata name="fbCommand3.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="cbPedido_compra.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>474, 20</value>
+  </metadata>
+  <metadata name="datItens_ped.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>623, 20</value>
+  </metadata>
+  <metadata name="fbCommand8.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand6.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand5.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand7.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>761, 20</value>
+  </metadata>
+  <metadata name="dsItens_ped.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>745, 20</value>
+  </metadata>
+  <metadata name="cbItens_ped.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>861, 20</value>
+  </metadata>
+  <metadata name="datItens_req.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>156, 59</value>
+  </metadata>
+  <metadata name="fbCommand12.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand12.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand10.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand10.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand9.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand9.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand11.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="comando_select.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 59</value>
+  </metadata>
+  <metadata name="dsItens_req.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>275, 59</value>
+  </metadata>
+  <metadata name="datFornecedores.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>388, 59</value>
+  </metadata>
+  <metadata name="fbCommand16.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand16.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand14.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand14.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand13.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand13.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand15.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand15.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="dsFornecedores.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>531, 59</value>
+  </metadata>
+  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>669, 59</value>
+  </metadata>
+  <metadata name="datEmails_enviados.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1099, 20</value>
+  </metadata>
+  <metadata name="fbCommand20.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand20.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand18.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand18.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand17.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand17.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand19.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand19.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="dsEmails_enviados.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>785, 59</value>
+  </metadata>
+  <metadata name="col_item_req.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ITEM_ITEM_PED.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="POSICAO_ITEM_PED.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="col_peso.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="col_frete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Req.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="col_chegou.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="col_nf.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="col_data_chegada.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="col_resp_chegada.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="datFatura_pc.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>978, 20</value>
+  </metadata>
+  <metadata name="fbCommand24.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand24.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand22.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand22.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 59</value>
+  </metadata>
+  <metadata name="fbCommand21.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand21.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand23.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand23.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="dsFatura_pc.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>937, 59</value>
+  </metadata>
+  <metadata name="fbCommand25.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand25.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand26.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand26.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="fbCommand27.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand27.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1191, 59</value>
+  </metadata>
+  <metadata name="fbCommand28.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="fbCommand28.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1191, 59</value>
+  </metadata>
+  <metadata name="cbFatura_pc.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1084, 57</value>
+  </metadata>
+</root>
