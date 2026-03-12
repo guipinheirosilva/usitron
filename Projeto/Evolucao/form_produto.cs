@@ -521,7 +521,7 @@ namespace Evolucao
             //tb_estoque_medio.Text = _saldo.ToString();
             */
             classeEstoque estoque = new classeEstoque();
-            estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+            estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
             estoque.calcular_estoque(txtCodAlternativo.Text);
             localizar_item(tb_cod.Text);
 

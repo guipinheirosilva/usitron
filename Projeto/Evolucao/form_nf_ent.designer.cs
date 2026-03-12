@@ -31,11 +31,11 @@ namespace Evolucao
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_nf_ent));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_nf_ent));
             this.cbPedido = new System.Windows.Forms.CheckBox();
             this.itemPanel = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -359,89 +359,6 @@ namespace Evolucao
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.barra_status = new System.Windows.Forms.ToolStripStatusLabel();
             this.dgvItens_nota = new System.Windows.Forms.DataGridView();
-            this.col_cod_item = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCodBarras = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCodFornecedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DATA_VALIDADE_ITEM_ENT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_unidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_qtde = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_ncm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_cfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_valor_unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_preco_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sTITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_valor_st = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_valor_bc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_novo_lote = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_lote = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_qtde_lote = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_cnpj_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iCMITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_valor_icm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iPIITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_valor_ipi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nFITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_pedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_n_linha_ped = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mAEITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_cod_item_req = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_cod_item_ped = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_cod_item_est = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_buscar_item_est = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.col_prestacao_servico = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.iSSITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_valor_iss = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tIPOSERVICOITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cODCOMISSIONARIOITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vALORUNITCOMISSAOITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vALORTOTALCOMISSAOITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATAINSERCAOITEMENTNOTADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cNPJCLIENTEITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sTATUSATUALNFEENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pORCCOMISSAOITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_valor_bc_st = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iCMSSTITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_frete = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_desconto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_seguro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_outras_desp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iVAITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rEDUCAOITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cOFINSITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vALORCOFINSITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pISITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vALORPISITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.oRIGEMITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mODBCITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mODBCSTITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rEDUCAOSTITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aLIQUOTACREDITOITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_valor_credito = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iPITRIBITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.iPINTRIBITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.cSTIPITRIBITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cSTIPINTRIBITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tIPOPISITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cSTPISITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tIPOCOFINSITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cSTCOFINSITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iTEMPEDIDOCOMPRAITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bCIPIITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bCPISITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bCCOFINSITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bCISSITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bCCOMIPIITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sTIMPRESSAOITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rOTAITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dIITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATADIITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lOCALDESITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uFDESITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATADESITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cODEXPITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dsItens_nota_ent = new System.Data.DataSet();
             this.ITENS_NOTA_ENT = new System.Data.DataTable();
             this.COD_ITENS_NOTA_ENT = new System.Data.DataColumn();
@@ -581,6 +498,89 @@ namespace Evolucao
             this.LOTE_ESTOQUE_SAIDA = new System.Data.DataColumn();
             this.POS_ESTOQUE_SAIDA = new System.Data.DataColumn();
             this.DESENHO_ESTOQUE_SAIDA = new System.Data.DataColumn();
+            this.col_cod_item = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCodBarras = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCodFornecedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DATA_VALIDADE_ITEM_ENT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_unidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_qtde = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_ncm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_cfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_valor_unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_preco_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sTITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_valor_st = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_valor_bc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_novo_lote = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_lote = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_qtde_lote = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_cnpj_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iCMITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_valor_icm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iPIITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_valor_ipi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nFITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_pedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_n_linha_ped = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mAEITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_cod_item_req = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_cod_item_ped = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_cod_item_est = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_buscar_item_est = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.col_prestacao_servico = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.iSSITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_valor_iss = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tIPOSERVICOITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cODCOMISSIONARIOITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vALORUNITCOMISSAOITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vALORTOTALCOMISSAOITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dATAINSERCAOITEMENTNOTADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNPJCLIENTEITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sTATUSATUALNFEENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pORCCOMISSAOITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_valor_bc_st = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iCMSSTITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_frete = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_desconto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_seguro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_outras_desp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iVAITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rEDUCAOITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cOFINSITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vALORCOFINSITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pISITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vALORPISITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.oRIGEMITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mODBCITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mODBCSTITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rEDUCAOSTITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aLIQUOTACREDITOITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_valor_credito = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iPITRIBITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.iPINTRIBITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.cSTIPITRIBITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cSTIPINTRIBITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tIPOPISITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cSTPISITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tIPOCOFINSITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cSTCOFINSITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iTEMPEDIDOCOMPRAITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bCIPIITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bCPISITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bCCOFINSITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bCISSITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bCCOMIPIITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sTIMPRESSAOITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rOTAITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dIITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dATADIITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lOCALDESITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uFDESITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dATADESITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cODEXPITEMENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemPanel.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -3553,579 +3553,6 @@ namespace Evolucao
             this.dgvItens_nota.TabIndex = 294;
             this.dgvItens_nota.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItens_nota_CellContentClick);
             // 
-            // col_cod_item
-            // 
-            this.col_cod_item.DataPropertyName = "COD_ITENS_NOTA_ENT";
-            this.col_cod_item.HeaderText = "COD_ITENS_NOTA_ENT";
-            this.col_cod_item.Name = "col_cod_item";
-            this.col_cod_item.Visible = false;
-            // 
-            // colCodBarras
-            // 
-            this.colCodBarras.DataPropertyName = "COD_EAN_ITEM_ENT";
-            this.colCodBarras.HeaderText = "Cód. Barras";
-            this.colCodBarras.Name = "colCodBarras";
-            // 
-            // colCodFornecedor
-            // 
-            this.colCodFornecedor.DataPropertyName = "COD_ITEM_ENT";
-            this.colCodFornecedor.HeaderText = "Cód Fornecedor";
-            this.colCodFornecedor.Name = "colCodFornecedor";
-            // 
-            // DATA_VALIDADE_ITEM_ENT
-            // 
-            this.DATA_VALIDADE_ITEM_ENT.DataPropertyName = "DATA_VALIDADE_ITEM_ENT";
-            this.DATA_VALIDADE_ITEM_ENT.HeaderText = "Data Validade";
-            this.DATA_VALIDADE_ITEM_ENT.Name = "DATA_VALIDADE_ITEM_ENT";
-            this.DATA_VALIDADE_ITEM_ENT.Width = 70;
-            // 
-            // col_descricao
-            // 
-            this.col_descricao.DataPropertyName = "DESCRICAO_ITEM_ENT";
-            this.col_descricao.HeaderText = "Descrição";
-            this.col_descricao.Name = "col_descricao";
-            this.col_descricao.Width = 250;
-            // 
-            // col_unidade
-            // 
-            this.col_unidade.DataPropertyName = "UNIDADE_ITEM_ENT";
-            this.col_unidade.HeaderText = "Un";
-            this.col_unidade.Name = "col_unidade";
-            this.col_unidade.Width = 40;
-            // 
-            // col_qtde
-            // 
-            this.col_qtde.DataPropertyName = "QTDE_ITEM_ENT";
-            this.col_qtde.HeaderText = "Qtde";
-            this.col_qtde.Name = "col_qtde";
-            this.col_qtde.Width = 60;
-            // 
-            // col_ncm
-            // 
-            this.col_ncm.DataPropertyName = "NCM_ITEM_ENT";
-            this.col_ncm.HeaderText = "NCM";
-            this.col_ncm.Name = "col_ncm";
-            this.col_ncm.Width = 80;
-            // 
-            // col_cfo
-            // 
-            this.col_cfo.DataPropertyName = "CFOP_ITEM_ENT";
-            this.col_cfo.HeaderText = "CFOP";
-            this.col_cfo.Name = "col_cfo";
-            this.col_cfo.Width = 60;
-            // 
-            // col_valor_unit
-            // 
-            this.col_valor_unit.DataPropertyName = "PRECO_UNIT_ITEM_ENT";
-            this.col_valor_unit.HeaderText = "Valor Unit.";
-            this.col_valor_unit.Name = "col_valor_unit";
-            this.col_valor_unit.Width = 80;
-            // 
-            // col_preco_total
-            // 
-            this.col_preco_total.DataPropertyName = "PRECO_TOTAL_ITEM_ENT";
-            this.col_preco_total.HeaderText = "Valor Total";
-            this.col_preco_total.Name = "col_preco_total";
-            this.col_preco_total.Width = 90;
-            // 
-            // sTITEMENTDataGridViewTextBoxColumn
-            // 
-            this.sTITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ST_ITEM_ENT";
-            this.sTITEMENTDataGridViewTextBoxColumn.HeaderText = "CST/CSON";
-            this.sTITEMENTDataGridViewTextBoxColumn.Name = "sTITEMENTDataGridViewTextBoxColumn";
-            this.sTITEMENTDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // col_valor_st
-            // 
-            this.col_valor_st.DataPropertyName = "VALOR_ICMS_ST_ITEM_ENT";
-            this.col_valor_st.HeaderText = "Valor ICMS ST";
-            this.col_valor_st.Name = "col_valor_st";
-            // 
-            // col_valor_bc
-            // 
-            this.col_valor_bc.DataPropertyName = "VALOR_BC_ITEM_ENT";
-            this.col_valor_bc.HeaderText = "Valor BC";
-            this.col_valor_bc.Name = "col_valor_bc";
-            this.col_valor_bc.Width = 80;
-            // 
-            // col_novo_lote
-            // 
-            this.col_novo_lote.HeaderText = "Novo Lote";
-            this.col_novo_lote.Name = "col_novo_lote";
-            this.col_novo_lote.Text = "Novo Lote";
-            this.col_novo_lote.ToolTipText = "Novo Lote";
-            this.col_novo_lote.UseColumnTextForButtonValue = true;
-            this.col_novo_lote.Visible = false;
-            this.col_novo_lote.Width = 65;
-            // 
-            // col_lote
-            // 
-            this.col_lote.DataPropertyName = "LOTE_ITEM_ENT";
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.col_lote.DefaultCellStyle = dataGridViewCellStyle2;
-            this.col_lote.HeaderText = "Lote";
-            this.col_lote.Name = "col_lote";
-            this.col_lote.ReadOnly = true;
-            this.col_lote.Visible = false;
-            this.col_lote.Width = 70;
-            // 
-            // col_qtde_lote
-            // 
-            this.col_qtde_lote.DataPropertyName = "QTDE_LOTE_ITEM_ENT";
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.col_qtde_lote.DefaultCellStyle = dataGridViewCellStyle3;
-            this.col_qtde_lote.HeaderText = "Qtde Lote";
-            this.col_qtde_lote.Name = "col_qtde_lote";
-            this.col_qtde_lote.ReadOnly = true;
-            this.col_qtde_lote.Visible = false;
-            this.col_qtde_lote.Width = 70;
-            // 
-            // col_cnpj_cliente
-            // 
-            this.col_cnpj_cliente.DataPropertyName = "CNPJ_PROPRIETARIO_ITEM_ENT";
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.col_cnpj_cliente.DefaultCellStyle = dataGridViewCellStyle4;
-            this.col_cnpj_cliente.HeaderText = "CNPJ Cliente";
-            this.col_cnpj_cliente.Name = "col_cnpj_cliente";
-            this.col_cnpj_cliente.ReadOnly = true;
-            this.col_cnpj_cliente.Visible = false;
-            // 
-            // col_cliente
-            // 
-            this.col_cliente.DataPropertyName = "NOME_PROPRIETARIO_ITEM_ENT";
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.col_cliente.DefaultCellStyle = dataGridViewCellStyle5;
-            this.col_cliente.HeaderText = "Nome Cliente";
-            this.col_cliente.Name = "col_cliente";
-            this.col_cliente.ReadOnly = true;
-            this.col_cliente.Visible = false;
-            this.col_cliente.Width = 200;
-            // 
-            // iCMITEMENTDataGridViewTextBoxColumn
-            // 
-            this.iCMITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ICM_ITEM_ENT";
-            this.iCMITEMENTDataGridViewTextBoxColumn.HeaderText = "ICMS";
-            this.iCMITEMENTDataGridViewTextBoxColumn.Name = "iCMITEMENTDataGridViewTextBoxColumn";
-            this.iCMITEMENTDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // col_valor_icm
-            // 
-            this.col_valor_icm.DataPropertyName = "VALOR_ICM_ITEM_ENT";
-            this.col_valor_icm.HeaderText = "Valor ICMS";
-            this.col_valor_icm.Name = "col_valor_icm";
-            this.col_valor_icm.Width = 80;
-            // 
-            // iPIITEMENTDataGridViewTextBoxColumn
-            // 
-            this.iPIITEMENTDataGridViewTextBoxColumn.DataPropertyName = "IPI_ITEM_ENT";
-            this.iPIITEMENTDataGridViewTextBoxColumn.HeaderText = "IPI";
-            this.iPIITEMENTDataGridViewTextBoxColumn.Name = "iPIITEMENTDataGridViewTextBoxColumn";
-            this.iPIITEMENTDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // col_valor_ipi
-            // 
-            this.col_valor_ipi.DataPropertyName = "VALOR_IPI_ITEM_ENT";
-            this.col_valor_ipi.HeaderText = "Valor IPI";
-            this.col_valor_ipi.Name = "col_valor_ipi";
-            this.col_valor_ipi.Width = 80;
-            // 
-            // nFITEMENTDataGridViewTextBoxColumn
-            // 
-            this.nFITEMENTDataGridViewTextBoxColumn.DataPropertyName = "NF_ITEM_ENT";
-            this.nFITEMENTDataGridViewTextBoxColumn.HeaderText = "NF_ITEM_ENT";
-            this.nFITEMENTDataGridViewTextBoxColumn.Name = "nFITEMENTDataGridViewTextBoxColumn";
-            this.nFITEMENTDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // col_pedido
-            // 
-            this.col_pedido.DataPropertyName = "PEDIDO_COMPRA_ITEM_ENT";
-            this.col_pedido.HeaderText = "Pedido Compra";
-            this.col_pedido.Name = "col_pedido";
-            // 
-            // OB
-            // 
-            this.OB.DataPropertyName = "COD_ITENS_NOTA_ENT";
-            this.OB.HeaderText = "OB";
-            this.OB.Name = "OB";
-            this.OB.Visible = false;
-            // 
-            // col_n_linha_ped
-            // 
-            this.col_n_linha_ped.DataPropertyName = "N_LINHA_PED_ITEM_ENT";
-            this.col_n_linha_ped.HeaderText = "Nº Linha Pedido";
-            this.col_n_linha_ped.Name = "col_n_linha_ped";
-            this.col_n_linha_ped.Width = 70;
-            // 
-            // mAEITEMENTDataGridViewTextBoxColumn
-            // 
-            this.mAEITEMENTDataGridViewTextBoxColumn.DataPropertyName = "MAE_ITEM_ENT";
-            this.mAEITEMENTDataGridViewTextBoxColumn.HeaderText = "MAE_ITEM_ENT";
-            this.mAEITEMENTDataGridViewTextBoxColumn.Name = "mAEITEMENTDataGridViewTextBoxColumn";
-            this.mAEITEMENTDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // col_cod_item_req
-            // 
-            this.col_cod_item_req.DataPropertyName = "COD_ITEM_REQ_ITEM_ENT";
-            this.col_cod_item_req.HeaderText = "Cód. Item Requisição";
-            this.col_cod_item_req.Name = "col_cod_item_req";
-            // 
-            // col_cod_item_ped
-            // 
-            this.col_cod_item_ped.DataPropertyName = "COD_ITEM_PED_ITEM_ENT";
-            this.col_cod_item_ped.HeaderText = "Código Item Pedido";
-            this.col_cod_item_ped.Name = "col_cod_item_ped";
-            // 
-            // col_cod_item_est
-            // 
-            this.col_cod_item_est.DataPropertyName = "COD_ITEM_EST_ITEM_ENT";
-            this.col_cod_item_est.HeaderText = "Código Item Estoque";
-            this.col_cod_item_est.Name = "col_cod_item_est";
-            // 
-            // col_buscar_item_est
-            // 
-            this.col_buscar_item_est.HeaderText = "Buscar Item Est";
-            this.col_buscar_item_est.Name = "col_buscar_item_est";
-            this.col_buscar_item_est.Text = "Buscar Item Est";
-            this.col_buscar_item_est.ToolTipText = "Buscar Item Est";
-            this.col_buscar_item_est.UseColumnTextForButtonValue = true;
-            // 
-            // col_prestacao_servico
-            // 
-            this.col_prestacao_servico.DataPropertyName = "PRESTACAO_SERVICO_ITEM_ENT";
-            this.col_prestacao_servico.FalseValue = "0";
-            this.col_prestacao_servico.HeaderText = "Prest. Serv.?";
-            this.col_prestacao_servico.IndeterminateValue = "0";
-            this.col_prestacao_servico.Name = "col_prestacao_servico";
-            this.col_prestacao_servico.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.col_prestacao_servico.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.col_prestacao_servico.TrueValue = "1";
-            // 
-            // iSSITEMENTDataGridViewTextBoxColumn
-            // 
-            this.iSSITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ISS_ITEM_ENT";
-            this.iSSITEMENTDataGridViewTextBoxColumn.HeaderText = "ISS";
-            this.iSSITEMENTDataGridViewTextBoxColumn.Name = "iSSITEMENTDataGridViewTextBoxColumn";
-            // 
-            // col_valor_iss
-            // 
-            this.col_valor_iss.DataPropertyName = "VALOR_ISS_ITEM_ENT";
-            this.col_valor_iss.HeaderText = "Valor ISS";
-            this.col_valor_iss.Name = "col_valor_iss";
-            this.col_valor_iss.Width = 80;
-            // 
-            // tIPOSERVICOITEMENTDataGridViewTextBoxColumn
-            // 
-            this.tIPOSERVICOITEMENTDataGridViewTextBoxColumn.DataPropertyName = "TIPO_SERVICO_ITEM_ENT";
-            this.tIPOSERVICOITEMENTDataGridViewTextBoxColumn.HeaderText = "Tipo Serviço";
-            this.tIPOSERVICOITEMENTDataGridViewTextBoxColumn.Name = "tIPOSERVICOITEMENTDataGridViewTextBoxColumn";
-            // 
-            // cODCOMISSIONARIOITEMENTDataGridViewTextBoxColumn
-            // 
-            this.cODCOMISSIONARIOITEMENTDataGridViewTextBoxColumn.DataPropertyName = "COD_COMISSIONARIO_ITEM_ENT";
-            this.cODCOMISSIONARIOITEMENTDataGridViewTextBoxColumn.HeaderText = "COD_COMISSIONARIO_ITEM_ENT";
-            this.cODCOMISSIONARIOITEMENTDataGridViewTextBoxColumn.Name = "cODCOMISSIONARIOITEMENTDataGridViewTextBoxColumn";
-            this.cODCOMISSIONARIOITEMENTDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // vALORUNITCOMISSAOITEMENTDataGridViewTextBoxColumn
-            // 
-            this.vALORUNITCOMISSAOITEMENTDataGridViewTextBoxColumn.DataPropertyName = "VALOR_UNIT_COMISSAO_ITEM_ENT";
-            this.vALORUNITCOMISSAOITEMENTDataGridViewTextBoxColumn.HeaderText = "VALOR_UNIT_COMISSAO_ITEM_ENT";
-            this.vALORUNITCOMISSAOITEMENTDataGridViewTextBoxColumn.Name = "vALORUNITCOMISSAOITEMENTDataGridViewTextBoxColumn";
-            this.vALORUNITCOMISSAOITEMENTDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // vALORTOTALCOMISSAOITEMENTDataGridViewTextBoxColumn
-            // 
-            this.vALORTOTALCOMISSAOITEMENTDataGridViewTextBoxColumn.DataPropertyName = "VALOR_TOTAL_COMISSAO_ITEM_ENT";
-            this.vALORTOTALCOMISSAOITEMENTDataGridViewTextBoxColumn.HeaderText = "VALOR_TOTAL_COMISSAO_ITEM_ENT";
-            this.vALORTOTALCOMISSAOITEMENTDataGridViewTextBoxColumn.Name = "vALORTOTALCOMISSAOITEMENTDataGridViewTextBoxColumn";
-            this.vALORTOTALCOMISSAOITEMENTDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // dATAINSERCAOITEMENTNOTADataGridViewTextBoxColumn
-            // 
-            this.dATAINSERCAOITEMENTNOTADataGridViewTextBoxColumn.DataPropertyName = "DATA_INSERCAO_ITEM_ENT_NOTA";
-            this.dATAINSERCAOITEMENTNOTADataGridViewTextBoxColumn.HeaderText = "DATA_INSERCAO_ITEM_ENT_NOTA";
-            this.dATAINSERCAOITEMENTNOTADataGridViewTextBoxColumn.Name = "dATAINSERCAOITEMENTNOTADataGridViewTextBoxColumn";
-            this.dATAINSERCAOITEMENTNOTADataGridViewTextBoxColumn.Visible = false;
-            // 
-            // cNPJCLIENTEITEMENTDataGridViewTextBoxColumn
-            // 
-            this.cNPJCLIENTEITEMENTDataGridViewTextBoxColumn.DataPropertyName = "CNPJ_CLIENTE_ITEM_ENT";
-            this.cNPJCLIENTEITEMENTDataGridViewTextBoxColumn.HeaderText = "CNPJ_CLIENTE_ITEM_ENT";
-            this.cNPJCLIENTEITEMENTDataGridViewTextBoxColumn.Name = "cNPJCLIENTEITEMENTDataGridViewTextBoxColumn";
-            this.cNPJCLIENTEITEMENTDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // sTATUSATUALNFEENTDataGridViewTextBoxColumn
-            // 
-            this.sTATUSATUALNFEENTDataGridViewTextBoxColumn.DataPropertyName = "STATUS_ATUAL_NFE_ENT";
-            this.sTATUSATUALNFEENTDataGridViewTextBoxColumn.HeaderText = "STATUS_ATUAL_NFE_ENT";
-            this.sTATUSATUALNFEENTDataGridViewTextBoxColumn.Name = "sTATUSATUALNFEENTDataGridViewTextBoxColumn";
-            this.sTATUSATUALNFEENTDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // pORCCOMISSAOITEMENTDataGridViewTextBoxColumn
-            // 
-            this.pORCCOMISSAOITEMENTDataGridViewTextBoxColumn.DataPropertyName = "PORC_COMISSAO_ITEM_ENT";
-            this.pORCCOMISSAOITEMENTDataGridViewTextBoxColumn.HeaderText = "PORC_COMISSAO_ITEM_ENT";
-            this.pORCCOMISSAOITEMENTDataGridViewTextBoxColumn.Name = "pORCCOMISSAOITEMENTDataGridViewTextBoxColumn";
-            this.pORCCOMISSAOITEMENTDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // col_valor_bc_st
-            // 
-            this.col_valor_bc_st.DataPropertyName = "VALOR_BC_ICMS_ST_ITEM_ENT";
-            this.col_valor_bc_st.HeaderText = "Valor BC ST";
-            this.col_valor_bc_st.Name = "col_valor_bc_st";
-            // 
-            // iCMSSTITEMENTDataGridViewTextBoxColumn
-            // 
-            this.iCMSSTITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ICMS_ST_ITEM_ENT";
-            this.iCMSSTITEMENTDataGridViewTextBoxColumn.HeaderText = "ICMS ST";
-            this.iCMSSTITEMENTDataGridViewTextBoxColumn.Name = "iCMSSTITEMENTDataGridViewTextBoxColumn";
-            // 
-            // col_frete
-            // 
-            this.col_frete.DataPropertyName = "VALOR_FRETE_ITEM_ENT";
-            this.col_frete.HeaderText = "Frete";
-            this.col_frete.Name = "col_frete";
-            // 
-            // col_desconto
-            // 
-            this.col_desconto.DataPropertyName = "VALOR_DESCONTO_ITEM_ENT";
-            this.col_desconto.HeaderText = "Desconto";
-            this.col_desconto.Name = "col_desconto";
-            // 
-            // col_seguro
-            // 
-            this.col_seguro.DataPropertyName = "VALOR_SEGURO_ITEM_ENT";
-            this.col_seguro.HeaderText = "Seguro";
-            this.col_seguro.Name = "col_seguro";
-            // 
-            // col_outras_desp
-            // 
-            this.col_outras_desp.DataPropertyName = "VALOR_OUTRAS_DESP_ITEM_ENT";
-            this.col_outras_desp.HeaderText = "Outras Despesas";
-            this.col_outras_desp.Name = "col_outras_desp";
-            // 
-            // iVAITEMENTDataGridViewTextBoxColumn
-            // 
-            this.iVAITEMENTDataGridViewTextBoxColumn.DataPropertyName = "IVA_ITEM_ENT";
-            this.iVAITEMENTDataGridViewTextBoxColumn.HeaderText = "IVA";
-            this.iVAITEMENTDataGridViewTextBoxColumn.Name = "iVAITEMENTDataGridViewTextBoxColumn";
-            this.iVAITEMENTDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // rEDUCAOITEMENTDataGridViewTextBoxColumn
-            // 
-            this.rEDUCAOITEMENTDataGridViewTextBoxColumn.DataPropertyName = "REDUCAO_ITEM_ENT";
-            this.rEDUCAOITEMENTDataGridViewTextBoxColumn.HeaderText = "Redução BC";
-            this.rEDUCAOITEMENTDataGridViewTextBoxColumn.Name = "rEDUCAOITEMENTDataGridViewTextBoxColumn";
-            this.rEDUCAOITEMENTDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // cOFINSITEMENTDataGridViewTextBoxColumn
-            // 
-            this.cOFINSITEMENTDataGridViewTextBoxColumn.DataPropertyName = "COFINS_ITEM_ENT";
-            this.cOFINSITEMENTDataGridViewTextBoxColumn.HeaderText = "Cofins";
-            this.cOFINSITEMENTDataGridViewTextBoxColumn.Name = "cOFINSITEMENTDataGridViewTextBoxColumn";
-            this.cOFINSITEMENTDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // vALORCOFINSITEMENTDataGridViewTextBoxColumn
-            // 
-            this.vALORCOFINSITEMENTDataGridViewTextBoxColumn.DataPropertyName = "VALOR_COFINS_ITEM_ENT";
-            this.vALORCOFINSITEMENTDataGridViewTextBoxColumn.HeaderText = "Valor Cofins";
-            this.vALORCOFINSITEMENTDataGridViewTextBoxColumn.Name = "vALORCOFINSITEMENTDataGridViewTextBoxColumn";
-            this.vALORCOFINSITEMENTDataGridViewTextBoxColumn.Width = 80;
-            // 
-            // pISITEMENTDataGridViewTextBoxColumn
-            // 
-            this.pISITEMENTDataGridViewTextBoxColumn.DataPropertyName = "PIS_ITEM_ENT";
-            this.pISITEMENTDataGridViewTextBoxColumn.HeaderText = "PIS";
-            this.pISITEMENTDataGridViewTextBoxColumn.Name = "pISITEMENTDataGridViewTextBoxColumn";
-            this.pISITEMENTDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // vALORPISITEMENTDataGridViewTextBoxColumn
-            // 
-            this.vALORPISITEMENTDataGridViewTextBoxColumn.DataPropertyName = "VALOR_PIS_ITEM_ENT";
-            this.vALORPISITEMENTDataGridViewTextBoxColumn.HeaderText = "Valor PIS";
-            this.vALORPISITEMENTDataGridViewTextBoxColumn.Name = "vALORPISITEMENTDataGridViewTextBoxColumn";
-            this.vALORPISITEMENTDataGridViewTextBoxColumn.Width = 80;
-            // 
-            // oRIGEMITEMENTDataGridViewTextBoxColumn
-            // 
-            this.oRIGEMITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ORIGEM_ITEM_ENT";
-            this.oRIGEMITEMENTDataGridViewTextBoxColumn.HeaderText = "Origem";
-            this.oRIGEMITEMENTDataGridViewTextBoxColumn.Name = "oRIGEMITEMENTDataGridViewTextBoxColumn";
-            this.oRIGEMITEMENTDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // mODBCITEMENTDataGridViewTextBoxColumn
-            // 
-            this.mODBCITEMENTDataGridViewTextBoxColumn.DataPropertyName = "MOD_BC_ITEM_ENT";
-            this.mODBCITEMENTDataGridViewTextBoxColumn.HeaderText = "Mod. BC";
-            this.mODBCITEMENTDataGridViewTextBoxColumn.Name = "mODBCITEMENTDataGridViewTextBoxColumn";
-            // 
-            // mODBCSTITEMENTDataGridViewTextBoxColumn
-            // 
-            this.mODBCSTITEMENTDataGridViewTextBoxColumn.DataPropertyName = "MOD_BC_ST_ITEM_ENT";
-            this.mODBCSTITEMENTDataGridViewTextBoxColumn.HeaderText = "Mod. ST";
-            this.mODBCSTITEMENTDataGridViewTextBoxColumn.Name = "mODBCSTITEMENTDataGridViewTextBoxColumn";
-            // 
-            // rEDUCAOSTITEMENTDataGridViewTextBoxColumn
-            // 
-            this.rEDUCAOSTITEMENTDataGridViewTextBoxColumn.DataPropertyName = "REDUCAO_ST_ITEM_ENT";
-            this.rEDUCAOSTITEMENTDataGridViewTextBoxColumn.HeaderText = "Redução ST";
-            this.rEDUCAOSTITEMENTDataGridViewTextBoxColumn.Name = "rEDUCAOSTITEMENTDataGridViewTextBoxColumn";
-            // 
-            // aLIQUOTACREDITOITEMENTDataGridViewTextBoxColumn
-            // 
-            this.aLIQUOTACREDITOITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ALIQUOTA_CREDITO_ITEM_ENT";
-            this.aLIQUOTACREDITOITEMENTDataGridViewTextBoxColumn.HeaderText = "Aliquota Crédito";
-            this.aLIQUOTACREDITOITEMENTDataGridViewTextBoxColumn.Name = "aLIQUOTACREDITOITEMENTDataGridViewTextBoxColumn";
-            // 
-            // col_valor_credito
-            // 
-            this.col_valor_credito.DataPropertyName = "VALOR_CREDITO_ITEM_ENT";
-            this.col_valor_credito.HeaderText = "Valor Credito";
-            this.col_valor_credito.Name = "col_valor_credito";
-            // 
-            // iPITRIBITEMENTDataGridViewTextBoxColumn
-            // 
-            this.iPITRIBITEMENTDataGridViewTextBoxColumn.DataPropertyName = "IPI_TRIB_ITEM_ENT";
-            this.iPITRIBITEMENTDataGridViewTextBoxColumn.FalseValue = "0";
-            this.iPITRIBITEMENTDataGridViewTextBoxColumn.HeaderText = "IPI Trib?";
-            this.iPITRIBITEMENTDataGridViewTextBoxColumn.IndeterminateValue = "0";
-            this.iPITRIBITEMENTDataGridViewTextBoxColumn.Name = "iPITRIBITEMENTDataGridViewTextBoxColumn";
-            this.iPITRIBITEMENTDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.iPITRIBITEMENTDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.iPITRIBITEMENTDataGridViewTextBoxColumn.TrueValue = "1";
-            // 
-            // iPINTRIBITEMENTDataGridViewTextBoxColumn
-            // 
-            this.iPINTRIBITEMENTDataGridViewTextBoxColumn.DataPropertyName = "IPI_N_TRIB_ITEM_ENT";
-            this.iPINTRIBITEMENTDataGridViewTextBoxColumn.FalseValue = "0";
-            this.iPINTRIBITEMENTDataGridViewTextBoxColumn.HeaderText = "IPI Não Trib.?";
-            this.iPINTRIBITEMENTDataGridViewTextBoxColumn.IndeterminateValue = "0";
-            this.iPINTRIBITEMENTDataGridViewTextBoxColumn.Name = "iPINTRIBITEMENTDataGridViewTextBoxColumn";
-            this.iPINTRIBITEMENTDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.iPINTRIBITEMENTDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.iPINTRIBITEMENTDataGridViewTextBoxColumn.TrueValue = "1";
-            // 
-            // cSTIPITRIBITEMENTDataGridViewTextBoxColumn
-            // 
-            this.cSTIPITRIBITEMENTDataGridViewTextBoxColumn.DataPropertyName = "CST_IPI_TRIB_ITEM_ENT";
-            this.cSTIPITRIBITEMENTDataGridViewTextBoxColumn.HeaderText = "CST IPI Trib";
-            this.cSTIPITRIBITEMENTDataGridViewTextBoxColumn.Name = "cSTIPITRIBITEMENTDataGridViewTextBoxColumn";
-            // 
-            // cSTIPINTRIBITEMENTDataGridViewTextBoxColumn
-            // 
-            this.cSTIPINTRIBITEMENTDataGridViewTextBoxColumn.DataPropertyName = "CST_IPI_N_TRIB_ITEM_ENT";
-            this.cSTIPINTRIBITEMENTDataGridViewTextBoxColumn.HeaderText = "CST IPI Não Trib.";
-            this.cSTIPINTRIBITEMENTDataGridViewTextBoxColumn.Name = "cSTIPINTRIBITEMENTDataGridViewTextBoxColumn";
-            // 
-            // tIPOPISITEMENTDataGridViewTextBoxColumn
-            // 
-            this.tIPOPISITEMENTDataGridViewTextBoxColumn.DataPropertyName = "TIPO_PIS_ITEM_ENT";
-            this.tIPOPISITEMENTDataGridViewTextBoxColumn.HeaderText = "Tipo PIS";
-            this.tIPOPISITEMENTDataGridViewTextBoxColumn.Name = "tIPOPISITEMENTDataGridViewTextBoxColumn";
-            // 
-            // cSTPISITEMENTDataGridViewTextBoxColumn
-            // 
-            this.cSTPISITEMENTDataGridViewTextBoxColumn.DataPropertyName = "CST_PIS_ITEM_ENT";
-            this.cSTPISITEMENTDataGridViewTextBoxColumn.HeaderText = "CST PIS";
-            this.cSTPISITEMENTDataGridViewTextBoxColumn.Name = "cSTPISITEMENTDataGridViewTextBoxColumn";
-            // 
-            // tIPOCOFINSITEMENTDataGridViewTextBoxColumn
-            // 
-            this.tIPOCOFINSITEMENTDataGridViewTextBoxColumn.DataPropertyName = "TIPO_COFINS_ITEM_ENT";
-            this.tIPOCOFINSITEMENTDataGridViewTextBoxColumn.HeaderText = "Tipo Cofins";
-            this.tIPOCOFINSITEMENTDataGridViewTextBoxColumn.Name = "tIPOCOFINSITEMENTDataGridViewTextBoxColumn";
-            // 
-            // cSTCOFINSITEMENTDataGridViewTextBoxColumn
-            // 
-            this.cSTCOFINSITEMENTDataGridViewTextBoxColumn.DataPropertyName = "CST_COFINS_ITEM_ENT";
-            this.cSTCOFINSITEMENTDataGridViewTextBoxColumn.HeaderText = "CST Cofins";
-            this.cSTCOFINSITEMENTDataGridViewTextBoxColumn.Name = "cSTCOFINSITEMENTDataGridViewTextBoxColumn";
-            // 
-            // iTEMPEDIDOCOMPRAITEMENTDataGridViewTextBoxColumn
-            // 
-            this.iTEMPEDIDOCOMPRAITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ITEM_PEDIDO_COMPRA_ITEM_ENT";
-            this.iTEMPEDIDOCOMPRAITEMENTDataGridViewTextBoxColumn.HeaderText = "ITEM_PEDIDO_COMPRA_ITEM_ENT";
-            this.iTEMPEDIDOCOMPRAITEMENTDataGridViewTextBoxColumn.Name = "iTEMPEDIDOCOMPRAITEMENTDataGridViewTextBoxColumn";
-            this.iTEMPEDIDOCOMPRAITEMENTDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // bCIPIITEMENTDataGridViewTextBoxColumn
-            // 
-            this.bCIPIITEMENTDataGridViewTextBoxColumn.DataPropertyName = "BC_IPI_ITEM_ENT";
-            this.bCIPIITEMENTDataGridViewTextBoxColumn.HeaderText = "BC_IPI_ITEM_ENT";
-            this.bCIPIITEMENTDataGridViewTextBoxColumn.Name = "bCIPIITEMENTDataGridViewTextBoxColumn";
-            // 
-            // bCPISITEMENTDataGridViewTextBoxColumn
-            // 
-            this.bCPISITEMENTDataGridViewTextBoxColumn.DataPropertyName = "BC_PIS_ITEM_ENT";
-            this.bCPISITEMENTDataGridViewTextBoxColumn.HeaderText = "BC_PIS_ITEM_ENT";
-            this.bCPISITEMENTDataGridViewTextBoxColumn.Name = "bCPISITEMENTDataGridViewTextBoxColumn";
-            // 
-            // bCCOFINSITEMENTDataGridViewTextBoxColumn
-            // 
-            this.bCCOFINSITEMENTDataGridViewTextBoxColumn.DataPropertyName = "BC_COFINS_ITEM_ENT";
-            this.bCCOFINSITEMENTDataGridViewTextBoxColumn.HeaderText = "BC_COFINS_ITEM_ENT";
-            this.bCCOFINSITEMENTDataGridViewTextBoxColumn.Name = "bCCOFINSITEMENTDataGridViewTextBoxColumn";
-            // 
-            // bCISSITEMENTDataGridViewTextBoxColumn
-            // 
-            this.bCISSITEMENTDataGridViewTextBoxColumn.DataPropertyName = "BC_ISS_ITEM_ENT";
-            this.bCISSITEMENTDataGridViewTextBoxColumn.HeaderText = "BC_ISS_ITEM_ENT";
-            this.bCISSITEMENTDataGridViewTextBoxColumn.Name = "bCISSITEMENTDataGridViewTextBoxColumn";
-            // 
-            // bCCOMIPIITEMENTDataGridViewTextBoxColumn
-            // 
-            this.bCCOMIPIITEMENTDataGridViewTextBoxColumn.DataPropertyName = "BC_COM_IPI_ITEM_ENT";
-            this.bCCOMIPIITEMENTDataGridViewTextBoxColumn.HeaderText = "BC_COM_IPI_ITEM_ENT";
-            this.bCCOMIPIITEMENTDataGridViewTextBoxColumn.Name = "bCCOMIPIITEMENTDataGridViewTextBoxColumn";
-            // 
-            // sTIMPRESSAOITEMENTDataGridViewTextBoxColumn
-            // 
-            this.sTIMPRESSAOITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ST_IMPRESSAO_ITEM_ENT";
-            this.sTIMPRESSAOITEMENTDataGridViewTextBoxColumn.HeaderText = "ST_IMPRESSAO_ITEM_ENT";
-            this.sTIMPRESSAOITEMENTDataGridViewTextBoxColumn.Name = "sTIMPRESSAOITEMENTDataGridViewTextBoxColumn";
-            // 
-            // rOTAITEMENTDataGridViewTextBoxColumn
-            // 
-            this.rOTAITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ROTA_ITEM_ENT";
-            this.rOTAITEMENTDataGridViewTextBoxColumn.HeaderText = "ROTA_ITEM_ENT";
-            this.rOTAITEMENTDataGridViewTextBoxColumn.Name = "rOTAITEMENTDataGridViewTextBoxColumn";
-            // 
-            // dIITEMENTDataGridViewTextBoxColumn
-            // 
-            this.dIITEMENTDataGridViewTextBoxColumn.DataPropertyName = "DI_ITEM_ENT";
-            this.dIITEMENTDataGridViewTextBoxColumn.HeaderText = "DI_ITEM_ENT";
-            this.dIITEMENTDataGridViewTextBoxColumn.Name = "dIITEMENTDataGridViewTextBoxColumn";
-            // 
-            // dATADIITEMENTDataGridViewTextBoxColumn
-            // 
-            this.dATADIITEMENTDataGridViewTextBoxColumn.DataPropertyName = "DATA_DI_ITEM_ENT";
-            this.dATADIITEMENTDataGridViewTextBoxColumn.HeaderText = "DATA_DI_ITEM_ENT";
-            this.dATADIITEMENTDataGridViewTextBoxColumn.Name = "dATADIITEMENTDataGridViewTextBoxColumn";
-            // 
-            // lOCALDESITEMENTDataGridViewTextBoxColumn
-            // 
-            this.lOCALDESITEMENTDataGridViewTextBoxColumn.DataPropertyName = "LOCAL_DES_ITEM_ENT";
-            this.lOCALDESITEMENTDataGridViewTextBoxColumn.HeaderText = "LOCAL_DES_ITEM_ENT";
-            this.lOCALDESITEMENTDataGridViewTextBoxColumn.Name = "lOCALDESITEMENTDataGridViewTextBoxColumn";
-            // 
-            // uFDESITEMENTDataGridViewTextBoxColumn
-            // 
-            this.uFDESITEMENTDataGridViewTextBoxColumn.DataPropertyName = "UF_DES_ITEM_ENT";
-            this.uFDESITEMENTDataGridViewTextBoxColumn.HeaderText = "UF_DES_ITEM_ENT";
-            this.uFDESITEMENTDataGridViewTextBoxColumn.Name = "uFDESITEMENTDataGridViewTextBoxColumn";
-            // 
-            // dATADESITEMENTDataGridViewTextBoxColumn
-            // 
-            this.dATADESITEMENTDataGridViewTextBoxColumn.DataPropertyName = "DATA_DES_ITEM_ENT";
-            this.dATADESITEMENTDataGridViewTextBoxColumn.HeaderText = "DATA_DES_ITEM_ENT";
-            this.dATADESITEMENTDataGridViewTextBoxColumn.Name = "dATADESITEMENTDataGridViewTextBoxColumn";
-            // 
-            // cODEXPITEMENTDataGridViewTextBoxColumn
-            // 
-            this.cODEXPITEMENTDataGridViewTextBoxColumn.DataPropertyName = "COD_EXP_ITEM_ENT";
-            this.cODEXPITEMENTDataGridViewTextBoxColumn.HeaderText = "COD_EXP_ITEM_ENT";
-            this.cODEXPITEMENTDataGridViewTextBoxColumn.Name = "cODEXPITEMENTDataGridViewTextBoxColumn";
-            // 
             // dsItens_nota_ent
             // 
             this.dsItens_nota_ent.DataSetName = "dsItens_nota_ent";
@@ -4977,6 +4404,583 @@ namespace Evolucao
             this.DESENHO_ESTOQUE_SAIDA.ColumnName = "DESENHO_ESTOQUE_SAIDA";
             this.DESENHO_ESTOQUE_SAIDA.MaxLength = 100;
             // 
+            // col_cod_item
+            // 
+            this.col_cod_item.DataPropertyName = "COD_ITENS_NOTA_ENT";
+            this.col_cod_item.HeaderText = "COD_ITENS_NOTA_ENT";
+            this.col_cod_item.Name = "col_cod_item";
+            this.col_cod_item.Visible = false;
+            // 
+            // colCodBarras
+            // 
+            this.colCodBarras.DataPropertyName = "COD_EAN_ITEM_ENT";
+            this.colCodBarras.HeaderText = "Cód. Barras";
+            this.colCodBarras.Name = "colCodBarras";
+            // 
+            // colCodFornecedor
+            // 
+            this.colCodFornecedor.DataPropertyName = "COD_ITEM_ENT";
+            this.colCodFornecedor.HeaderText = "Cód Fornecedor";
+            this.colCodFornecedor.Name = "colCodFornecedor";
+            // 
+            // DATA_VALIDADE_ITEM_ENT
+            // 
+            this.DATA_VALIDADE_ITEM_ENT.DataPropertyName = "DATA_VALIDADE_ITEM_ENT";
+            this.DATA_VALIDADE_ITEM_ENT.HeaderText = "Data Validade";
+            this.DATA_VALIDADE_ITEM_ENT.Name = "DATA_VALIDADE_ITEM_ENT";
+            this.DATA_VALIDADE_ITEM_ENT.Width = 70;
+            // 
+            // col_descricao
+            // 
+            this.col_descricao.DataPropertyName = "DESCRICAO_ITEM_ENT";
+            this.col_descricao.HeaderText = "Descrição";
+            this.col_descricao.Name = "col_descricao";
+            this.col_descricao.Width = 250;
+            // 
+            // col_unidade
+            // 
+            this.col_unidade.DataPropertyName = "UNIDADE_ITEM_ENT";
+            this.col_unidade.HeaderText = "Un";
+            this.col_unidade.Name = "col_unidade";
+            this.col_unidade.Width = 40;
+            // 
+            // col_qtde
+            // 
+            this.col_qtde.DataPropertyName = "QTDE_ITEM_ENT";
+            this.col_qtde.HeaderText = "Qtde";
+            this.col_qtde.Name = "col_qtde";
+            this.col_qtde.Width = 60;
+            // 
+            // col_ncm
+            // 
+            this.col_ncm.DataPropertyName = "NCM_ITEM_ENT";
+            this.col_ncm.HeaderText = "NCM";
+            this.col_ncm.Name = "col_ncm";
+            this.col_ncm.Width = 80;
+            // 
+            // col_cfo
+            // 
+            this.col_cfo.DataPropertyName = "CFOP_ITEM_ENT";
+            this.col_cfo.HeaderText = "CFOP";
+            this.col_cfo.Name = "col_cfo";
+            this.col_cfo.Width = 60;
+            // 
+            // col_valor_unit
+            // 
+            this.col_valor_unit.DataPropertyName = "PRECO_UNIT_ITEM_ENT";
+            this.col_valor_unit.HeaderText = "Valor Unit.";
+            this.col_valor_unit.Name = "col_valor_unit";
+            this.col_valor_unit.Width = 80;
+            // 
+            // col_preco_total
+            // 
+            this.col_preco_total.DataPropertyName = "PRECO_TOTAL_ITEM_ENT";
+            this.col_preco_total.HeaderText = "Valor Total";
+            this.col_preco_total.Name = "col_preco_total";
+            this.col_preco_total.Width = 90;
+            // 
+            // sTITEMENTDataGridViewTextBoxColumn
+            // 
+            this.sTITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ST_ITEM_ENT";
+            this.sTITEMENTDataGridViewTextBoxColumn.HeaderText = "CST/CSON";
+            this.sTITEMENTDataGridViewTextBoxColumn.Name = "sTITEMENTDataGridViewTextBoxColumn";
+            this.sTITEMENTDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // col_valor_st
+            // 
+            this.col_valor_st.DataPropertyName = "VALOR_ICMS_ST_ITEM_ENT";
+            this.col_valor_st.HeaderText = "Valor ICMS ST";
+            this.col_valor_st.Name = "col_valor_st";
+            // 
+            // col_valor_bc
+            // 
+            this.col_valor_bc.DataPropertyName = "VALOR_BC_ITEM_ENT";
+            this.col_valor_bc.HeaderText = "Valor BC";
+            this.col_valor_bc.Name = "col_valor_bc";
+            this.col_valor_bc.Width = 80;
+            // 
+            // col_novo_lote
+            // 
+            this.col_novo_lote.HeaderText = "Novo Lote";
+            this.col_novo_lote.Name = "col_novo_lote";
+            this.col_novo_lote.Text = "Novo Lote";
+            this.col_novo_lote.ToolTipText = "Novo Lote";
+            this.col_novo_lote.UseColumnTextForButtonValue = true;
+            this.col_novo_lote.Visible = false;
+            this.col_novo_lote.Width = 65;
+            // 
+            // col_lote
+            // 
+            this.col_lote.DataPropertyName = "LOTE_ITEM_ENT";
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.col_lote.DefaultCellStyle = dataGridViewCellStyle2;
+            this.col_lote.HeaderText = "Lote";
+            this.col_lote.Name = "col_lote";
+            this.col_lote.ReadOnly = true;
+            this.col_lote.Visible = false;
+            this.col_lote.Width = 70;
+            // 
+            // col_qtde_lote
+            // 
+            this.col_qtde_lote.DataPropertyName = "QTDE_LOTE_ITEM_ENT";
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.col_qtde_lote.DefaultCellStyle = dataGridViewCellStyle3;
+            this.col_qtde_lote.HeaderText = "Qtde Lote";
+            this.col_qtde_lote.Name = "col_qtde_lote";
+            this.col_qtde_lote.ReadOnly = true;
+            this.col_qtde_lote.Visible = false;
+            this.col_qtde_lote.Width = 70;
+            // 
+            // col_cnpj_cliente
+            // 
+            this.col_cnpj_cliente.DataPropertyName = "CNPJ_PROPRIETARIO_ITEM_ENT";
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.col_cnpj_cliente.DefaultCellStyle = dataGridViewCellStyle4;
+            this.col_cnpj_cliente.HeaderText = "CNPJ Cliente";
+            this.col_cnpj_cliente.Name = "col_cnpj_cliente";
+            this.col_cnpj_cliente.ReadOnly = true;
+            this.col_cnpj_cliente.Visible = false;
+            // 
+            // col_cliente
+            // 
+            this.col_cliente.DataPropertyName = "NOME_PROPRIETARIO_ITEM_ENT";
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.col_cliente.DefaultCellStyle = dataGridViewCellStyle5;
+            this.col_cliente.HeaderText = "Nome Cliente";
+            this.col_cliente.Name = "col_cliente";
+            this.col_cliente.ReadOnly = true;
+            this.col_cliente.Visible = false;
+            this.col_cliente.Width = 200;
+            // 
+            // iCMITEMENTDataGridViewTextBoxColumn
+            // 
+            this.iCMITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ICM_ITEM_ENT";
+            this.iCMITEMENTDataGridViewTextBoxColumn.HeaderText = "ICMS";
+            this.iCMITEMENTDataGridViewTextBoxColumn.Name = "iCMITEMENTDataGridViewTextBoxColumn";
+            this.iCMITEMENTDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // col_valor_icm
+            // 
+            this.col_valor_icm.DataPropertyName = "VALOR_ICM_ITEM_ENT";
+            this.col_valor_icm.HeaderText = "Valor ICMS";
+            this.col_valor_icm.Name = "col_valor_icm";
+            this.col_valor_icm.Width = 80;
+            // 
+            // iPIITEMENTDataGridViewTextBoxColumn
+            // 
+            this.iPIITEMENTDataGridViewTextBoxColumn.DataPropertyName = "IPI_ITEM_ENT";
+            this.iPIITEMENTDataGridViewTextBoxColumn.HeaderText = "IPI";
+            this.iPIITEMENTDataGridViewTextBoxColumn.Name = "iPIITEMENTDataGridViewTextBoxColumn";
+            this.iPIITEMENTDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // col_valor_ipi
+            // 
+            this.col_valor_ipi.DataPropertyName = "VALOR_IPI_ITEM_ENT";
+            this.col_valor_ipi.HeaderText = "Valor IPI";
+            this.col_valor_ipi.Name = "col_valor_ipi";
+            this.col_valor_ipi.Width = 80;
+            // 
+            // nFITEMENTDataGridViewTextBoxColumn
+            // 
+            this.nFITEMENTDataGridViewTextBoxColumn.DataPropertyName = "NF_ITEM_ENT";
+            this.nFITEMENTDataGridViewTextBoxColumn.HeaderText = "NF_ITEM_ENT";
+            this.nFITEMENTDataGridViewTextBoxColumn.Name = "nFITEMENTDataGridViewTextBoxColumn";
+            this.nFITEMENTDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // col_pedido
+            // 
+            this.col_pedido.DataPropertyName = "PEDIDO_COMPRA_ITEM_ENT";
+            this.col_pedido.HeaderText = "Pedido Compra";
+            this.col_pedido.Name = "col_pedido";
+            this.col_pedido.Visible = false;
+            // 
+            // OB
+            // 
+            this.OB.DataPropertyName = "COD_ITENS_NOTA_ENT";
+            this.OB.HeaderText = "OB";
+            this.OB.Name = "OB";
+            this.OB.Visible = false;
+            // 
+            // col_n_linha_ped
+            // 
+            this.col_n_linha_ped.DataPropertyName = "N_LINHA_PED_ITEM_ENT";
+            this.col_n_linha_ped.HeaderText = "Nº Linha Pedido";
+            this.col_n_linha_ped.Name = "col_n_linha_ped";
+            this.col_n_linha_ped.Visible = false;
+            this.col_n_linha_ped.Width = 70;
+            // 
+            // mAEITEMENTDataGridViewTextBoxColumn
+            // 
+            this.mAEITEMENTDataGridViewTextBoxColumn.DataPropertyName = "MAE_ITEM_ENT";
+            this.mAEITEMENTDataGridViewTextBoxColumn.HeaderText = "MAE_ITEM_ENT";
+            this.mAEITEMENTDataGridViewTextBoxColumn.Name = "mAEITEMENTDataGridViewTextBoxColumn";
+            this.mAEITEMENTDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // col_cod_item_req
+            // 
+            this.col_cod_item_req.DataPropertyName = "COD_ITEM_REQ_ITEM_ENT";
+            this.col_cod_item_req.HeaderText = "Cód. Item Requisição";
+            this.col_cod_item_req.Name = "col_cod_item_req";
+            this.col_cod_item_req.Visible = false;
+            // 
+            // col_cod_item_ped
+            // 
+            this.col_cod_item_ped.DataPropertyName = "COD_ITEM_PED_ITEM_ENT";
+            this.col_cod_item_ped.HeaderText = "Código Item Pedido";
+            this.col_cod_item_ped.Name = "col_cod_item_ped";
+            this.col_cod_item_ped.Visible = false;
+            // 
+            // col_cod_item_est
+            // 
+            this.col_cod_item_est.DataPropertyName = "COD_ITEM_EST_ITEM_ENT";
+            this.col_cod_item_est.HeaderText = "Código Item Estoque";
+            this.col_cod_item_est.Name = "col_cod_item_est";
+            // 
+            // col_buscar_item_est
+            // 
+            this.col_buscar_item_est.HeaderText = "Buscar Item Est";
+            this.col_buscar_item_est.Name = "col_buscar_item_est";
+            this.col_buscar_item_est.Text = "Buscar Item Est";
+            this.col_buscar_item_est.ToolTipText = "Buscar Item Est";
+            this.col_buscar_item_est.UseColumnTextForButtonValue = true;
+            // 
+            // col_prestacao_servico
+            // 
+            this.col_prestacao_servico.DataPropertyName = "PRESTACAO_SERVICO_ITEM_ENT";
+            this.col_prestacao_servico.FalseValue = "0";
+            this.col_prestacao_servico.HeaderText = "Prest. Serv.?";
+            this.col_prestacao_servico.IndeterminateValue = "0";
+            this.col_prestacao_servico.Name = "col_prestacao_servico";
+            this.col_prestacao_servico.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.col_prestacao_servico.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.col_prestacao_servico.TrueValue = "1";
+            // 
+            // iSSITEMENTDataGridViewTextBoxColumn
+            // 
+            this.iSSITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ISS_ITEM_ENT";
+            this.iSSITEMENTDataGridViewTextBoxColumn.HeaderText = "ISS";
+            this.iSSITEMENTDataGridViewTextBoxColumn.Name = "iSSITEMENTDataGridViewTextBoxColumn";
+            // 
+            // col_valor_iss
+            // 
+            this.col_valor_iss.DataPropertyName = "VALOR_ISS_ITEM_ENT";
+            this.col_valor_iss.HeaderText = "Valor ISS";
+            this.col_valor_iss.Name = "col_valor_iss";
+            this.col_valor_iss.Width = 80;
+            // 
+            // tIPOSERVICOITEMENTDataGridViewTextBoxColumn
+            // 
+            this.tIPOSERVICOITEMENTDataGridViewTextBoxColumn.DataPropertyName = "TIPO_SERVICO_ITEM_ENT";
+            this.tIPOSERVICOITEMENTDataGridViewTextBoxColumn.HeaderText = "Tipo Serviço";
+            this.tIPOSERVICOITEMENTDataGridViewTextBoxColumn.Name = "tIPOSERVICOITEMENTDataGridViewTextBoxColumn";
+            // 
+            // cODCOMISSIONARIOITEMENTDataGridViewTextBoxColumn
+            // 
+            this.cODCOMISSIONARIOITEMENTDataGridViewTextBoxColumn.DataPropertyName = "COD_COMISSIONARIO_ITEM_ENT";
+            this.cODCOMISSIONARIOITEMENTDataGridViewTextBoxColumn.HeaderText = "COD_COMISSIONARIO_ITEM_ENT";
+            this.cODCOMISSIONARIOITEMENTDataGridViewTextBoxColumn.Name = "cODCOMISSIONARIOITEMENTDataGridViewTextBoxColumn";
+            this.cODCOMISSIONARIOITEMENTDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // vALORUNITCOMISSAOITEMENTDataGridViewTextBoxColumn
+            // 
+            this.vALORUNITCOMISSAOITEMENTDataGridViewTextBoxColumn.DataPropertyName = "VALOR_UNIT_COMISSAO_ITEM_ENT";
+            this.vALORUNITCOMISSAOITEMENTDataGridViewTextBoxColumn.HeaderText = "VALOR_UNIT_COMISSAO_ITEM_ENT";
+            this.vALORUNITCOMISSAOITEMENTDataGridViewTextBoxColumn.Name = "vALORUNITCOMISSAOITEMENTDataGridViewTextBoxColumn";
+            this.vALORUNITCOMISSAOITEMENTDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // vALORTOTALCOMISSAOITEMENTDataGridViewTextBoxColumn
+            // 
+            this.vALORTOTALCOMISSAOITEMENTDataGridViewTextBoxColumn.DataPropertyName = "VALOR_TOTAL_COMISSAO_ITEM_ENT";
+            this.vALORTOTALCOMISSAOITEMENTDataGridViewTextBoxColumn.HeaderText = "VALOR_TOTAL_COMISSAO_ITEM_ENT";
+            this.vALORTOTALCOMISSAOITEMENTDataGridViewTextBoxColumn.Name = "vALORTOTALCOMISSAOITEMENTDataGridViewTextBoxColumn";
+            this.vALORTOTALCOMISSAOITEMENTDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // dATAINSERCAOITEMENTNOTADataGridViewTextBoxColumn
+            // 
+            this.dATAINSERCAOITEMENTNOTADataGridViewTextBoxColumn.DataPropertyName = "DATA_INSERCAO_ITEM_ENT_NOTA";
+            this.dATAINSERCAOITEMENTNOTADataGridViewTextBoxColumn.HeaderText = "DATA_INSERCAO_ITEM_ENT_NOTA";
+            this.dATAINSERCAOITEMENTNOTADataGridViewTextBoxColumn.Name = "dATAINSERCAOITEMENTNOTADataGridViewTextBoxColumn";
+            this.dATAINSERCAOITEMENTNOTADataGridViewTextBoxColumn.Visible = false;
+            // 
+            // cNPJCLIENTEITEMENTDataGridViewTextBoxColumn
+            // 
+            this.cNPJCLIENTEITEMENTDataGridViewTextBoxColumn.DataPropertyName = "CNPJ_CLIENTE_ITEM_ENT";
+            this.cNPJCLIENTEITEMENTDataGridViewTextBoxColumn.HeaderText = "CNPJ_CLIENTE_ITEM_ENT";
+            this.cNPJCLIENTEITEMENTDataGridViewTextBoxColumn.Name = "cNPJCLIENTEITEMENTDataGridViewTextBoxColumn";
+            this.cNPJCLIENTEITEMENTDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // sTATUSATUALNFEENTDataGridViewTextBoxColumn
+            // 
+            this.sTATUSATUALNFEENTDataGridViewTextBoxColumn.DataPropertyName = "STATUS_ATUAL_NFE_ENT";
+            this.sTATUSATUALNFEENTDataGridViewTextBoxColumn.HeaderText = "STATUS_ATUAL_NFE_ENT";
+            this.sTATUSATUALNFEENTDataGridViewTextBoxColumn.Name = "sTATUSATUALNFEENTDataGridViewTextBoxColumn";
+            this.sTATUSATUALNFEENTDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // pORCCOMISSAOITEMENTDataGridViewTextBoxColumn
+            // 
+            this.pORCCOMISSAOITEMENTDataGridViewTextBoxColumn.DataPropertyName = "PORC_COMISSAO_ITEM_ENT";
+            this.pORCCOMISSAOITEMENTDataGridViewTextBoxColumn.HeaderText = "PORC_COMISSAO_ITEM_ENT";
+            this.pORCCOMISSAOITEMENTDataGridViewTextBoxColumn.Name = "pORCCOMISSAOITEMENTDataGridViewTextBoxColumn";
+            this.pORCCOMISSAOITEMENTDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // col_valor_bc_st
+            // 
+            this.col_valor_bc_st.DataPropertyName = "VALOR_BC_ICMS_ST_ITEM_ENT";
+            this.col_valor_bc_st.HeaderText = "Valor BC ST";
+            this.col_valor_bc_st.Name = "col_valor_bc_st";
+            // 
+            // iCMSSTITEMENTDataGridViewTextBoxColumn
+            // 
+            this.iCMSSTITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ICMS_ST_ITEM_ENT";
+            this.iCMSSTITEMENTDataGridViewTextBoxColumn.HeaderText = "ICMS ST";
+            this.iCMSSTITEMENTDataGridViewTextBoxColumn.Name = "iCMSSTITEMENTDataGridViewTextBoxColumn";
+            // 
+            // col_frete
+            // 
+            this.col_frete.DataPropertyName = "VALOR_FRETE_ITEM_ENT";
+            this.col_frete.HeaderText = "Frete";
+            this.col_frete.Name = "col_frete";
+            // 
+            // col_desconto
+            // 
+            this.col_desconto.DataPropertyName = "VALOR_DESCONTO_ITEM_ENT";
+            this.col_desconto.HeaderText = "Desconto";
+            this.col_desconto.Name = "col_desconto";
+            // 
+            // col_seguro
+            // 
+            this.col_seguro.DataPropertyName = "VALOR_SEGURO_ITEM_ENT";
+            this.col_seguro.HeaderText = "Seguro";
+            this.col_seguro.Name = "col_seguro";
+            // 
+            // col_outras_desp
+            // 
+            this.col_outras_desp.DataPropertyName = "VALOR_OUTRAS_DESP_ITEM_ENT";
+            this.col_outras_desp.HeaderText = "Outras Despesas";
+            this.col_outras_desp.Name = "col_outras_desp";
+            // 
+            // iVAITEMENTDataGridViewTextBoxColumn
+            // 
+            this.iVAITEMENTDataGridViewTextBoxColumn.DataPropertyName = "IVA_ITEM_ENT";
+            this.iVAITEMENTDataGridViewTextBoxColumn.HeaderText = "IVA";
+            this.iVAITEMENTDataGridViewTextBoxColumn.Name = "iVAITEMENTDataGridViewTextBoxColumn";
+            this.iVAITEMENTDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // rEDUCAOITEMENTDataGridViewTextBoxColumn
+            // 
+            this.rEDUCAOITEMENTDataGridViewTextBoxColumn.DataPropertyName = "REDUCAO_ITEM_ENT";
+            this.rEDUCAOITEMENTDataGridViewTextBoxColumn.HeaderText = "Redução BC";
+            this.rEDUCAOITEMENTDataGridViewTextBoxColumn.Name = "rEDUCAOITEMENTDataGridViewTextBoxColumn";
+            this.rEDUCAOITEMENTDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // cOFINSITEMENTDataGridViewTextBoxColumn
+            // 
+            this.cOFINSITEMENTDataGridViewTextBoxColumn.DataPropertyName = "COFINS_ITEM_ENT";
+            this.cOFINSITEMENTDataGridViewTextBoxColumn.HeaderText = "Cofins";
+            this.cOFINSITEMENTDataGridViewTextBoxColumn.Name = "cOFINSITEMENTDataGridViewTextBoxColumn";
+            this.cOFINSITEMENTDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // vALORCOFINSITEMENTDataGridViewTextBoxColumn
+            // 
+            this.vALORCOFINSITEMENTDataGridViewTextBoxColumn.DataPropertyName = "VALOR_COFINS_ITEM_ENT";
+            this.vALORCOFINSITEMENTDataGridViewTextBoxColumn.HeaderText = "Valor Cofins";
+            this.vALORCOFINSITEMENTDataGridViewTextBoxColumn.Name = "vALORCOFINSITEMENTDataGridViewTextBoxColumn";
+            this.vALORCOFINSITEMENTDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // pISITEMENTDataGridViewTextBoxColumn
+            // 
+            this.pISITEMENTDataGridViewTextBoxColumn.DataPropertyName = "PIS_ITEM_ENT";
+            this.pISITEMENTDataGridViewTextBoxColumn.HeaderText = "PIS";
+            this.pISITEMENTDataGridViewTextBoxColumn.Name = "pISITEMENTDataGridViewTextBoxColumn";
+            this.pISITEMENTDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // vALORPISITEMENTDataGridViewTextBoxColumn
+            // 
+            this.vALORPISITEMENTDataGridViewTextBoxColumn.DataPropertyName = "VALOR_PIS_ITEM_ENT";
+            this.vALORPISITEMENTDataGridViewTextBoxColumn.HeaderText = "Valor PIS";
+            this.vALORPISITEMENTDataGridViewTextBoxColumn.Name = "vALORPISITEMENTDataGridViewTextBoxColumn";
+            this.vALORPISITEMENTDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // oRIGEMITEMENTDataGridViewTextBoxColumn
+            // 
+            this.oRIGEMITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ORIGEM_ITEM_ENT";
+            this.oRIGEMITEMENTDataGridViewTextBoxColumn.HeaderText = "Origem";
+            this.oRIGEMITEMENTDataGridViewTextBoxColumn.Name = "oRIGEMITEMENTDataGridViewTextBoxColumn";
+            this.oRIGEMITEMENTDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // mODBCITEMENTDataGridViewTextBoxColumn
+            // 
+            this.mODBCITEMENTDataGridViewTextBoxColumn.DataPropertyName = "MOD_BC_ITEM_ENT";
+            this.mODBCITEMENTDataGridViewTextBoxColumn.HeaderText = "Mod. BC";
+            this.mODBCITEMENTDataGridViewTextBoxColumn.Name = "mODBCITEMENTDataGridViewTextBoxColumn";
+            // 
+            // mODBCSTITEMENTDataGridViewTextBoxColumn
+            // 
+            this.mODBCSTITEMENTDataGridViewTextBoxColumn.DataPropertyName = "MOD_BC_ST_ITEM_ENT";
+            this.mODBCSTITEMENTDataGridViewTextBoxColumn.HeaderText = "Mod. ST";
+            this.mODBCSTITEMENTDataGridViewTextBoxColumn.Name = "mODBCSTITEMENTDataGridViewTextBoxColumn";
+            // 
+            // rEDUCAOSTITEMENTDataGridViewTextBoxColumn
+            // 
+            this.rEDUCAOSTITEMENTDataGridViewTextBoxColumn.DataPropertyName = "REDUCAO_ST_ITEM_ENT";
+            this.rEDUCAOSTITEMENTDataGridViewTextBoxColumn.HeaderText = "Redução ST";
+            this.rEDUCAOSTITEMENTDataGridViewTextBoxColumn.Name = "rEDUCAOSTITEMENTDataGridViewTextBoxColumn";
+            // 
+            // aLIQUOTACREDITOITEMENTDataGridViewTextBoxColumn
+            // 
+            this.aLIQUOTACREDITOITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ALIQUOTA_CREDITO_ITEM_ENT";
+            this.aLIQUOTACREDITOITEMENTDataGridViewTextBoxColumn.HeaderText = "Aliquota Crédito";
+            this.aLIQUOTACREDITOITEMENTDataGridViewTextBoxColumn.Name = "aLIQUOTACREDITOITEMENTDataGridViewTextBoxColumn";
+            // 
+            // col_valor_credito
+            // 
+            this.col_valor_credito.DataPropertyName = "VALOR_CREDITO_ITEM_ENT";
+            this.col_valor_credito.HeaderText = "Valor Credito";
+            this.col_valor_credito.Name = "col_valor_credito";
+            // 
+            // iPITRIBITEMENTDataGridViewTextBoxColumn
+            // 
+            this.iPITRIBITEMENTDataGridViewTextBoxColumn.DataPropertyName = "IPI_TRIB_ITEM_ENT";
+            this.iPITRIBITEMENTDataGridViewTextBoxColumn.FalseValue = "0";
+            this.iPITRIBITEMENTDataGridViewTextBoxColumn.HeaderText = "IPI Trib?";
+            this.iPITRIBITEMENTDataGridViewTextBoxColumn.IndeterminateValue = "0";
+            this.iPITRIBITEMENTDataGridViewTextBoxColumn.Name = "iPITRIBITEMENTDataGridViewTextBoxColumn";
+            this.iPITRIBITEMENTDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.iPITRIBITEMENTDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.iPITRIBITEMENTDataGridViewTextBoxColumn.TrueValue = "1";
+            // 
+            // iPINTRIBITEMENTDataGridViewTextBoxColumn
+            // 
+            this.iPINTRIBITEMENTDataGridViewTextBoxColumn.DataPropertyName = "IPI_N_TRIB_ITEM_ENT";
+            this.iPINTRIBITEMENTDataGridViewTextBoxColumn.FalseValue = "0";
+            this.iPINTRIBITEMENTDataGridViewTextBoxColumn.HeaderText = "IPI Não Trib.?";
+            this.iPINTRIBITEMENTDataGridViewTextBoxColumn.IndeterminateValue = "0";
+            this.iPINTRIBITEMENTDataGridViewTextBoxColumn.Name = "iPINTRIBITEMENTDataGridViewTextBoxColumn";
+            this.iPINTRIBITEMENTDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.iPINTRIBITEMENTDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.iPINTRIBITEMENTDataGridViewTextBoxColumn.TrueValue = "1";
+            // 
+            // cSTIPITRIBITEMENTDataGridViewTextBoxColumn
+            // 
+            this.cSTIPITRIBITEMENTDataGridViewTextBoxColumn.DataPropertyName = "CST_IPI_TRIB_ITEM_ENT";
+            this.cSTIPITRIBITEMENTDataGridViewTextBoxColumn.HeaderText = "CST IPI Trib";
+            this.cSTIPITRIBITEMENTDataGridViewTextBoxColumn.Name = "cSTIPITRIBITEMENTDataGridViewTextBoxColumn";
+            // 
+            // cSTIPINTRIBITEMENTDataGridViewTextBoxColumn
+            // 
+            this.cSTIPINTRIBITEMENTDataGridViewTextBoxColumn.DataPropertyName = "CST_IPI_N_TRIB_ITEM_ENT";
+            this.cSTIPINTRIBITEMENTDataGridViewTextBoxColumn.HeaderText = "CST IPI Não Trib.";
+            this.cSTIPINTRIBITEMENTDataGridViewTextBoxColumn.Name = "cSTIPINTRIBITEMENTDataGridViewTextBoxColumn";
+            // 
+            // tIPOPISITEMENTDataGridViewTextBoxColumn
+            // 
+            this.tIPOPISITEMENTDataGridViewTextBoxColumn.DataPropertyName = "TIPO_PIS_ITEM_ENT";
+            this.tIPOPISITEMENTDataGridViewTextBoxColumn.HeaderText = "Tipo PIS";
+            this.tIPOPISITEMENTDataGridViewTextBoxColumn.Name = "tIPOPISITEMENTDataGridViewTextBoxColumn";
+            // 
+            // cSTPISITEMENTDataGridViewTextBoxColumn
+            // 
+            this.cSTPISITEMENTDataGridViewTextBoxColumn.DataPropertyName = "CST_PIS_ITEM_ENT";
+            this.cSTPISITEMENTDataGridViewTextBoxColumn.HeaderText = "CST PIS";
+            this.cSTPISITEMENTDataGridViewTextBoxColumn.Name = "cSTPISITEMENTDataGridViewTextBoxColumn";
+            // 
+            // tIPOCOFINSITEMENTDataGridViewTextBoxColumn
+            // 
+            this.tIPOCOFINSITEMENTDataGridViewTextBoxColumn.DataPropertyName = "TIPO_COFINS_ITEM_ENT";
+            this.tIPOCOFINSITEMENTDataGridViewTextBoxColumn.HeaderText = "Tipo Cofins";
+            this.tIPOCOFINSITEMENTDataGridViewTextBoxColumn.Name = "tIPOCOFINSITEMENTDataGridViewTextBoxColumn";
+            // 
+            // cSTCOFINSITEMENTDataGridViewTextBoxColumn
+            // 
+            this.cSTCOFINSITEMENTDataGridViewTextBoxColumn.DataPropertyName = "CST_COFINS_ITEM_ENT";
+            this.cSTCOFINSITEMENTDataGridViewTextBoxColumn.HeaderText = "CST Cofins";
+            this.cSTCOFINSITEMENTDataGridViewTextBoxColumn.Name = "cSTCOFINSITEMENTDataGridViewTextBoxColumn";
+            // 
+            // iTEMPEDIDOCOMPRAITEMENTDataGridViewTextBoxColumn
+            // 
+            this.iTEMPEDIDOCOMPRAITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ITEM_PEDIDO_COMPRA_ITEM_ENT";
+            this.iTEMPEDIDOCOMPRAITEMENTDataGridViewTextBoxColumn.HeaderText = "ITEM_PEDIDO_COMPRA_ITEM_ENT";
+            this.iTEMPEDIDOCOMPRAITEMENTDataGridViewTextBoxColumn.Name = "iTEMPEDIDOCOMPRAITEMENTDataGridViewTextBoxColumn";
+            this.iTEMPEDIDOCOMPRAITEMENTDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // bCIPIITEMENTDataGridViewTextBoxColumn
+            // 
+            this.bCIPIITEMENTDataGridViewTextBoxColumn.DataPropertyName = "BC_IPI_ITEM_ENT";
+            this.bCIPIITEMENTDataGridViewTextBoxColumn.HeaderText = "BC_IPI_ITEM_ENT";
+            this.bCIPIITEMENTDataGridViewTextBoxColumn.Name = "bCIPIITEMENTDataGridViewTextBoxColumn";
+            // 
+            // bCPISITEMENTDataGridViewTextBoxColumn
+            // 
+            this.bCPISITEMENTDataGridViewTextBoxColumn.DataPropertyName = "BC_PIS_ITEM_ENT";
+            this.bCPISITEMENTDataGridViewTextBoxColumn.HeaderText = "BC_PIS_ITEM_ENT";
+            this.bCPISITEMENTDataGridViewTextBoxColumn.Name = "bCPISITEMENTDataGridViewTextBoxColumn";
+            // 
+            // bCCOFINSITEMENTDataGridViewTextBoxColumn
+            // 
+            this.bCCOFINSITEMENTDataGridViewTextBoxColumn.DataPropertyName = "BC_COFINS_ITEM_ENT";
+            this.bCCOFINSITEMENTDataGridViewTextBoxColumn.HeaderText = "BC_COFINS_ITEM_ENT";
+            this.bCCOFINSITEMENTDataGridViewTextBoxColumn.Name = "bCCOFINSITEMENTDataGridViewTextBoxColumn";
+            // 
+            // bCISSITEMENTDataGridViewTextBoxColumn
+            // 
+            this.bCISSITEMENTDataGridViewTextBoxColumn.DataPropertyName = "BC_ISS_ITEM_ENT";
+            this.bCISSITEMENTDataGridViewTextBoxColumn.HeaderText = "BC_ISS_ITEM_ENT";
+            this.bCISSITEMENTDataGridViewTextBoxColumn.Name = "bCISSITEMENTDataGridViewTextBoxColumn";
+            // 
+            // bCCOMIPIITEMENTDataGridViewTextBoxColumn
+            // 
+            this.bCCOMIPIITEMENTDataGridViewTextBoxColumn.DataPropertyName = "BC_COM_IPI_ITEM_ENT";
+            this.bCCOMIPIITEMENTDataGridViewTextBoxColumn.HeaderText = "BC_COM_IPI_ITEM_ENT";
+            this.bCCOMIPIITEMENTDataGridViewTextBoxColumn.Name = "bCCOMIPIITEMENTDataGridViewTextBoxColumn";
+            // 
+            // sTIMPRESSAOITEMENTDataGridViewTextBoxColumn
+            // 
+            this.sTIMPRESSAOITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ST_IMPRESSAO_ITEM_ENT";
+            this.sTIMPRESSAOITEMENTDataGridViewTextBoxColumn.HeaderText = "ST_IMPRESSAO_ITEM_ENT";
+            this.sTIMPRESSAOITEMENTDataGridViewTextBoxColumn.Name = "sTIMPRESSAOITEMENTDataGridViewTextBoxColumn";
+            // 
+            // rOTAITEMENTDataGridViewTextBoxColumn
+            // 
+            this.rOTAITEMENTDataGridViewTextBoxColumn.DataPropertyName = "ROTA_ITEM_ENT";
+            this.rOTAITEMENTDataGridViewTextBoxColumn.HeaderText = "ROTA_ITEM_ENT";
+            this.rOTAITEMENTDataGridViewTextBoxColumn.Name = "rOTAITEMENTDataGridViewTextBoxColumn";
+            // 
+            // dIITEMENTDataGridViewTextBoxColumn
+            // 
+            this.dIITEMENTDataGridViewTextBoxColumn.DataPropertyName = "DI_ITEM_ENT";
+            this.dIITEMENTDataGridViewTextBoxColumn.HeaderText = "DI_ITEM_ENT";
+            this.dIITEMENTDataGridViewTextBoxColumn.Name = "dIITEMENTDataGridViewTextBoxColumn";
+            // 
+            // dATADIITEMENTDataGridViewTextBoxColumn
+            // 
+            this.dATADIITEMENTDataGridViewTextBoxColumn.DataPropertyName = "DATA_DI_ITEM_ENT";
+            this.dATADIITEMENTDataGridViewTextBoxColumn.HeaderText = "DATA_DI_ITEM_ENT";
+            this.dATADIITEMENTDataGridViewTextBoxColumn.Name = "dATADIITEMENTDataGridViewTextBoxColumn";
+            // 
+            // lOCALDESITEMENTDataGridViewTextBoxColumn
+            // 
+            this.lOCALDESITEMENTDataGridViewTextBoxColumn.DataPropertyName = "LOCAL_DES_ITEM_ENT";
+            this.lOCALDESITEMENTDataGridViewTextBoxColumn.HeaderText = "LOCAL_DES_ITEM_ENT";
+            this.lOCALDESITEMENTDataGridViewTextBoxColumn.Name = "lOCALDESITEMENTDataGridViewTextBoxColumn";
+            // 
+            // uFDESITEMENTDataGridViewTextBoxColumn
+            // 
+            this.uFDESITEMENTDataGridViewTextBoxColumn.DataPropertyName = "UF_DES_ITEM_ENT";
+            this.uFDESITEMENTDataGridViewTextBoxColumn.HeaderText = "UF_DES_ITEM_ENT";
+            this.uFDESITEMENTDataGridViewTextBoxColumn.Name = "uFDESITEMENTDataGridViewTextBoxColumn";
+            // 
+            // dATADESITEMENTDataGridViewTextBoxColumn
+            // 
+            this.dATADESITEMENTDataGridViewTextBoxColumn.DataPropertyName = "DATA_DES_ITEM_ENT";
+            this.dATADESITEMENTDataGridViewTextBoxColumn.HeaderText = "DATA_DES_ITEM_ENT";
+            this.dATADESITEMENTDataGridViewTextBoxColumn.Name = "dATADESITEMENTDataGridViewTextBoxColumn";
+            // 
+            // cODEXPITEMENTDataGridViewTextBoxColumn
+            // 
+            this.cODEXPITEMENTDataGridViewTextBoxColumn.DataPropertyName = "COD_EXP_ITEM_ENT";
+            this.cODEXPITEMENTDataGridViewTextBoxColumn.HeaderText = "COD_EXP_ITEM_ENT";
+            this.cODEXPITEMENTDataGridViewTextBoxColumn.Name = "cODEXPITEMENTDataGridViewTextBoxColumn";
+            // 
             // form_nf_ent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5515,6 +5519,7 @@ namespace Evolucao
         private System.Data.DataColumn dataColumn21;
         private System.Data.DataColumn dataColumn22;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Data.DataColumn dataColumn23;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_cod_item;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCodBarras;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCodFornecedor;
@@ -5598,6 +5603,5 @@ namespace Evolucao
         private System.Windows.Forms.DataGridViewTextBoxColumn uFDESITEMENTDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dATADESITEMENTDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cODEXPITEMENTDataGridViewTextBoxColumn;
-        private System.Data.DataColumn dataColumn23;
     }
 }

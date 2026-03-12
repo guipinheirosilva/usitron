@@ -28,7 +28,7 @@ namespace Evolucao
             {
                 FbCommand comando = new FbCommand();
                 FbConnection fbConnection1 = new FbConnection();
-                fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                 comando.Connection = fbConnection1;
                 comando.CommandText = "SELECT * FROM EMPRESA where LICENCA_DLL_NFE_EMPRESA is not null";
                 DataSet empresa = new DataSet();
@@ -133,7 +133,7 @@ namespace Evolucao
                         inner join CLIENTES cl on c.COD_CLIENTE_FORN_CONTATO = cl.COD_CLIENTE 
                         where c.TIPO_CONTATO = 'NF' AND cl.CNPJ = '" + cnpj_cliente + "'";
                         FbConnection fbConnection1 = new FbConnection();
-                        fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                        fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                         select.Connection = fbConnection1;
                         fbConnection1.Open();
                         FbDataAdapter datSelect = new FbDataAdapter();
@@ -153,8 +153,10 @@ namespace Evolucao
                     catch { }
 
                     //Assunto do email 
-
                     mensagem.Subject = assunto;
+
+                    //Cópia para a prórpria Usitron.
+                    mensagem.CC.Add(email_remetente);
 
                     //Conteúdo do email 
                     //if (!razao_social_empresa.Contains("IMPÉRIO"))

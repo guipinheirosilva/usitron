@@ -3856,8 +3856,8 @@ namespace Evolucao
                         fbConnection1.Close(); 
                     }
                     
-                    //@"\\10.3.3.4\nfe\xml\" + data_emissao.ToString("MM")
-                    caminho = @"\\10.3.3.4\ASSINADAS\CTE" + tb_n_cte.Text + ".xml";
+                    //@"\\localhost\nfe\xml\" + data_emissao.ToString("MM")
+                    caminho = @"\\localhost\ASSINADAS\CTE" + tb_n_cte.Text + ".xml";
                     if (System.IO.File.Exists(caminho))
                     {
                         StreamReader objReader = new StreamReader(caminho);

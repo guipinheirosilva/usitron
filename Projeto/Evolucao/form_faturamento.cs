@@ -533,7 +533,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
                 FbCommand select = new FbCommand();
                 select.Connection = fbConnection1;
                 select.CommandText =
-                    "SELECT first(1) N_NF, COD_SISTEMA_NF FROM NOTA_FISCAL WHERE CNPJ_EMISSOR_NF = '" + cnpj_empresa + "' ORDER BY COD_SISTEMA_NF DESC";
+                    "SELECT first(1) N_NF, COD_SISTEMA_NF FROM NOTA_FISCAL WHERE CNPJ_EMISSOR_NF = '" + cnpj_empresa + "' ORDER BY N_NF DESC";
                 fbConnection1.Open();
                 DataSet notas = new DataSet();
                 datNota_fiscal.SelectCommand = select;
@@ -7553,7 +7553,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
                 {
                     calcular_estoque_lote(dr[0].ToString());
                     classeEstoque_material est = new classeEstoque_material();
-                    est.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                    est.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                     est.calcular_estoque(dr[1].ToString());
                 }
                
