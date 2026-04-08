@@ -533,7 +533,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
                 FbCommand select = new FbCommand();
                 select.Connection = fbConnection1;
                 select.CommandText =
-                    "SELECT first(1) N_NF, COD_SISTEMA_NF FROM NOTA_FISCAL WHERE CNPJ_EMISSOR_NF = '" + cnpj_empresa + "' AND N_NF IS NOT NULL ORDER BY COD_SISTEMA_NF DESC";
+                    "SELECT first(1) N_NF, COD_SISTEMA_NF FROM NOTA_FISCAL WHERE CNPJ_EMISSOR_NF = '" + cnpj_empresa + "' ORDER BY N_NF DESC";
                 fbConnection1.Open();
                 DataSet notas = new DataSet();
                 datNota_fiscal.SelectCommand = select;

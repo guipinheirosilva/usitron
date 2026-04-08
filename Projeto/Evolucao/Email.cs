@@ -156,11 +156,9 @@ namespace Evolucao
 
                     mensagem.Subject = assunto;
 
-                    //Conteúdo do email 
-                    //if (!razao_social_empresa.Contains("IMPÉRIO"))
-                    //{
-                    //    mensagem.CC.Add("fiscal@metalurgicaclara.com.br");
-                    //}
+                    //Cópia para a prórpria Usitron.
+                    mensagem.CC.Add(email_remetente);
+
                     mensagem.Body = corpo;
                     try
                     {
