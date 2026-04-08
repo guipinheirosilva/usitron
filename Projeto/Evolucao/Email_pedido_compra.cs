@@ -15,7 +15,7 @@ namespace Evolucao
     {
         public string cnpj_empresa;
         public string _email, _senha_email;
-        FbConnection fbConnection1 = new FbConnection(@"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0");
+        FbConnection fbConnection1 = new FbConnection(@"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0");
         //public string cnpj_empresa;
         //empresa
         string razao_social_empresa = "", nome_fantasia_empresa = "", /*cnpj_empresa = "",*/ ie_empresa = "", im_empresa = "", cnae_empresa = "", endereco_empresa = "", n_endereco_empresa = "",

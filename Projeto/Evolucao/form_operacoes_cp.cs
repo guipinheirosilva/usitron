@@ -120,7 +120,7 @@ namespace Evolucao
                 }
                 catch
                 {
-                    MessageBox.Show("Erro ao apagar registro");
+                    //MessageBox.Show("Erro ao apagar registro");
                     fbConnection1.Close(); 
                 }
             

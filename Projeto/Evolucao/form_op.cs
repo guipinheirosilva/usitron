@@ -1176,7 +1176,7 @@ namespace Evolucao
             update_os();
             update_rotas();
             classeEstoque_pecas est = new classeEstoque_pecas();
-            est.conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+            est.conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
             est.conexao.Open();
             
             est.localizacao = buscar_localizacao_peca(tb_codigo_peca.Text);
@@ -1192,7 +1192,7 @@ namespace Evolucao
             if (tb_cod_mat.Text != "")
             {
                 classeEstoque estoque = new classeEstoque();
-                estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                 estoque.calcular_estoque(tb_cod_mat.Text);
 
             }
@@ -1898,7 +1898,7 @@ namespace Evolucao
 
                             classeApontamentos apontamento = new classeApontamentos();
                             apontamento.fbConnection1.ConnectionString =
-                                @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                                @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                             DateTime[] primeiro_dia_semana = new DateTime[200];
                             DateTime[] ultimo_dia_semana = new DateTime[200];
                             int[] semana_numero = new int[200];

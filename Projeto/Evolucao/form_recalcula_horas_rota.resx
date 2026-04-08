@@ -142,7 +142,7 @@
     <value>135, 54</value>
   </metadata>
   <data name="fbConnection1.ConnectionString" xml:space="preserve">
-    <value>User=SYSDBA;Password=masterkey;Database=localhost:c:\\evolucao\\evolucao.fdb;DataSource=FireBird;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0</value>
+    <value>User=SYSDBA;Password=masterkey;Database=10.3.3.4:c:\\evolucao\\evolucao.fdb;DataSource=FireBird;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0</value>
   </data>
   <metadata name="fbCommand3.DesignTimeVisible" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>

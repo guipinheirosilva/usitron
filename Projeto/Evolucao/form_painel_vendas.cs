@@ -1202,7 +1202,7 @@ Convert.ToDateTime(dt_hoje.Text).ToShortDateString().Replace("/", ".") + "'	" +
                 //dtVendas_cliente.TableName = "VENDAS_CLIENTE";
                 //dtVendas_cliente.WriteXml(@"c:\\evolucao\\xml\vendas_cliente.xml");
                 //fbConnection1.Close();
-                //localhost.DataSource = dtVendas_cliente;
+                //10.3.3.4.DataSource = dtVendas_cliente;
             }
             catch { fbConnection1.Close(); }
 

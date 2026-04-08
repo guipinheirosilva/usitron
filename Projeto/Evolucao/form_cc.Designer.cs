@@ -35,22 +35,6 @@ namespace Evolucao
             this.fbConnection1 = new FirebirdSql.Data.FirebirdClient.FbConnection();
             this.fbCommand3 = new FirebirdSql.Data.FirebirdClient.FbCommand();
             this.dgvCc = new System.Windows.Forms.DataGridView();
-            this.col_cod = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bANCOCCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cODIGOBANCOCCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aGENCIACCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dIGAGENCIACCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cONTACCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dIGCONTACCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mULTACCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mORADIACCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dIASPROTESTOCCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cARTEIRACCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bOLETOCCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.CODIGO_NO_BANCO_CC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.COD_TRANSMISSAO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NAO_APARECER_CC = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dsCc = new System.Data.DataSet();
             this.CONTAS_CORRENTES = new System.Data.DataTable();
             this.COD_CC = new System.Data.DataColumn();
@@ -72,6 +56,24 @@ namespace Evolucao
             this.button1 = new System.Windows.Forms.Button();
             this.cbCc = new FirebirdSql.Data.FirebirdClient.FbCommandBuilder();
             this.datCc = new FirebirdSql.Data.FirebirdClient.FbDataAdapter();
+            this.dataColumn4 = new System.Data.DataColumn();
+            this.col_cod = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bANCOCCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cODIGOBANCOCCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aGENCIACCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dIGAGENCIACCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cONTACCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dIGCONTACCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mULTACCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mORADIACCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dIASPROTESTOCCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cARTEIRACCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bOLETOCCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.CODIGO_NO_BANCO_CC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CNPJ_EMISSOR_CC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.COD_TRANSMISSAO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NAO_APARECER_CC = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsCc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CONTAS_CORRENTES)).BeginInit();
@@ -118,136 +120,16 @@ namespace Evolucao
             this.cARTEIRACCDataGridViewTextBoxColumn,
             this.bOLETOCCDataGridViewTextBoxColumn,
             this.CODIGO_NO_BANCO_CC,
+            this.CNPJ_EMISSOR_CC,
             this.COD_TRANSMISSAO,
             this.NAO_APARECER_CC});
             this.dgvCc.DataMember = "CONTAS_CORRENTES";
             this.dgvCc.DataSource = this.dsCc;
             this.dgvCc.Location = new System.Drawing.Point(12, 12);
             this.dgvCc.Name = "dgvCc";
-            this.dgvCc.Size = new System.Drawing.Size(1200, 373);
+            this.dgvCc.Size = new System.Drawing.Size(1283, 373);
             this.dgvCc.TabIndex = 0;
             this.dgvCc.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCarteiras_CellDoubleClick);
-            // 
-            // col_cod
-            // 
-            this.col_cod.DataPropertyName = "COD_CC";
-            this.col_cod.HeaderText = "Cód.";
-            this.col_cod.Name = "col_cod";
-            this.col_cod.Width = 50;
-            // 
-            // col_descricao
-            // 
-            this.col_descricao.DataPropertyName = "DESCRICAO_CC";
-            this.col_descricao.HeaderText = "Descrição";
-            this.col_descricao.Name = "col_descricao";
-            this.col_descricao.Width = 200;
-            // 
-            // bANCOCCDataGridViewTextBoxColumn
-            // 
-            this.bANCOCCDataGridViewTextBoxColumn.DataPropertyName = "BANCO_CC";
-            this.bANCOCCDataGridViewTextBoxColumn.HeaderText = "Banco";
-            this.bANCOCCDataGridViewTextBoxColumn.Name = "bANCOCCDataGridViewTextBoxColumn";
-            // 
-            // cODIGOBANCOCCDataGridViewTextBoxColumn
-            // 
-            this.cODIGOBANCOCCDataGridViewTextBoxColumn.DataPropertyName = "CODIGO_BANCO_CC";
-            this.cODIGOBANCOCCDataGridViewTextBoxColumn.HeaderText = "Cód. Banco";
-            this.cODIGOBANCOCCDataGridViewTextBoxColumn.Name = "cODIGOBANCOCCDataGridViewTextBoxColumn";
-            this.cODIGOBANCOCCDataGridViewTextBoxColumn.Width = 70;
-            // 
-            // aGENCIACCDataGridViewTextBoxColumn
-            // 
-            this.aGENCIACCDataGridViewTextBoxColumn.DataPropertyName = "AGENCIA_CC";
-            this.aGENCIACCDataGridViewTextBoxColumn.HeaderText = "Agência";
-            this.aGENCIACCDataGridViewTextBoxColumn.Name = "aGENCIACCDataGridViewTextBoxColumn";
-            this.aGENCIACCDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // dIGAGENCIACCDataGridViewTextBoxColumn
-            // 
-            this.dIGAGENCIACCDataGridViewTextBoxColumn.DataPropertyName = "DIG_AGENCIA_CC";
-            this.dIGAGENCIACCDataGridViewTextBoxColumn.HeaderText = "Dig. Ag.";
-            this.dIGAGENCIACCDataGridViewTextBoxColumn.Name = "dIGAGENCIACCDataGridViewTextBoxColumn";
-            this.dIGAGENCIACCDataGridViewTextBoxColumn.Width = 40;
-            // 
-            // cONTACCDataGridViewTextBoxColumn
-            // 
-            this.cONTACCDataGridViewTextBoxColumn.DataPropertyName = "CONTA_CC";
-            this.cONTACCDataGridViewTextBoxColumn.HeaderText = "No. Conta";
-            this.cONTACCDataGridViewTextBoxColumn.Name = "cONTACCDataGridViewTextBoxColumn";
-            this.cONTACCDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // dIGCONTACCDataGridViewTextBoxColumn
-            // 
-            this.dIGCONTACCDataGridViewTextBoxColumn.DataPropertyName = "DIG_CONTA_CC";
-            this.dIGCONTACCDataGridViewTextBoxColumn.HeaderText = "Dig. Conta";
-            this.dIGCONTACCDataGridViewTextBoxColumn.Name = "dIGCONTACCDataGridViewTextBoxColumn";
-            this.dIGCONTACCDataGridViewTextBoxColumn.Width = 40;
-            // 
-            // mULTACCDataGridViewTextBoxColumn
-            // 
-            this.mULTACCDataGridViewTextBoxColumn.DataPropertyName = "MULTA_CC";
-            this.mULTACCDataGridViewTextBoxColumn.HeaderText = "Multa";
-            this.mULTACCDataGridViewTextBoxColumn.Name = "mULTACCDataGridViewTextBoxColumn";
-            this.mULTACCDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // mORADIACCDataGridViewTextBoxColumn
-            // 
-            this.mORADIACCDataGridViewTextBoxColumn.DataPropertyName = "MORA_DIA_CC";
-            this.mORADIACCDataGridViewTextBoxColumn.HeaderText = "Mora";
-            this.mORADIACCDataGridViewTextBoxColumn.Name = "mORADIACCDataGridViewTextBoxColumn";
-            this.mORADIACCDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // dIASPROTESTOCCDataGridViewTextBoxColumn
-            // 
-            this.dIASPROTESTOCCDataGridViewTextBoxColumn.DataPropertyName = "DIAS_PROTESTO_CC";
-            this.dIASPROTESTOCCDataGridViewTextBoxColumn.HeaderText = "Dias Protesto";
-            this.dIASPROTESTOCCDataGridViewTextBoxColumn.Name = "dIASPROTESTOCCDataGridViewTextBoxColumn";
-            this.dIASPROTESTOCCDataGridViewTextBoxColumn.Width = 40;
-            // 
-            // cARTEIRACCDataGridViewTextBoxColumn
-            // 
-            this.cARTEIRACCDataGridViewTextBoxColumn.DataPropertyName = "CARTEIRA_CC";
-            this.cARTEIRACCDataGridViewTextBoxColumn.HeaderText = "Carteira";
-            this.cARTEIRACCDataGridViewTextBoxColumn.Name = "cARTEIRACCDataGridViewTextBoxColumn";
-            this.cARTEIRACCDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // bOLETOCCDataGridViewTextBoxColumn
-            // 
-            this.bOLETOCCDataGridViewTextBoxColumn.DataPropertyName = "BOLETO_CC";
-            this.bOLETOCCDataGridViewTextBoxColumn.FalseValue = "0";
-            this.bOLETOCCDataGridViewTextBoxColumn.HeaderText = "Boleto";
-            this.bOLETOCCDataGridViewTextBoxColumn.IndeterminateValue = "0";
-            this.bOLETOCCDataGridViewTextBoxColumn.Name = "bOLETOCCDataGridViewTextBoxColumn";
-            this.bOLETOCCDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.bOLETOCCDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.bOLETOCCDataGridViewTextBoxColumn.TrueValue = "1";
-            this.bOLETOCCDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // CODIGO_NO_BANCO_CC
-            // 
-            this.CODIGO_NO_BANCO_CC.DataPropertyName = "CODIGO_NO_BANCO_CC";
-            this.CODIGO_NO_BANCO_CC.HeaderText = "Cód. no Banco";
-            this.CODIGO_NO_BANCO_CC.Name = "CODIGO_NO_BANCO_CC";
-            this.CODIGO_NO_BANCO_CC.Width = 80;
-            // 
-            // COD_TRANSMISSAO
-            // 
-            this.COD_TRANSMISSAO.DataPropertyName = "COD_TRANSMISSAO";
-            this.COD_TRANSMISSAO.HeaderText = "Cód. Transmissão";
-            this.COD_TRANSMISSAO.Name = "COD_TRANSMISSAO";
-            this.COD_TRANSMISSAO.Width = 130;
-            // 
-            // NAO_APARECER_CC
-            // 
-            this.NAO_APARECER_CC.DataPropertyName = "NAO_APARECER_CC";
-            this.NAO_APARECER_CC.FalseValue = "0";
-            this.NAO_APARECER_CC.HeaderText = "Não Aparecer";
-            this.NAO_APARECER_CC.IndeterminateValue = "0";
-            this.NAO_APARECER_CC.Name = "NAO_APARECER_CC";
-            this.NAO_APARECER_CC.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.NAO_APARECER_CC.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.NAO_APARECER_CC.TrueValue = "1";
-            this.NAO_APARECER_CC.Width = 60;
             // 
             // dsCc
             // 
@@ -274,7 +156,8 @@ namespace Evolucao
             this.BOLETO_CC,
             this.dataColumn1,
             this.dataColumn2,
-            this.dataColumn3});
+            this.dataColumn3,
+            this.dataColumn4});
             this.CONTAS_CORRENTES.Constraints.AddRange(new System.Data.Constraint[] {
             new System.Data.UniqueConstraint("Constraint1", new string[] {
                         "COD_CC"}, true)});
@@ -387,11 +270,142 @@ namespace Evolucao
             this.datCc.SelectCommand = this.fbCommand1;
             this.datCc.UpdateCommand = this.fbCommand3;
             // 
+            // dataColumn4
+            // 
+            this.dataColumn4.ColumnName = "CNPJ_EMISSOR_CC";
+            // 
+            // col_cod
+            // 
+            this.col_cod.DataPropertyName = "COD_CC";
+            this.col_cod.HeaderText = "Cód.";
+            this.col_cod.Name = "col_cod";
+            this.col_cod.Width = 50;
+            // 
+            // col_descricao
+            // 
+            this.col_descricao.DataPropertyName = "DESCRICAO_CC";
+            this.col_descricao.HeaderText = "Descrição";
+            this.col_descricao.Name = "col_descricao";
+            this.col_descricao.Width = 200;
+            // 
+            // bANCOCCDataGridViewTextBoxColumn
+            // 
+            this.bANCOCCDataGridViewTextBoxColumn.DataPropertyName = "BANCO_CC";
+            this.bANCOCCDataGridViewTextBoxColumn.HeaderText = "Banco";
+            this.bANCOCCDataGridViewTextBoxColumn.Name = "bANCOCCDataGridViewTextBoxColumn";
+            // 
+            // cODIGOBANCOCCDataGridViewTextBoxColumn
+            // 
+            this.cODIGOBANCOCCDataGridViewTextBoxColumn.DataPropertyName = "CODIGO_BANCO_CC";
+            this.cODIGOBANCOCCDataGridViewTextBoxColumn.HeaderText = "Cód. Banco";
+            this.cODIGOBANCOCCDataGridViewTextBoxColumn.Name = "cODIGOBANCOCCDataGridViewTextBoxColumn";
+            this.cODIGOBANCOCCDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // aGENCIACCDataGridViewTextBoxColumn
+            // 
+            this.aGENCIACCDataGridViewTextBoxColumn.DataPropertyName = "AGENCIA_CC";
+            this.aGENCIACCDataGridViewTextBoxColumn.HeaderText = "Agência";
+            this.aGENCIACCDataGridViewTextBoxColumn.Name = "aGENCIACCDataGridViewTextBoxColumn";
+            this.aGENCIACCDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // dIGAGENCIACCDataGridViewTextBoxColumn
+            // 
+            this.dIGAGENCIACCDataGridViewTextBoxColumn.DataPropertyName = "DIG_AGENCIA_CC";
+            this.dIGAGENCIACCDataGridViewTextBoxColumn.HeaderText = "Dig. Ag.";
+            this.dIGAGENCIACCDataGridViewTextBoxColumn.Name = "dIGAGENCIACCDataGridViewTextBoxColumn";
+            this.dIGAGENCIACCDataGridViewTextBoxColumn.Width = 40;
+            // 
+            // cONTACCDataGridViewTextBoxColumn
+            // 
+            this.cONTACCDataGridViewTextBoxColumn.DataPropertyName = "CONTA_CC";
+            this.cONTACCDataGridViewTextBoxColumn.HeaderText = "No. Conta";
+            this.cONTACCDataGridViewTextBoxColumn.Name = "cONTACCDataGridViewTextBoxColumn";
+            this.cONTACCDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // dIGCONTACCDataGridViewTextBoxColumn
+            // 
+            this.dIGCONTACCDataGridViewTextBoxColumn.DataPropertyName = "DIG_CONTA_CC";
+            this.dIGCONTACCDataGridViewTextBoxColumn.HeaderText = "Dig. Conta";
+            this.dIGCONTACCDataGridViewTextBoxColumn.Name = "dIGCONTACCDataGridViewTextBoxColumn";
+            this.dIGCONTACCDataGridViewTextBoxColumn.Width = 40;
+            // 
+            // mULTACCDataGridViewTextBoxColumn
+            // 
+            this.mULTACCDataGridViewTextBoxColumn.DataPropertyName = "MULTA_CC";
+            this.mULTACCDataGridViewTextBoxColumn.HeaderText = "Multa";
+            this.mULTACCDataGridViewTextBoxColumn.Name = "mULTACCDataGridViewTextBoxColumn";
+            this.mULTACCDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // mORADIACCDataGridViewTextBoxColumn
+            // 
+            this.mORADIACCDataGridViewTextBoxColumn.DataPropertyName = "MORA_DIA_CC";
+            this.mORADIACCDataGridViewTextBoxColumn.HeaderText = "Mora";
+            this.mORADIACCDataGridViewTextBoxColumn.Name = "mORADIACCDataGridViewTextBoxColumn";
+            this.mORADIACCDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // dIASPROTESTOCCDataGridViewTextBoxColumn
+            // 
+            this.dIASPROTESTOCCDataGridViewTextBoxColumn.DataPropertyName = "DIAS_PROTESTO_CC";
+            this.dIASPROTESTOCCDataGridViewTextBoxColumn.HeaderText = "Dias Protesto";
+            this.dIASPROTESTOCCDataGridViewTextBoxColumn.Name = "dIASPROTESTOCCDataGridViewTextBoxColumn";
+            this.dIASPROTESTOCCDataGridViewTextBoxColumn.Width = 40;
+            // 
+            // cARTEIRACCDataGridViewTextBoxColumn
+            // 
+            this.cARTEIRACCDataGridViewTextBoxColumn.DataPropertyName = "CARTEIRA_CC";
+            this.cARTEIRACCDataGridViewTextBoxColumn.HeaderText = "Carteira";
+            this.cARTEIRACCDataGridViewTextBoxColumn.Name = "cARTEIRACCDataGridViewTextBoxColumn";
+            this.cARTEIRACCDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // bOLETOCCDataGridViewTextBoxColumn
+            // 
+            this.bOLETOCCDataGridViewTextBoxColumn.DataPropertyName = "BOLETO_CC";
+            this.bOLETOCCDataGridViewTextBoxColumn.FalseValue = "0";
+            this.bOLETOCCDataGridViewTextBoxColumn.HeaderText = "Boleto";
+            this.bOLETOCCDataGridViewTextBoxColumn.IndeterminateValue = "0";
+            this.bOLETOCCDataGridViewTextBoxColumn.Name = "bOLETOCCDataGridViewTextBoxColumn";
+            this.bOLETOCCDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.bOLETOCCDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.bOLETOCCDataGridViewTextBoxColumn.TrueValue = "1";
+            this.bOLETOCCDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // CODIGO_NO_BANCO_CC
+            // 
+            this.CODIGO_NO_BANCO_CC.DataPropertyName = "CODIGO_NO_BANCO_CC";
+            this.CODIGO_NO_BANCO_CC.HeaderText = "Cód. no Banco";
+            this.CODIGO_NO_BANCO_CC.Name = "CODIGO_NO_BANCO_CC";
+            this.CODIGO_NO_BANCO_CC.Width = 80;
+            // 
+            // CNPJ_EMISSOR_CC
+            // 
+            this.CNPJ_EMISSOR_CC.DataPropertyName = "CNPJ_EMISSOR_CC";
+            this.CNPJ_EMISSOR_CC.HeaderText = "CNPJ Emissor";
+            this.CNPJ_EMISSOR_CC.Name = "CNPJ_EMISSOR_CC";
+            // 
+            // COD_TRANSMISSAO
+            // 
+            this.COD_TRANSMISSAO.DataPropertyName = "COD_TRANSMISSAO";
+            this.COD_TRANSMISSAO.HeaderText = "Cód. Transmissão";
+            this.COD_TRANSMISSAO.Name = "COD_TRANSMISSAO";
+            this.COD_TRANSMISSAO.Width = 130;
+            // 
+            // NAO_APARECER_CC
+            // 
+            this.NAO_APARECER_CC.DataPropertyName = "NAO_APARECER_CC";
+            this.NAO_APARECER_CC.FalseValue = "0";
+            this.NAO_APARECER_CC.HeaderText = "Não Aparecer";
+            this.NAO_APARECER_CC.IndeterminateValue = "0";
+            this.NAO_APARECER_CC.Name = "NAO_APARECER_CC";
+            this.NAO_APARECER_CC.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.NAO_APARECER_CC.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.NAO_APARECER_CC.TrueValue = "1";
+            this.NAO_APARECER_CC.Width = 60;
+            // 
             // form_cc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1239, 448);
+            this.ClientSize = new System.Drawing.Size(1307, 448);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvCc);
             this.Name = "form_cc";
@@ -447,7 +461,9 @@ namespace Evolucao
         private System.Windows.Forms.DataGridViewTextBoxColumn cARTEIRACCDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn bOLETOCCDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_NO_BANCO_CC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CNPJ_EMISSOR_CC;
         private System.Windows.Forms.DataGridViewTextBoxColumn COD_TRANSMISSAO;
         private System.Windows.Forms.DataGridViewCheckBoxColumn NAO_APARECER_CC;
+        private System.Data.DataColumn dataColumn4;
     }
 }

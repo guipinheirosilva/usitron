@@ -54,7 +54,7 @@ namespace Evolucao
                 }
                 catch
                 {
-                    MessageBox.Show("Erro ao excluir registro");
+                    //MessageBox.Show("Erro ao excluir registro");
                     fbConnection1.Close(); 
                 }
             

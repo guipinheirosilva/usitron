@@ -196,10 +196,10 @@ namespace Evolucao
 
             try
             {
-                if (verificar_se_existem_boletos_cancelados())
-                {
-                    MessageBox.Show("Existem boletos que foram cancelados. Por favor verifique");
-                }
+                //if (verificar_se_existem_boletos_cancelados())
+                //{
+                //    MessageBox.Show("Existem boletos que foram cancelados. Por favor verifique");
+                //}
 
                 dateTimeIr.Value = DateTime.Now;
                 mes_atual = DateTime.Now.Month;
@@ -965,31 +965,132 @@ namespace Evolucao
             {
                 for (int i = 0; i < dgvPlanejamento.SelectedRows.Count; i++)
                 {
-
-                    if (Convert.ToDouble(dgvPlanejamento.SelectedRows[i].Cells["VALOR_CP"].Value.ToString()) > 0)
+                    try
                     {
-                        MessageBox.Show("Não é possível excluir contas a receber nesse botão");
-                    }
-                    else
-                    {
-                        form_operacoes_cp op = new form_operacoes_cp();
-                        try
+                        if (Convert.ToDouble(dgvPlanejamento.SelectedRows[i].Cells["VALOR_CP"].Value.ToString()) > 0)
                         {
+                            MessageBox.Show("Não é possível excluir contas a receber nesse botão");
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(dgvPlanejamento.SelectedRows[i].Cells["VALOR_CP"].Value.ToString()) == 0)
+                            {
+                                try
+                                {
+                                    form_operacoes_cr op = new form_operacoes_cr();
+                                    try
+                                    {
+                                        try
+                                        {
+                                            op.cod_a_abrir = dgvPlanejamento.SelectedRows[i].Cells["COD_CR"].Value.ToString();
+                                        }
+                                        catch
+                                        {
+                                            MessageBox.Show("Por favor, selecione a linha inteira");
+                                        }
+                                        op.excluir = true;
+                                        op.ShowDialog();
+                                    }
+                                    finally
+                                    {
+                                        // filtrar();
+                                    }
+                                }
+                                catch { }
+                                try
+                                {
+                                    form_operacoes_cp op = new form_operacoes_cp();
+                                    try
+                                    {
+                                        try
+                                        {
+                                            op.cod_a_abrir = dgvPlanejamento.SelectedRows[i].Cells["COD_CR"].Value.ToString();
+                                            op.excluir = true;
+                                            op.ShowDialog();
+                                        }
+                                        catch
+                                        {
+                                            MessageBox.Show("Por favor, selecione a linha inteira");
+                                        }
+                                    }
+                                    finally
+                                    {
+                                        // filtrar();
+                                    }
+                                }
+                                catch { }
+                            }
+                            else
+                            {
+                                form_operacoes_cp op = new form_operacoes_cp();
+                                try
+                                {
+                                    try
+                                    {
+                                        op.cod_a_abrir = dgvPlanejamento.SelectedRows[i].Cells["COD_CR"].Value.ToString();
+                                        op.excluir = true;
+                                        op.ShowDialog();
+                                    }
+                                    catch
+                                    {
+                                        MessageBox.Show("Por favor, selecione a linha inteira");
+                                    }
+                                }
+                                finally
+                                {
+                                    // filtrar();
+                                }
+                            }
+                        }
+                    }
+                    catch
+                    {
+                        
                             try
                             {
-                                op.cod_a_abrir = dgvPlanejamento.SelectedRows[i].Cells["COD_CR"].Value.ToString();
-                                op.excluir = true;
-                                op.ShowDialog();
+                                form_operacoes_cr op = new form_operacoes_cr();
+                                try
+                                {
+                                    try
+                                    {
+                                        op.cod_a_abrir = dgvPlanejamento.SelectedRows[i].Cells["COD_CR"].Value.ToString();
+                                    }
+                                    catch
+                                    {
+                                        MessageBox.Show("Por favor, selecione a linha inteira");
+                                    }
+                                    op.excluir = true;
+                                    op.ShowDialog();
+                                }
+                                finally
+                                {
+                                    // filtrar();
+                                }
                             }
-                            catch
+                            catch { }
+                            try
                             {
-                                MessageBox.Show("Por favor, selecione a linha inteira");
+                                form_operacoes_cp op = new form_operacoes_cp();
+                                try
+                                {
+                                    try
+                                    {
+                                        op.cod_a_abrir = dgvPlanejamento.SelectedRows[i].Cells["COD_CR"].Value.ToString();
+                                        op.excluir = true;
+                                        op.ShowDialog();
+                                    }
+                                    catch
+                                    {
+                                        MessageBox.Show("Por favor, selecione a linha inteira");
+                                    }
+                                }
+                                finally
+                                {
+                                    // filtrar();
+                                }
                             }
-                        }
-                        finally
-                        {
-                            // filtrar();
-                        }
+                            catch { }
+                        
                     }
                 }
             }
@@ -1229,32 +1330,136 @@ namespace Evolucao
         {
             for (int i = 0; i < dgvPlanejamento.SelectedRows.Count; i++)
             {
-                if (Convert.ToDouble(dgvPlanejamento.SelectedRows[i].Cells["VALOR_CP"].Value.ToString()) < 0)
+                try
                 {
-                    MessageBox.Show("Não é possível excluir contas a pagar nesse botão");
+                    if (Convert.ToDouble(dgvPlanejamento.SelectedRows[i].Cells["VALOR_CP"].Value.ToString()) < 0)
+                    {
+                        MessageBox.Show("Não é possível excluir contas a pagar nesse botão");
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(dgvPlanejamento.SelectedRows[i].Cells["VALOR_CP"].Value.ToString()) == 0)
+                        {
+                            try
+                            {
+                                form_operacoes_cr op = new form_operacoes_cr();
+                                try
+                                {
+                                    try
+                                    {
+                                        op.cod_a_abrir = dgvPlanejamento.SelectedRows[i].Cells["COD_CR"].Value.ToString();
+                                    }
+                                    catch
+                                    {
+                                        MessageBox.Show("Por favor, selecione a linha inteira");
+                                    }
+                                    op.excluir = true;
+                                    op.ShowDialog();
+                                }
+                                finally
+                                {
+                                    // filtrar();
+                                }
+                            }
+                            catch { }
+                            try
+                            {
+                                form_operacoes_cp op = new form_operacoes_cp();
+                                try
+                                {
+                                    try
+                                    {
+                                        op.cod_a_abrir = dgvPlanejamento.SelectedRows[i].Cells["COD_CR"].Value.ToString();
+                                        op.excluir = true;
+                                        op.ShowDialog();
+                                    }
+                                    catch
+                                    {
+                                        MessageBox.Show("Por favor, selecione a linha inteira");
+                                    }
+                                }
+                                finally
+                                {
+                                    // filtrar();
+                                }
+                            }
+                            catch { }
+                        }
+                        else
+                        {
+
+                            form_operacoes_cr op = new form_operacoes_cr();
+                            try
+                            {
+                                try
+                                {
+                                    op.cod_a_abrir = dgvPlanejamento.SelectedRows[i].Cells["COD_CR"].Value.ToString();
+                                }
+                                catch
+                                {
+                                    MessageBox.Show("Por favor, selecione a linha inteira");
+                                }
+                                op.excluir = true;
+                                op.ShowDialog();
+                            }
+                            finally
+                            {
+                                // filtrar();
+                            }
+                        }
+                    }
+
                 }
-                else
+                catch
                 {
-                    form_operacoes_cr op = new form_operacoes_cr();
+
                     try
                     {
+                        form_operacoes_cr op = new form_operacoes_cr();
                         try
                         {
-                            op.cod_a_abrir = dgvPlanejamento.SelectedRows[i].Cells["COD_CR"].Value.ToString();
+                            try
+                            {
+                                op.cod_a_abrir = dgvPlanejamento.SelectedRows[i].Cells["COD_CR"].Value.ToString();
+                            }
+                            catch
+                            {
+                                MessageBox.Show("Por favor, selecione a linha inteira");
+                            }
+                            op.excluir = true;
+                            op.ShowDialog();
                         }
-                        catch
+                        finally
                         {
-                            MessageBox.Show("Por favor, selecione a linha inteira");
+                            // filtrar();
                         }
-                        op.excluir = true;
-                        op.ShowDialog();
                     }
-                    finally
+                    catch { }
+                    try
                     {
-                       // filtrar();
+                        form_operacoes_cp op = new form_operacoes_cp();
+                        try
+                        {
+                            try
+                            {
+                                op.cod_a_abrir = dgvPlanejamento.SelectedRows[i].Cells["COD_CR"].Value.ToString();
+                                op.excluir = true;
+                                op.ShowDialog();
+                            }
+                            catch
+                            {
+                                MessageBox.Show("Por favor, selecione a linha inteira");
+                            }
+                        }
+                        finally
+                        {
+                            // filtrar();
+                        }
                     }
+                    catch { }
                 }
             }
+        
         }
 
         private void bt_multiplicar_cr_Click(object sender, EventArgs e)

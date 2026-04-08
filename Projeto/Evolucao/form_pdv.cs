@@ -684,7 +684,7 @@ namespace Evolucao
             {
                 FbCommand select = new FbCommand();
                 FbConnection conexao = new FbConnection();
-                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                 select.CommandText =
                     "SELECT COD_BARRAS_PRODUTO, COD_BARRAS_CAIXA_PRODUTO, QTDE_UNIDADE_PRODUTO, " +
                     "CNPJ_FORNECEDOR_PRODUTO, COD_PRODUTO FROM PRODUTOS WHERE COD_PRODUTO like '" + idProduto + "' OR COD_FORNECEDOR_PRODUTO LIKE '%" + idProduto + "%'";
@@ -723,7 +723,7 @@ namespace Evolucao
                         string ean = buscar_ean_produto(dgvItens.Rows[i].Cells["col_cod"].Value.ToString(), out _dun, out _qtde, out _cnpj, out _cod);
 
                         //classeEstoque estoque = new classeEstoque();
-                        //estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                        //estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                         //estoque.calcular_estoque(_dun, ean, _qtde, _cnpj, _cod);
                     }
                     catch { }

@@ -187,7 +187,7 @@ namespace Evolucao
             FbDataAdapter datEntrada_pa = new FbDataAdapter();
             DataSet dsEntrada_pa = new DataSet();
             //FbConnection conexao = new FbConnection();
-            //conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+            //conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
             //conexao.Open();
             FbCommand comando_select = new FbCommand();
             comando_select.Connection = conexao;
@@ -263,7 +263,7 @@ namespace Evolucao
                 FbDataAdapter datEstoque_pecas = new FbDataAdapter();
                 DataSet dsEstoque_pecas = new DataSet();
                 //FbConnection conexao = new FbConnection();
-                //conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                //conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                // conexao.Open();
                 FbCommand comando_select = new FbCommand();
                 comando_select.Connection = conexao;
@@ -297,7 +297,7 @@ namespace Evolucao
                 FbDataAdapter datEstoque_pecas = new FbDataAdapter();
                 DataSet dsEstoque_pecas = new DataSet();
                 //FbConnection conexao = new FbConnection();
-                //conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                //conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                 //conexao.Open();
                 FbCommand comando_select = new FbCommand();
                 comando_select.Connection = conexao;
@@ -325,7 +325,7 @@ namespace Evolucao
                 FbDataAdapter datEstoque_pecas = new FbDataAdapter();
                 DataSet dsEstoque_pecas = new DataSet();
                 //FbConnection conexao = new FbConnection();
-                //conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                //conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                 //conexao.Open();
                 string local = "";
                 if (localizacao != "'null'" && localizacao != null )
@@ -361,7 +361,7 @@ namespace Evolucao
                 rev = rev.Replace("'", "");
                 FbDataAdapter datEstoque_pecas = new FbDataAdapter();
                 //FbConnection conexao = new FbConnection();
-                //conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                //conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                 //conexao.Open();
                 FbCommand comando_select = new FbCommand();
                 comando_select.Connection = conexao;

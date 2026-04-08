@@ -74,7 +74,7 @@ namespace Evolucao
                 }
                 if (zoom150)
                     crystalReportViewer1.Zoom(150);
-                //"\\localhost\\orcamentos"
+                //"\\10.3.3.4\\orcamentos"
                 if (orcamento_molde == true)
                 {
                     bool existe = Directory.Exists(@"c:\\evolucao\\ORCAMENTOS\\MOLDE");
@@ -83,7 +83,7 @@ namespace Evolucao
                         Directory.CreateDirectory(@"c:\\evolucao\\ORCAMENTOS\\MOLDE");
                     }
                     relatorio1.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, @"c:\\evolucao\\ORCAMENTOS\\MOLDE\\ORCAMENTO_" + n_orcamento + ".pdf");
-                    try { relatorio1.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, @"\\localhost\\orcamentos\\MOLDE\\ORCAMENTO_" + n_orcamento + ".pdf"); }
+                    try { relatorio1.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, @"\\10.3.3.4\\orcamentos\\MOLDE\\ORCAMENTO_" + n_orcamento + ".pdf"); }
                     catch { }
                 }
                 if (orcamento_peca == true)
@@ -94,7 +94,7 @@ namespace Evolucao
                         Directory.CreateDirectory(@"c:\\evolucao\\ORCAMENTOS");
                     }
                     relatorio1.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, @"c:\\evolucao\\ORCAMENTOS\\ORCAMENTO_" + n_orcamento + ".pdf");
-                    try { relatorio1.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, @"\\localhost\\ORCAMENTOS\\ORCAMENTO_" + n_orcamento + ".pdf"); }
+                    try { relatorio1.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, @"\\10.3.3.4\\ORCAMENTOS\\ORCAMENTO_" + n_orcamento + ".pdf"); }
                     catch { }
                 }
                 if (orcamento == true)

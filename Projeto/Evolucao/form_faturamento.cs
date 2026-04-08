@@ -403,7 +403,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
             {
                 FbCommand select = new FbCommand();
                 select.CommandText =
-                    "SELECT * FROM CONTAS_CORRENTES WHERE BOLETO_CC = '1'";
+                    "SELECT * FROM CONTAS_CORRENTES WHERE BOLETO_CC = '1' AND CNPJ_EMISSOR_CC = '" + cnpj_empresa + "'";
                 select.Connection = fbConnection1;
                 fbConnection1.Open();
                 FbDataAdapter datSelect = new FbDataAdapter();
@@ -533,7 +533,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
                 FbCommand select = new FbCommand();
                 select.Connection = fbConnection1;
                 select.CommandText =
-                    "SELECT first(1) N_NF, COD_SISTEMA_NF FROM NOTA_FISCAL WHERE CNPJ_EMISSOR_NF = '" + cnpj_empresa + "' ORDER BY N_NF DESC";
+                    "SELECT first(1) N_NF, COD_SISTEMA_NF FROM NOTA_FISCAL WHERE CNPJ_EMISSOR_NF = '" + cnpj_empresa + "' AND N_NF IS NOT NULL ORDER BY COD_SISTEMA_NF DESC";
                 fbConnection1.Open();
                 DataSet notas = new DataSet();
                 datNota_fiscal.SelectCommand = select;
@@ -4362,7 +4362,37 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
 
         private void button6_Click(object sender, EventArgs e)
         {
-            calcular();
+            double valor_atual = 0;
+            try
+            {
+                valor_atual = Convert.ToDouble(tb_total_nota.Text);
+            }
+            catch
+            {
+                
+            }
+
+            try
+            {
+                calcular();
+            }
+            finally
+            {
+                double valor_novo = 0;
+                try
+                {
+                    valor_novo = Convert.ToDouble(tb_total_nota.Text);
+                }
+                catch
+                {
+
+                }
+                if (valor_atual != valor_novo)
+                {
+                    cb_forma_pgto.Text = "";
+                    apaga_faturas_anteriores();
+                }
+            }
         }
 
         private void calcular()
@@ -7128,6 +7158,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
                 this.datFatura_nf.DeleteCommand.Connection = fbConnection1;
                 this.datFatura_nf.DeleteCommand.ExecuteNonQuery();
                 this.fbConnection1.Close();
+                dsFatura_nf.Clear();
             }
             catch { fbConnection1.Close(); }
         }
@@ -7553,7 +7584,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
                 {
                     calcular_estoque_lote(dr[0].ToString());
                     classeEstoque_material est = new classeEstoque_material();
-                    est.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                    est.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                     est.calcular_estoque(dr[1].ToString());
                 }
                
@@ -8803,12 +8834,12 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
 
         private void buscar_pedido(int n_pedido)
         {
-            if (dgvPedidos.RowCount > 0)
-            {
-                MessageBox.Show("Não é possível inserir 2 pedidos na mesma nota. Exclua o outro pedido.");
-            }
-            else
-            {
+            //if (dgvPedidos.RowCount > 0)
+            //{
+            //    MessageBox.Show("Não é possível inserir 2 pedidos na mesma nota. Exclua o outro pedido.");
+            //}
+            //else
+            //{
                 if (tb_protocolo_autorizacao.Text != "")
                 {
                     MessageBox.Show("Essa nota já está autorizada. Impossível inserir outro pedido");
@@ -9167,7 +9198,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
                         }
                     }
                 }
-            }
+            //}
         }
 
         private string buscar_rateio_produto(string cod, out double porc)
@@ -12188,16 +12219,18 @@ group by iprod.cod_estoque_ip";
 
         }
 
-        private void buscar_informacoes_nota_entrada(string n_nf, out string cnpj_nf_entrada, out string razao_social_entrada, out string cnpj_cliente_forn, out string natureza_entrada)
+        private void buscar_informacoes_nota_entrada(string n_nf, out string cnpj_nf_entrada, out string razao_social_entrada, 
+            out string cnpj_cliente_forn, out string natureza_entrada, out string data_emissao)
         {
-            cnpj_nf_entrada = ""; razao_social_entrada = ""; cnpj_cliente_forn = ""; natureza_entrada = "";
+            cnpj_nf_entrada = ""; razao_social_entrada = ""; cnpj_cliente_forn = ""; natureza_entrada = ""; data_emissao = "";
             try
             {
                 FbCommand select = new FbCommand();
                 fbConnection1.Open();
                 select.Connection = fbConnection1;
                 select.CommandText =
-                    "SELECT RAZAO_DESTINATARIO_NF_ENT, CNPJ_DESTINATARIO_NF_ENT, CNPJ_CLIENTE_FORN_ENT, NATUREZA_OPERACAO_NF_ENT FROM NOTA_FISCAL_ENT WHERE COD_SISTEMA_NF_ENT = '" + n_nf + "'";
+                    "SELECT RAZAO_DESTINATARIO_NF_ENT, CNPJ_DESTINATARIO_NF_ENT, CNPJ_CLIENTE_FORN_ENT, NATUREZA_OPERACAO_NF_ENT, DATA_EMISSAO_NF_ENT " + 
+                    "FROM NOTA_FISCAL_ENT WHERE COD_SISTEMA_NF_ENT = '" + n_nf + "'";
                 FbDataAdapter datSelect = new FbDataAdapter();
                 datSelect.SelectCommand = select;
                 DataTable dtSelect = new DataTable();
@@ -12210,6 +12243,11 @@ group by iprod.cod_estoque_ip";
                     razao_social_entrada = dr[0].ToString();
                     cnpj_cliente_forn = dr[2].ToString();
                     natureza_entrada = dr[3].ToString();
+                    try
+                    {
+                        data_emissao = Convert.ToDateTime(dr[4].ToString()).ToShortDateString() ;
+                    }
+                    catch { }
                 }
             }
             catch (Exception a)
@@ -13012,8 +13050,8 @@ group by iprod.cod_estoque_ip";
                                 nf = buscar_ultima_nf(cnpj_empresa, out cod_sistema);
                                 nf++;
                                 notaUltima = nf.ToString();
-                                string cnpj_cliente_entrada = "", cnpj_nf_entrada = "", razao_social_entrada = "", natureza_entrada = "", inf_compl = "REFERENTE A SUA NF No: ", natureza = "DEVOLUCAO";
-                                buscar_informacoes_nota_entrada(abre_nf.n_nf.Trim(), out cnpj_nf_entrada, out razao_social_entrada, out cnpj_cliente_entrada, out natureza_entrada);
+                                string cnpj_cliente_entrada = "", cnpj_nf_entrada = "", razao_social_entrada = "", natureza_entrada = "", inf_compl = "REFERENTE A SUA NF No: ", natureza = "DEVOLUCAO", data_emissao = "";
+                                buscar_informacoes_nota_entrada(abre_nf.n_nf.Trim(), out cnpj_nf_entrada, out razao_social_entrada, out cnpj_cliente_entrada, out natureza_entrada, out data_emissao);
                                 string _cfop = buscar_cfop(natureza_entrada);
                                 //if (_cfop == "5902")
                                 //    natureza = 
@@ -13055,7 +13093,7 @@ group by iprod.cod_estoque_ip";
                                     update.CommandText =
                                         "UPDATE NOTA_FISCAL SET N_NF = '" + notaUltima + "', DATA_EMISSAO_NF = '" + dataAtual + "', NATUREZA_OPERACAO_NF = '" + natureza + "',  " +
                                         "SAIDA_NF = '" + saida + "', entrada_NF = '" + entrada + "', ENTRADA_SAIDA_NF = '" + entrada_saida + 
-                                        "',  FORMA_PGTO_NF = '2 - Outros', FRETE_CONTA_NF = '0', INF_COMPL_NF = '" + inf_compl + n_nf_entrada + "'" + mudar_cliente +
+                                        "',  FORMA_PGTO_NF = '2 - Outros', FRETE_CONTA_NF = '0', INF_COMPL_NF = '" + inf_compl + n_nf_entrada + " de "  + data_emissao + "'" + mudar_cliente +
                                         "  WHERE COD_SISTEMA_NF = '" + ultimaSistema() + "'";
 
                                     FbDataAdapter datUpdate = new FbDataAdapter();
@@ -13258,7 +13296,7 @@ group by iprod.cod_estoque_ip";
                                                 else
                                                     cst_ipi_n_tributado = dr[3].ToString();
 
-                                                string cst = " ST_ITEM = '900', ";
+                                                string cst = ", ST_ITEM = '900' ";
                                                 if (crt_empresa != "1")
                                                 {
                                                     cst = _cst;
@@ -13342,7 +13380,7 @@ group by iprod.cod_estoque_ip";
                                                 update.Connection = fbConnection1;
                                                 update.CommandText = "UPDATE ITENS_NOTA SET COD_SISTEMA_NF_ITEM = '" + ultimaSistema() + "',  NF_ITEM = '" + notaUltima + "', MOD_BC_ST_ITEM = '4', MOD_BC_ITEM = 3, " +
                                                     "CFOP_ITEM = '" + cfop + "', IPI_TRIB_ITEM = " + ipi_trib + ", IPI_N_TRIB_ITEM = " + ipi_n_trib + ", CST_IPI_N_TRIB_ITEM = " + cst_ipi_n_tributado + ", " +
-                                                    "CST_PIS_ITEM = '06', CST_COFINS_ITEM = '06', TIPO_PIS_ITEM = '3 - Não Tributado', TIPO_COFINS_ITEM = '3 - Não Tributado', COD_EAN_ITEM = '" + _cod_barras + "' " +
+                                                    "CST_PIS_ITEM = '06', CST_COFINS_ITEM = '06', TIPO_PIS_ITEM = '3 - Não Tributado', TIPO_COFINS_ITEM = '3 - Não Tributado', COD_EAN_ITEM = '" + _cod_barras + "' " + cst +
                                                     "WHERE COD_ITENS_NOTA = '" + ultimoItem + "'";
                                                 FbDataAdapter datUpdate = new FbDataAdapter();
                                                 datUpdate.UpdateCommand = update;

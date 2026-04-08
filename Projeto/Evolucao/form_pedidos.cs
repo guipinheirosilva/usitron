@@ -1070,7 +1070,7 @@ namespace Evolucao
                                 try
                                 {
                                     classeEstoque estoque = new classeEstoque();
-                                    estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                                    estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                                     estoque.calcular_estoque(cod_item.Replace("'", ""));
                                 }
                                 catch { }
@@ -1896,7 +1896,7 @@ namespace Evolucao
                 }
                 try
                 {
-                    //if (Convert.ToDouble(qtde_item.Replace("'","")) <= Convert.ToDouble(qtde_disponivel) || fbConnection1.DataSource == "localhost")
+                    //if (Convert.ToDouble(qtde_item.Replace("'","")) <= Convert.ToDouble(qtde_disponivel) || fbConnection1.DataSource == "10.3.3.4")
                     // {
                     this.datItens_ped_venda.InsertCommand.CommandText =
                        "INSERT INTO ITENS_PEDIDO_VENDA (COD_PROD_ITEM_VENDA, DESCRICAO_PROD_ITEM_VENDA, UNIDADE_PROD_ITEM_VENDA, QTDE_ITEM_VENDA, VALOR_UNIT_PROD_ITEM_VENDA, " +
@@ -1916,7 +1916,7 @@ namespace Evolucao
                     try
                     {
                         classeEstoque estoque = new classeEstoque();
-                        estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                        estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                         estoque.calcular_estoque(cod_item.Replace("'", ""));
                     }
                     catch { }
@@ -1967,7 +1967,7 @@ namespace Evolucao
             {
                 FbCommand select = new FbCommand();
                 FbConnection conexao = new FbConnection();
-                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                 select.CommandText =
                     "SELECT COD_BARRAS_PRODUTO, COD_BARRAS_CAIXA_PRODUTO, QTDE_UNIDADE_PRODUTO, " +
                     "CNPJ_FORNECEDOR_PRODUTO, COD_PRODUTO FROM PRODUTOS WHERE COD_PRODUTO like '" + idProduto + "' OR COD_FORNECEDOR_PRODUTO = '" + idProduto + "'";
@@ -5161,7 +5161,7 @@ string imagePath = GerarImagem(boletoPathHTML);
                     try
                     {
                         classeEstoque estoque = new classeEstoque();
-                        estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                        estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                         estoque.calcular_estoque(dr[0].ToString());
                     }
                     catch { }
@@ -6217,7 +6217,7 @@ string imagePath = GerarImagem(boletoPathHTML);
                        // string ean = buscar_ean_produto(dgvItens_nota.Rows[i].Cells["col_cod"].Value.ToString(), out _dun, out _qtde, out _cnpj, out _cod);
 
                         classeEstoque estoque = new classeEstoque();
-                        estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                        estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                         estoque.calcular_estoque(dgvItens_nota.Rows[i].Cells["col_cod_forn"].Value.ToString());
                     }
                     catch { }
@@ -6283,7 +6283,7 @@ string imagePath = GerarImagem(boletoPathHTML);
                                     try
                                     {
                                         classeEstoque estoque = new classeEstoque();
-                                        estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                                        estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                                         estoque.calcular_estoque(dgvItens_nota.Rows[i].Cells["col_cod_forn"].Value.ToString());
                                     }
                                     catch { }
@@ -7377,7 +7377,7 @@ WHERE COD_PEDIDO_ITEM_VENDA = " + tb_n_pedido.Text;
                                 try
                                 {
                                     classeEstoque estoque = new classeEstoque();
-                                    estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                                    estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                                     estoque.calcular_estoque(dgvItens_nota.SelectedRows[i].Cells["col_cod_forn"].Value.ToString());
                                 }
                                 catch { }
@@ -8682,7 +8682,7 @@ group by iprod.cod_estoque_ip";
                             try
                             {
                                 classeEstoque estoque = new classeEstoque();
-                                estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                                estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                                 estoque.calcular_estoque(dgvItens_nota.Rows[i].Cells["col_cod_forn"].Value.ToString());
                             }
                             catch { }
@@ -8708,7 +8708,7 @@ group by iprod.cod_estoque_ip";
                     try
                     {
                         classeEstoque estoque = new classeEstoque();
-                        estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                        estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                         estoque.calcular_estoque(dgvItens_nota.SelectedRows[i].Cells["col_cod_forn"].Value.ToString());
                     }
                     catch { }
@@ -8741,7 +8741,7 @@ group by iprod.cod_estoque_ip";
                     try
                     {
                         classeEstoque estoque = new classeEstoque();
-                        estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                        estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                         estoque.calcular_estoque(dgvItens_nota.SelectedRows[i].Cells["col_cod_forn"].Value.ToString());
                     }
                     catch { }
@@ -8772,7 +8772,7 @@ group by iprod.cod_estoque_ip";
                     try
                     {
                         classeEstoque estoque = new classeEstoque();
-                        estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                        estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                         estoque.calcular_estoque(dgvItens_nota.SelectedRows[i].Cells["col_cod_forn"].Value.ToString());
                     }
                     catch { }

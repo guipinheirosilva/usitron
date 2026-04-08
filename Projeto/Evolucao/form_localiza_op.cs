@@ -109,7 +109,7 @@ namespace Evolucao
                     numero_de_os = i + 1;
                 }
                 classe_cronograma cronograma = new classe_cronograma();
-                cronograma.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                cronograma.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                 cronograma.os = true;
                 cronograma.por_os = true;
                 cronograma.numero_de_os = numero_de_os;
