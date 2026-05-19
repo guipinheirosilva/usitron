@@ -76,7 +76,7 @@ namespace Evolucao.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Dsn=evolucao;Driver={Firebird/InterBase(r) driver};dbname=10.3.3.4:c:\\\\evolucao\\\\" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Dsn=evolucao;Driver={Firebird/InterBase(r) driver};dbname=localhost:c:\\\\evolucao\\\\" +
             "evolucao.fdb;charset=NONE;uid=SYSDBA")]
         public string ConnectionString4 {
             get {

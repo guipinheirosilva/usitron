@@ -250,7 +250,7 @@ namespace Evolucao
                 foreach (DataRow dr in ds.Tables[0].Rows)
                 {
                     FbConnection _conexao = new FbConnection();
-                    _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                    _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                         FbCommand select = new FbCommand();
                         select.Connection = _conexao;
@@ -290,7 +290,7 @@ namespace Evolucao
                     try
                     {
                         FbConnection _conexao = new FbConnection();
-                        _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                        _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                         FbCommand select = new FbCommand();
                         select.Connection = _conexao;
@@ -370,7 +370,7 @@ namespace Evolucao
                 try
                 {
                     FbConnection _conexao = new FbConnection();
-                    _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                    _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                     FbCommand select = new FbCommand();
                     select.CommandText =
@@ -446,7 +446,7 @@ namespace Evolucao
             try
             {
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                 FbCommand select = new FbCommand();
                 select.CommandText =
@@ -473,7 +473,7 @@ namespace Evolucao
             try
             {
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                 DateTime começo = DateTime.Now;
                 int i = 0;
@@ -495,7 +495,7 @@ namespace Evolucao
                     try
                     {
                         classeEstoque estoque = new classeEstoque();
-                        estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                        estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                         //estoque.calcular_estoque(dr[1].ToString(), dr[0].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString());
                     }
                     catch { }
@@ -519,7 +519,7 @@ namespace Evolucao
             try
             {
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                 select.CommandText =
                    @"SELECT DISTINCT(COD_SISTEMA_PROD_ITEM_VENDA), prod.cod_barras_produto,
@@ -557,7 +557,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
                             try
                             {
                                 classeEstoque estoque = new classeEstoque();
-                                estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                                estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                                 //estoque.calcular_estoque(_dun, ean.Replace("'", ""), _qtde, _cnpj, dr[0].ToString());
                             }
                             catch { }
@@ -585,7 +585,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
             {
 
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                 FbCommand update = new FbCommand();
                 update.Connection = _conexao;
@@ -622,7 +622,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
             try
             {
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                 FbCommand insert = new FbCommand();
                 insert.Connection = _conexao;
@@ -656,7 +656,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
 
         //        FbCommand select = new FbCommand();
 
-        //        conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+        //        conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
         //        select.CommandText =
         //            "SELECT * FROM PEDIDOS_VENDA WHERE COD_WEB_PED_VENDA = '" + codweb +
         //            "'";
@@ -725,7 +725,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
 
                 FbCommand select = new FbCommand();
 
-                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 select.CommandText =
                     "SELECT * FROM PEDIDOS_VENDA WHERE (ID_PEDIDO_CEL_PED_VENDA = " + idPedidoItem +
                     " AND COD_VENDEDOR_PED_VENDA = " + codUsuario + " and cnpj_ped_venda = '" + cnpj + "' and valor_total_ped_venda = " + totalPedido + ")" +
@@ -787,7 +787,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
         {
             existe = false;
             FbConnection conexao = new FbConnection();
-            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
 
             try
             {
@@ -821,7 +821,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
             try
             {
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                 FbCommand sel = new FbCommand();
                 FbDataAdapter datSel = new FbDataAdapter();
@@ -940,7 +940,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
                         verificar_se_id_novo_ja_existe(out existe, novo_codigo + 1, codUsuario, cnpjPedido);
                     }
                     FbConnection conexao = new FbConnection();
-                    conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                    conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
 
                     FbCommand update = new FbCommand();
                     update.CommandText = "update pedidos_venda pv set pv.id_pedido_cel_ped_venda =  pv.id_pedido_cel_ped_venda + " + novo_codigo + " where pv.cod_vendedor_ped_venda = '" + codUsuario + "'";
@@ -1108,7 +1108,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
                                     _cnpj = "'" + _cnpj + "'";
                                     FbCommand insert = new FbCommand();
                                     FbConnection conexao = new FbConnection();
-                                    conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                                    conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                                     insert.CommandText =
                                         "INSERT INTO CLIENTES (CNPJ, IE, RAZAO_SOCIAL, ENDERECO, NUMERO_CLIENTE, BAIRRO, CIDADE, ESTADO, CEP_CLIENTE, CONTATO1, EMAIL, " + 
                                         "FONE, COD_CIDADE_CLIENTE, ATIVO_CLIENTE, LIMITE_CREDITO_CLIENTE, LATITUDE_CLIENTE, LONGITUDE_CLIENTE) " +
@@ -1282,7 +1282,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
                                     FbCommand delete = new FbCommand();
                                     delete.CommandText =
                                         "DELETE FROM PEDIDOS_VENDA WHERE ID_PEDIDO_CEL_PED_VENDA = " + idPedido + " AND COD_VENDEDOR_PED_VENDA = " + codUsuario;
-                                    conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                                    conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                                     delete.Connection = conexao;
                                     conexao.Open();
                                     delete.ExecuteNonQuery();
@@ -1292,7 +1292,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
                                     FbCommand deleteItem = new FbCommand();
                                     deleteItem.CommandText =
                                         "DELETE FROM ITENS_PEDIDO_VENDA WHERE COD_PEDIDO_ITEM_VENDA = " + id;
-                                    conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                                    conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                                     deleteItem.Connection = conexao;
                                     conexao.Open();
                                     deleteItem.ExecuteNonQuery();
@@ -1321,7 +1321,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
                                 }
                                 // tb_n_ped_novo.Text = proximo_pedido.ToString();
                                 insert.Connection = conexao;
-                                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                                 insert.CommandText =
                                      "INSERT INTO PEDIDOS_VENDA " +
                                     "(DATA_PED_VENDA," +
@@ -1466,7 +1466,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
                                                                 try
                                                                 {
                                                                     FbCommand select = new FbCommand();
-                                                                    _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                                                                    _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                                                                     select.Connection = _conexao;
                                                                     select.CommandText =
                                                                         "SELECT * FROM PRODUTOS_KIT WHERE COD_KIT_PK = " + idProduto +  "";
@@ -1563,7 +1563,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
 
                                                                             try
                                                                             {
-                                                                                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                                                                                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                                                                                 insertItem.Connection = _conexao;
                                                                                 insertItem.CommandText =
                                                                                     "INSERT INTO ITENS_PEDIDO_VENDA " +
@@ -1632,7 +1632,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
 
                                                                 try
                                                                 {
-                                                                    _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                                                                    _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                                                                     insertItem.Connection = _conexao;
                                                                     insertItem.CommandText =
                                                                         "INSERT INTO ITENS_PEDIDO_VENDA " +
@@ -1674,7 +1674,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
                                                             try
                                                             {
                                                                 classeEstoque estoque = new classeEstoque();
-                                                                estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                                                                estoque.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                                                                 estoque.calcular_estoque(_dun, ean.Replace("'", ""), _qtde, _cnpj, idProduto);
                                                             }
                                                             catch { }
@@ -1788,7 +1788,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
 
                                 FbConnection _conexao = new FbConnection();
                                 FbCommand insert = new FbCommand();
-                                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                                 insert.Connection = _conexao;
                                 _conexao.Open();
                                 insert.CommandText =
@@ -1825,7 +1825,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
             try
             {
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
 
                 FbCommand update = new FbCommand();
                 update.Connection = _conexao;
@@ -1855,7 +1855,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
             try
             {
                  FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 FbCommand update = new FbCommand();
                 update.Connection = _conexao;
                 update.CommandText =                 
@@ -2033,7 +2033,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
             try
             {
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                 FbCommand comando_select = new FbCommand();
                 comando_select.Connection = _conexao;
@@ -2072,7 +2072,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
             try
             {
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                 FbCommand sel = new FbCommand();
                 FbDataAdapter datSel = new FbDataAdapter();
@@ -2128,7 +2128,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
 
 
                         FbConnection _conexao = new FbConnection();
-                        _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                        _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
 
                         int parcela_n = i + 1;
@@ -2164,7 +2164,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
             try
             {
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                 FbCommand comando_select = new FbCommand();
                 comando_select.Connection = _conexao;
@@ -2197,7 +2197,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
             try
             {
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                 FbCommand select = new FbCommand();
                 select.Connection = _conexao;
@@ -2229,7 +2229,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
             try
             {
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 FbCommand select = new FbCommand();
                 select.Connection = _conexao;
                 select.CommandText =
@@ -2260,7 +2260,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
             try
             {
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                 FbCommand select = new FbCommand(); select.Connection = _conexao;
                 select.CommandText =
@@ -2302,7 +2302,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
             {
                 FbCommand select = new FbCommand();
                 
-                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 select.CommandText =
                     "SELECT COD_BARRAS_PRODUTO, COD_BARRAS_CAIXA_PRODUTO, QTDE_UNIDADE_PRODUTO, " +
                     "CNPJ_FORNECEDOR_PRODUTO, COD_FORNECEDOR_PRODUTO, CUSTO_PRODUTO, COD_UNIDADE_PRODUTO FROM PRODUTOS WHERE COD_PRODUTO = " + idProduto +  "";
@@ -2349,7 +2349,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
                 select.CommandText =
                     "SELECT " + campo + " FROM EMPRESA";
                 FbConnection conexao = new FbConnection();
-                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 select.Connection = conexao;
                 conexao.Open();
                 FbDataAdapter datSelect = new FbDataAdapter();
@@ -2375,7 +2375,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
                 string nomeVendedor = buscar_nome_vendedor(codUsuario);
                 
                 FbConnection conexao = new FbConnection();
-                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 FbCommand insereVendedor = new FbCommand();
                 insereVendedor.CommandText =
                      "INSERT INTO vendedores_cliente (cod_cliente_vc, cod_vendedor_vc, nome_vendedor_vc) VALUES ('" + codigoCliente + "', " + codUsuario + ", '" + nomeVendedor + "')";
@@ -2399,7 +2399,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
             {
                 FbCommand select = new FbCommand();
                 FbConnection conexao = new FbConnection();
-                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 select.CommandText =
                     "SELECT NOME_VENDEDOR FROM VENDEDORES WHERE COD_VENDEDOR = " + codUsuario +  "";
                 select.Connection = conexao;
@@ -2426,7 +2426,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
             {
                 FbCommand select = new FbCommand();
                 FbConnection conexao = new FbConnection();
-                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 select.CommandText =
                     "SELECT COD_CLIENTE FROM CLIENTES WHERE CNPJ = " + _cnpj +  "";
                 select.Connection = conexao;
@@ -2472,7 +2472,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
             {
                 string codFornecedor =  "";
                 FbCommand select = new FbCommand();
-                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 select.CommandText =
                     "SELECT COD_FORNECEDOR_PRODUTO FROM PRODUTOS WHERE COD_PRODUTO = " + codProduto +  "";
                 log2 += select.CommandText;
@@ -2492,7 +2492,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
                     try
                     {
                         insertItem.Connection = conexao;
-                        conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                        conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                         insertItem.CommandText =
                             "UPDATE ITENS_PEDIDO_VENDA SET COD_PROD_ITEM_VENDA = " + codFornecedor +
                             " WHERE COD_SISTEMA_PROD_ITEM_VENDA = " + codProduto + " AND COD_PEDIDO_ITEM_VENDA = " + codPedido +  "";
@@ -2528,7 +2528,7 @@ WHERE lrw.ESTOQUE_CONFERIDO_LRW IS NULL";
             try
             {
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                 FbCommand comando = new FbCommand();
                 comando.Connection = _conexao;
@@ -2651,7 +2651,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
             try
             {
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                 FbCommand select = new FbCommand();
                 select.Connection = _conexao;
@@ -2758,12 +2758,12 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
         private void exportar_itens_ped_faturados(string cod_webservice_empresa)
         {
             FbConnection conexao = new FbConnection();
-            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
             XmlDocument xml = new XmlDocument();
             bool ok = false;
              FbCommand select_vendedores = new FbCommand();
 
-                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 select_vendedores.Connection = conexao;
                 select_vendedores.CommandText =
                     "SELECT COD_VENDEDOR FROM VENDEDORES";
@@ -2829,13 +2829,13 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
         private void exportar_pedidos_faturados(string cod_webservice_empresa)
         {
             FbConnection conexao = new FbConnection();
-            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
             XmlDocument xml = new XmlDocument();
             bool ok = false;
             
                  FbCommand select_vendedores = new FbCommand();
 
-                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 select_vendedores.Connection = conexao;
                 select_vendedores.CommandText =
                     "SELECT COD_VENDEDOR FROM VENDEDORES";
@@ -2894,7 +2894,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
         {
             
             FbConnection conexao = new FbConnection();
-            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
             XmlDocument xml = new XmlDocument();
             bool ok = false;
             try
@@ -2940,7 +2940,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
         private void exportar_forma_pgto(string cod_webservice_empresa)
         {
             FbConnection conexao = new FbConnection();
-            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
             XmlDocument xml = new XmlDocument();
             bool ok = false;
             try
@@ -2987,7 +2987,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
         private void exportar_tabelas(string cod_webservice_empresa)
         {
             FbConnection conexao = new FbConnection();
-            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
             XmlDocument xml = new XmlDocument();
             bool ok = false;
             List<string> estados = new List<string>
@@ -3071,7 +3071,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
         private void exportar_itens_promocao(string cod_webservice_empresa)
         {
             FbConnection conexao = new FbConnection();
-            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
             XmlDocument xml = new XmlDocument();
             bool ok = false;
             try
@@ -3116,7 +3116,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
         private void exportar_itens_tp(string cod_webservice_empresa)
         {
             FbConnection conexao = new FbConnection();
-            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
             XmlDocument xml = new XmlDocument();
             bool ok = false;
             List<string> estados = new List<string>
@@ -3203,7 +3203,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
             try
             {
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                 FbCommand update1 = new FbCommand();
                 update1.Connection = _conexao;
@@ -3221,7 +3221,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
             try
             {
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
 
                 DateTime data_atrasado = DateTime.Now;
                 while (data_atrasado.DayOfWeek == DayOfWeek.Monday || data_atrasado.DayOfWeek == DayOfWeek.Sunday)
@@ -3276,7 +3276,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
                         try
                         {
                             FbConnection _conexao1 = new FbConnection();
-                            _conexao1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                            _conexao1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
 
                             FbCommand update = new FbCommand();
                             update.Connection = _conexao1;
@@ -3312,7 +3312,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
             {
                 FbCommand select_vendedores = new FbCommand();
 
-                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 select_vendedores.Connection = conexao;
                 select_vendedores.CommandText =
                     "SELECT COD_VENDEDOR FROM VENDEDORES";
@@ -3405,7 +3405,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
             {
                 FbCommand select_vendedores = new FbCommand();
 
-                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 select_vendedores.Connection = conexao;
                 select_vendedores.CommandText =
                     "SELECT COD_VENDEDOR FROM VENDEDORES";
@@ -3474,7 +3474,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
         public void exportar_produtos(string cod_webservice_empresa)
         {
                 FbConnection conexao = new FbConnection();
-                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                     XmlDocument xml = new XmlDocument();
                     bool ok = false;
                     try
@@ -3527,7 +3527,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
             try
             {
                 FbConnection _conexao = new FbConnection();
-                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+                _conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
                 
                 string nome =  "";
                 FbCommand cmd = new FbCommand();
@@ -3549,7 +3549,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
         public void exportar_vendedores(string cod_webservice_empresa)
         {
             FbConnection conexao = new FbConnection();
-            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
+            conexao.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=False; MaxPoolSize = 100;Packet Size=8192;Server Type=0";
             XmlDocument xml = new XmlDocument();
             bool ok = false;
             try

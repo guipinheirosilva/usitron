@@ -120,7 +120,7 @@ namespace Evolucao
                 {
                     classeApontamentos apontamento = new classeApontamentos();
                     apontamento.fbConnection1.ConnectionString =
-                        @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                        @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                     apontamento.calcular_horas(rotalabel.Text);
                 }
                 catch { }

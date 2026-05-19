@@ -2167,7 +2167,7 @@ namespace Evolucao.webservice {
             }
             System.Uri wsUri = new System.Uri(url);
             if (((wsUri.Port >= 1024) 
-                        && (string.Compare(wsUri.Host, "10.3.3.4", System.StringComparison.OrdinalIgnoreCase) == 0))) {
+                        && (string.Compare(wsUri.Host, "localhost", System.StringComparison.OrdinalIgnoreCase) == 0))) {
                 return true;
             }
             return false;

@@ -6028,100 +6028,100 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
 
 
             ok = false;
-            if (dgvPedidos.RowCount > 1)
+            //if (dgvPedidos.RowCount > 1)
+            //{
+            //    MessageBox.Show("Não é possível inserir 2 pedidos na mesma nota. Exclua o pedido incorreto.");
+            //}
+            //else
+            //{
+            //Classe e chamada de método para calcular o volume em caixas
+            /*
+            classe_calcula_volume ccv = new classe_calcula_volume();
+            int numero_nota_fiscal = Convert.ToInt32(tb_n_nf.Text);
+            int qtde = 0;
+            string produto_sem_unidade;
+            bool resposta = ccv.calcula_volume_peso(numero_nota_fiscal, out qtde, out produto_sem_unidade);
+
+            if (resposta == true)
             {
-                MessageBox.Show("Não é possível inserir 2 pedidos na mesma nota. Exclua o pedido incorreto.");
+                tb_qtde_volume.Text = qtde.ToString();
+                tb_especie.Text = "CX";
             }
             else
             {
-                //Classe e chamada de método para calcular o volume em caixas
-                /*
-                classe_calcula_volume ccv = new classe_calcula_volume();
-                int numero_nota_fiscal = Convert.ToInt32(tb_n_nf.Text);
-                int qtde = 0;
-                string produto_sem_unidade;
-                bool resposta = ccv.calcula_volume_peso(numero_nota_fiscal, out qtde, out produto_sem_unidade);
-
-                if (resposta == true)
-                {
-                    tb_qtde_volume.Text = qtde.ToString();
-                    tb_especie.Text = "CX";
-                }
-                else
-                {
-                    // MessageBox.Show("Para calcular o volume, ajuste o cadastro de produtos na caixa: " + produto_sem_unidade);
-                }
-                 * */
-
-                if (cb_forma_pgto.Text != "")
-                {
-                    if (tb_qtde_volume.Text == "")
-                    {
-                        // MessageBox.Show("O volume da nota não foi preenchido!\nSe for necessário informar o volume, digite-o e gere o xml novamente.");
-                    }
-                    //buscar_peso_dos_produtos();
-                    verificar_retornos_mp();
-                    verificar_aproveitamento_credito();
-                    verificar_se_simples();
-                    verificar_cfop();
-                  //  colocar_form_pgto_no_dados_adicionais();
-                    Atualizar(false);
-                    criar_arquivo("NFE" + tb_n_nf.Text + ".txt");
-                    escrever_no_arquivo_nfe();
-                    string arquivo;
-                    string caminho = "c:\\evolucao\\NFE\\TXT\\NFE" + tb_n_nf.Text + ".txt";
-                    StreamReader objReader = new StreamReader(caminho);
-                    ArrayList arrText = new ArrayList();
-                    arquivo = objReader.ReadToEnd();
-                    objReader.Close();
-                    string _txtNumerado, _erros, _msgResultado;
-                    int _qtErros;
-                    int resultado = 0;
-                    //string _XML = util2.Txt2XML2G(arquivo, 1, "Evolucao", out _txtNumerado, out resultado, out _erros, out _qtErros, out _msgResultado);
-                    // string _XML = util2.Txt2XML310(arquivo, 1, "Evolucao", out _txtNumerado, out resultado, out _erros, out _qtErros, out _msgResultado);
-                    string _XML = util2.Txt2XML2015003(arquivo.Replace("'",""), 1, "Evolucao", out _txtNumerado, out resultado, out _erros, out _qtErros, out _msgResultado);
-                    if (resultado == 6901)
-                    {
-                        nfe40.cod_nf_sistema = tb_cod_interno.Text;
-                        _XML = nfe40.acertos_diversos(_XML);
-                        //MessageBox.Show(_XML);
-                        try
-                        {
-                            criar_arquivo_xml("NFE" + tb_n_nf.Text + ".xml");
-                            FileInfo t = new FileInfo("c:\\evolucao\\NFE\\XML\\" + "NFE" + tb_n_nf.Text + ".xml");
-                            using (StreamWriter texto = t.CreateText())
-                            {
-                                texto.WriteLine(_XML);
-                            }
-                            update_coluna_xml_gerado(_XML, tb_n_nf.Text, nome_certificado_nfe_empresa);
-
-                            barra_status.Text = "Arquivo XML gerado com sucesso";
-                            tb_status_nfe.Text = "Arquivo XML gerado com sucesso";
-                            gbNfe.BackColor = Color.Yellow;
-
-                            tb_chave_acesso_nfe.Text = buscar_chave("c:\\evolucao\\NFE\\xml\\" + "NFE" + tb_n_nf.Text + ".xml");
-                            Atualizar(false);
-                            criar_codigo_barras();
-                            Atualizar(false);
-                            ok = true;
-
-                        }
-                        catch
-                        {
-                            barra_status.Text = "Erro, tente outra vez";
-                            tb_status_nfe.Text = "Erro, tente outra vez";
-                            gbNfe.BackColor = Color.Red;
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show(_erros);
-                        MessageBox.Show(_msgResultado);
-                    }
-                }
-                else
-                    MessageBox.Show("A forma de pagamento é um campo obrigatório. Se não for uma nota de vendas, selecione a opção Outros");
+                // MessageBox.Show("Para calcular o volume, ajuste o cadastro de produtos na caixa: " + produto_sem_unidade);
             }
+             * */
+
+            if (cb_forma_pgto.Text != "")
+            {
+                if (tb_qtde_volume.Text == "")
+                {
+                    // MessageBox.Show("O volume da nota não foi preenchido!\nSe for necessário informar o volume, digite-o e gere o xml novamente.");
+                }
+                //buscar_peso_dos_produtos();
+                verificar_retornos_mp();
+                verificar_aproveitamento_credito();
+                verificar_se_simples();
+                verificar_cfop();
+                //  colocar_form_pgto_no_dados_adicionais();
+                Atualizar(false);
+                criar_arquivo("NFE" + tb_n_nf.Text + ".txt");
+                escrever_no_arquivo_nfe();
+                string arquivo;
+                string caminho = "c:\\evolucao\\NFE\\TXT\\NFE" + tb_n_nf.Text + ".txt";
+                StreamReader objReader = new StreamReader(caminho);
+                ArrayList arrText = new ArrayList();
+                arquivo = objReader.ReadToEnd();
+                objReader.Close();
+                string _txtNumerado, _erros, _msgResultado;
+                int _qtErros;
+                int resultado = 0;
+                //string _XML = util2.Txt2XML2G(arquivo, 1, "Evolucao", out _txtNumerado, out resultado, out _erros, out _qtErros, out _msgResultado);
+                // string _XML = util2.Txt2XML310(arquivo, 1, "Evolucao", out _txtNumerado, out resultado, out _erros, out _qtErros, out _msgResultado);
+                string _XML = util2.Txt2XML2015003(arquivo.Replace("'", ""), 1, "Evolucao", out _txtNumerado, out resultado, out _erros, out _qtErros, out _msgResultado);
+                if (resultado == 6901)
+                {
+                    nfe40.cod_nf_sistema = tb_cod_interno.Text;
+                    _XML = nfe40.acertos_diversos(_XML);
+                    //MessageBox.Show(_XML);
+                    try
+                    {
+                        criar_arquivo_xml("NFE" + tb_n_nf.Text + ".xml");
+                        FileInfo t = new FileInfo("c:\\evolucao\\NFE\\XML\\" + "NFE" + tb_n_nf.Text + ".xml");
+                        using (StreamWriter texto = t.CreateText())
+                        {
+                            texto.WriteLine(_XML);
+                        }
+                        update_coluna_xml_gerado(_XML, tb_n_nf.Text, nome_certificado_nfe_empresa);
+
+                        barra_status.Text = "Arquivo XML gerado com sucesso";
+                        tb_status_nfe.Text = "Arquivo XML gerado com sucesso";
+                        gbNfe.BackColor = Color.Yellow;
+
+                        tb_chave_acesso_nfe.Text = buscar_chave("c:\\evolucao\\NFE\\xml\\" + "NFE" + tb_n_nf.Text + ".xml");
+                        Atualizar(false);
+                        criar_codigo_barras();
+                        Atualizar(false);
+                        ok = true;
+
+                    }
+                    catch
+                    {
+                        barra_status.Text = "Erro, tente outra vez";
+                        tb_status_nfe.Text = "Erro, tente outra vez";
+                        gbNfe.BackColor = Color.Red;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(_erros);
+                    MessageBox.Show(_msgResultado);
+                }
+            }
+            else
+                MessageBox.Show("A forma de pagamento é um campo obrigatório. Se não for uma nota de vendas, selecione a opção Outros");
+        //}
         }
 
         private void colocar_form_pgto_no_dados_adicionais()
@@ -6334,77 +6334,119 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
             if (tb_chave_acesso_nfe.Text != "")
             {
                 bt_enviarNFe.Enabled = false;
-                if (_enviar == false)
+                //if (_enviar == false)
+                //{
+                if (tb_recibo.Text == "")
                 {
-                    if (tb_recibo.Text == "")
-                    {
-                        _enviar = true;
+                    _enviar = true;
 
-                        string proxy = proxy_empresa;
-                        string usuario = usuario_proxy_empresa;
-                        string senha = senha_proxy_empresa;
-                        string licenca = licenca_dll_nfe_empresa;
-                        string nomeCertificado = nome_certificado_nfe_empresa;
-                        string _nroRecibo, _msgCabec, _msgDados, _msgRetWS, _msgResultado, _NFeAssinada;
-                        string arquivo = "";
-                        string caminho = "c:\\evolucao\\NFE\\XML\\NFE" + tb_n_nf.Text + ".xml";
-                        StreamReader objReader = new StreamReader(caminho);
-                        ArrayList arrText = new ArrayList();
-                        arquivo = objReader.ReadToEnd();
-                        objReader.Close();
-                        int resultado = 0;
-                        int _cStat = 0;
-                        string _dhRecbto = "";
-                        string tMed = "";
+                    string proxy = proxy_empresa;
+                    string usuario = usuario_proxy_empresa;
+                    string senha = senha_proxy_empresa;
+                    string licenca = licenca_dll_nfe_empresa;
+                    string nomeCertificado = nome_certificado_nfe_empresa;
+                    string _nroRecibo, _msgCabec, _msgDados, _msgRetWS, _msgResultado, _NFeAssinada;
+                    string arquivo = "";
+                    string caminho = "c:\\evolucao\\NFE\\XML\\NFE" + tb_n_nf.Text + ".xml";
+                    StreamReader objReader = new StreamReader(caminho);
+                    ArrayList arrText = new ArrayList();
+                    arquivo = objReader.ReadToEnd();
+                    objReader.Close();
+                    int resultado = 0;
+                    int _cStat = 0;
+                    string _dhRecbto = "";
+                    string tMed = "";
 
-                        string wsuf = "SP";// "SP3";
-                        if (estado_empresa != "SP")
-                            wsuf = "SVRS";
-                        string _xml = util2.EnviaNFe2G(wsuf, ref arquivo, nomeCertificado, "4.00" /*("3.10"*/, out _msgDados,
+                    string wsuf = "SP";// "SP3";
+                    if (estado_empresa != "SP")
+                        wsuf = "SVRS";
+                    string _nroProtocolo = "", _dhProtocolo = "";
+                    string _xml = util2.EnviaNFSincrono(wsuf, arquivo, nomeCertificado, "4.00", out _msgDados,
+                       out _msgRetWS, out _cStat, out _msgResultado, out _nroProtocolo, out _dhProtocolo, out tMed,
+                       proxy, usuario, senha, licenca);
+                    resultado = _cStat;
+                    /*
+                    string wsuf = "SP3";
+                    if (estado_empresa != "SP")
+                        wsuf = "SVRS";
+
+                    string _xml = util2.EnviaNFe2G(wsuf, ref arquivo, nomeCertificado, "3.10", out _msgDados,
                         out _msgRetWS, out _cStat, out _msgResultado, out _nroRecibo, out _dhRecbto, out tMed,
                         proxy, usuario, senha, licenca);
-                        resultado = _cStat;
-                        /*
-                        string wsuf = "SP3";
-                        if (estado_empresa != "SP")
-                            wsuf = "SVRS";
+                    resultado = _cStat;*/
+                    //int resultado = util.EnviaNFeSCAN(estado_empresa, ref arquivo, out _nroRecibo, nomeCertificado, out _msgCabec, out _msgDados, out _msgRetWS, out _msgResultado, out _NFeAssinada, proxy, usuario, senha, licenca);
 
-                        string _xml = util2.EnviaNFe2G(wsuf, ref arquivo, nomeCertificado, "3.10", out _msgDados,
-                            out _msgRetWS, out _cStat, out _msgResultado, out _nroRecibo, out _dhRecbto, out tMed,
-                            proxy, usuario, senha, licenca);
-                        resultado = _cStat;*/
-                        //int resultado = util.EnviaNFeSCAN(estado_empresa, ref arquivo, out _nroRecibo, nomeCertificado, out _msgCabec, out _msgDados, out _msgRetWS, out _msgResultado, out _NFeAssinada, proxy, usuario, senha, licenca);
-
-                        if (resultado == 103)
+                    if (resultado == 100)
+                    {
+                        criar_codigo_barras();
+                        gerar_xml_autorizada(_xml);
+                        barra_status.Text = "NFe Autorizada. ";
+                        tb_status_nfe.Text = "NFe Autorizada.";
+                        tb_protocolo_autorizacao.Text = _nroProtocolo;
+                        update_coluna_xml_aut(_xml, _nroProtocolo, tb_status_nfe.Text, tb_chave_acesso_nfe.Text);
+                        Atualizar(true);
+                        calcular_estoque_mp();
+                        if (tb_ent_sai_nfe.Text == "0" && tb_Nfe_refer.Text != "")
                         {
-                            barra_status.Text = "NFe enviada com sucesso. Consulte o Status para autorizá-la";
-                            gbNfe.BackColor = Color.Orange;
-                            tb_status_nfe.Text = "NFe enviada com sucesso. Consulte o Status para autorizá-la";
-                            salvar_xml_assinado(_xml);
-                            tb_recibo.Text = _nroRecibo;
-                            //DateTime data_hora = new DateTime();
+                            cancelar_lotes_nf_origem();
+                            string nf_origem = buscar_nf_origem(tb_Nfe_refer.Text);
+                            cancelar_cr_origem(nf_origem);
+                        }
+                        if (boleto_pedido_empresa != "1")
+                            inserir_duplicatas_cr();
+                        try
+                        {
+                            if (Convert.ToDouble(dgvPedidos.Rows[0].Cells["col_pedido"].Value.ToString()) > 1000000)
+                            { //vem do romaneio
+                                acertar_status_romaneio();
+                            }
+                            else
+                            {
+                                inserir_status_pedido();
+                            }
+                        }
+                        catch { }
+                        //acertarEstoque();
 
 
-                            Atualizar(false);
-                            _enviar = false;
+                        classe_particularidades part = new classe_particularidades();
+                        part.cod_sistema_nf = tb_cod_interno.Text;
+                        part.executar_particularidades(tb_n_nf.Text); //aqui dá baixa nos romaneios e itens_pedido
+                        part.baixar_do_estoque();
+
+
+                        gbNfe.BackColor = Color.GreenYellow;
+                        Atualizar(true);
+                        ok = true;
+                        try
+                        {
+                            imprimir();
+                            if (boleto_pedido_empresa != "1")
+                                gerar_boletos();
+                        }
+                        finally
+                        {
+                            enviar_email();
+                            Atualizar(true);
                             ok = true;
                         }
-                        else
-                        {
-                            MessageBox.Show(_msgResultado, resultado.ToString());
-                            _enviar = false;
-                        }
-
                     }
                     else
                     {
-                        MessageBox.Show("Essa NF já foi enviada");
+                        MessageBox.Show(_msgResultado, resultado.ToString());
+                        tb_recibo.Text = "";
                     }
+
                 }
                 else
                 {
-                    MessageBox.Show("Aguarde");
+                    MessageBox.Show("Essa NF já foi enviada");
                 }
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Aguarde");
+                //}
                 bt_enviarNFe.Enabled = true;
             }
             else
@@ -7584,7 +7626,7 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
                 {
                     calcular_estoque_lote(dr[0].ToString());
                     classeEstoque_material est = new classeEstoque_material();
-                    est.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                    est.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                     est.calcular_estoque(dr[1].ToString());
                 }
                
@@ -8064,11 +8106,12 @@ out serie_empresa, out boleto_pedido_empresa, out saida_estoque_pedido_empresa, 
                     try
                     {
                         datPedidos_nf.SelectCommand.CommandText =
-                            "SELECT pnf.*, pv.vendedor_ped_venda, pv.N_PED_VENDA " +
+                            "SELECT FIRST 1 pnf.*, pv.vendedor_ped_venda, pv.N_PED_VENDA " +
                             "FROM PEDIDOS_NF pnf " +
                             "INNER JOIN pedidos_venda pv " +
                             "ON pv.cod_ped_venda = pnf.COD_SISTEMA_PEDIDO_NF " +
-                            "WHERE COD_SISTEMA_PEDIDO_NF = '" + tb_cod_interno.Text + "'";
+                            "WHERE COD_SISTEMA_PEDIDO_NF = '" + tb_cod_interno.Text + "' " +
+                            "ORDER BY pv.N_PED_VENDA";
                         datPedidos_nf.SelectCommand.Connection = fbConnection1;
                         fbConnection1.Open();
                         datPedidos_nf.SelectCommand.ExecuteNonQuery();

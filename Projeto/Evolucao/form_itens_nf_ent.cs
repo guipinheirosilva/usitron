@@ -347,7 +347,7 @@ namespace Evolucao
                         atualizar();
 
                         classeEstoque_material est = new classeEstoque_material();
-                        est.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                        est.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                         est.calcular_estoque(dgvItens_nota.Rows[e.RowIndex].Cells["col_cod_item_est"].Value.ToString());
                     }
 
@@ -381,7 +381,7 @@ namespace Evolucao
                             dgvItens_nota.Rows[e.RowIndex].Cells["col_ncm"].Value.ToString());
 
                         classeEstoque est = new classeEstoque();
-                        est.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                        est.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                         string cod_forn = buscar_cod_forn_produto(cod_produto);
                         est.calcular_estoque(cod_forn);
 
@@ -785,7 +785,7 @@ namespace Evolucao
                     update_local_estoque(dgvItens_nota.Rows[0].Cells["col_cod_item_est"].Value.ToString());
 
                     classeEstoque_material est = new classeEstoque_material();
-                    est.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=10.3.3.4;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
+                    est.fbConnection1.ConnectionString = @"User=SYSDBA;Password=masterkey;Database=c:\\evolucao\\evolucao.fdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=0;Connection timeout=15;Pooling=True;Packet Size=8192;Server Type=0";
                     est.calcular_estoque(dgvItens_nota.Rows[0].Cells["col_cod_item_est"].Value.ToString());
 
                     dsItens_nota_ent.Clear();

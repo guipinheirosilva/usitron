@@ -298,6 +298,13 @@ namespace Evolucao
             this.dataColumn121 = new System.Data.DataColumn();
             this.dataColumn119 = new System.Data.DataColumn();
             this.dataColumn122 = new System.Data.DataColumn();
+            this.dataColumn123 = new System.Data.DataColumn();
+            this.dataColumn124 = new System.Data.DataColumn();
+            this.dataColumn125 = new System.Data.DataColumn();
+            this.dataColumn126 = new System.Data.DataColumn();
+            this.dataColumn127 = new System.Data.DataColumn();
+            this.dataColumn128 = new System.Data.DataColumn();
+            this.dataColumn129 = new System.Data.DataColumn();
             this.radioEntrada = new System.Windows.Forms.RadioButton();
             this.radioSaida = new System.Windows.Forms.RadioButton();
             this.datNota_fiscal = new FirebirdSql.Data.FirebirdClient.FbDataAdapter();
@@ -763,6 +770,15 @@ namespace Evolucao
             this.label67 = new System.Windows.Forms.Label();
             this.rb_ipi_nao_tributado = new System.Windows.Forms.RadioButton();
             this.rb_ipi_tributado = new System.Windows.Forms.RadioButton();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.label88 = new System.Windows.Forms.Label();
+            this.tb_aliquota_cbs = new System.Windows.Forms.TextBox();
+            this.label89 = new System.Windows.Forms.Label();
+            this.tb_aliquota_ibs = new System.Windows.Forms.TextBox();
+            this.label90 = new System.Windows.Forms.Label();
+            this.tb_classificacao_ibscbs = new System.Windows.Forms.TextBox();
+            this.label91 = new System.Windows.Forms.Label();
+            this.tb_cst_ibscbs = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tb_tipo_cofins = new System.Windows.Forms.TextBox();
             this.label70 = new System.Windows.Forms.Label();
@@ -840,22 +856,6 @@ namespace Evolucao
             this.tb_informacoes_fisco = new System.Windows.Forms.TextBox();
             this.label85 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.label88 = new System.Windows.Forms.Label();
-            this.tb_aliquota_cbs = new System.Windows.Forms.TextBox();
-            this.label89 = new System.Windows.Forms.Label();
-            this.tb_aliquota_ibs = new System.Windows.Forms.TextBox();
-            this.label90 = new System.Windows.Forms.Label();
-            this.tb_classificacao_ibscbs = new System.Windows.Forms.TextBox();
-            this.label91 = new System.Windows.Forms.Label();
-            this.tb_cst_ibscbs = new System.Windows.Forms.TextBox();
-            this.dataColumn123 = new System.Data.DataColumn();
-            this.dataColumn124 = new System.Data.DataColumn();
-            this.dataColumn125 = new System.Data.DataColumn();
-            this.dataColumn126 = new System.Data.DataColumn();
-            this.dataColumn127 = new System.Data.DataColumn();
-            this.dataColumn128 = new System.Data.DataColumn();
-            this.dataColumn129 = new System.Data.DataColumn();
             this.dgvItens_nota = new System.Windows.Forms.DataGridView();
             this.col_cod_op = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -981,6 +981,7 @@ namespace Evolucao
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -990,7 +991,6 @@ namespace Evolucao
             ((System.ComponentModel.ISupportInitialize)(this.dsPedidos_nf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PEDIDOS_NF)).BeginInit();
             this.statusStrip2.SuspendLayout();
-            this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItens_nota)).BeginInit();
             this.SuspendLayout();
             // 
@@ -2691,6 +2691,39 @@ namespace Evolucao
             this.dataColumn122.ColumnName = "IOF_II_ITEM";
             this.dataColumn122.DataType = typeof(double);
             // 
+            // dataColumn123
+            // 
+            this.dataColumn123.ColumnName = "CST_IBSCBS_ITEM";
+            // 
+            // dataColumn124
+            // 
+            this.dataColumn124.ColumnName = "CCLASSTRIB_ITEM";
+            // 
+            // dataColumn125
+            // 
+            this.dataColumn125.ColumnName = "ALIQ_IBS_ITEM";
+            this.dataColumn125.DataType = typeof(double);
+            // 
+            // dataColumn126
+            // 
+            this.dataColumn126.ColumnName = "ALIQ_CBS_ITEM";
+            this.dataColumn126.DataType = typeof(double);
+            // 
+            // dataColumn127
+            // 
+            this.dataColumn127.ColumnName = "VALOR_IBS_ITEM";
+            this.dataColumn127.DataType = typeof(double);
+            // 
+            // dataColumn128
+            // 
+            this.dataColumn128.ColumnName = "VALOR_CBS_ITEM";
+            this.dataColumn128.DataType = typeof(double);
+            // 
+            // dataColumn129
+            // 
+            this.dataColumn129.ColumnName = "BC_IBSCBS_ITEM";
+            this.dataColumn129.DataType = typeof(double);
+            // 
             // radioEntrada
             // 
             this.radioEntrada.AutoSize = true;
@@ -4102,6 +4135,7 @@ namespace Evolucao
             this.br_consultaStatus.TabIndex = 31;
             this.br_consultaStatus.Text = "Consulta \r\nStatus (3)";
             this.br_consultaStatus.UseVisualStyleBackColor = true;
+            this.br_consultaStatus.Visible = false;
             this.br_consultaStatus.Click += new System.EventHandler(this.br_consultaStatus_Click);
             // 
             // gbNfe
@@ -6424,6 +6458,96 @@ namespace Evolucao
             this.rb_ipi_tributado.Text = "IPI Tributado";
             this.rb_ipi_tributado.UseVisualStyleBackColor = true;
             // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.label88);
+            this.tabPage7.Controls.Add(this.tb_aliquota_cbs);
+            this.tabPage7.Controls.Add(this.label89);
+            this.tabPage7.Controls.Add(this.tb_aliquota_ibs);
+            this.tabPage7.Controls.Add(this.label90);
+            this.tabPage7.Controls.Add(this.tb_classificacao_ibscbs);
+            this.tabPage7.Controls.Add(this.label91);
+            this.tabPage7.Controls.Add(this.tb_cst_ibscbs);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(382, 46);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Reforma Trib";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label88.Location = new System.Drawing.Point(296, 17);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(37, 12);
+            this.label88.TabIndex = 299;
+            this.label88.Text = "% CBS:";
+            // 
+            // tb_aliquota_cbs
+            // 
+            this.tb_aliquota_cbs.Location = new System.Drawing.Point(333, 13);
+            this.tb_aliquota_cbs.Name = "tb_aliquota_cbs";
+            this.tb_aliquota_cbs.Size = new System.Drawing.Size(42, 20);
+            this.tb_aliquota_cbs.TabIndex = 298;
+            this.tb_aliquota_cbs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label89.Location = new System.Drawing.Point(211, 17);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(33, 12);
+            this.label89.TabIndex = 297;
+            this.label89.Text = "% IBS:";
+            // 
+            // tb_aliquota_ibs
+            // 
+            this.tb_aliquota_ibs.Location = new System.Drawing.Point(244, 13);
+            this.tb_aliquota_ibs.Name = "tb_aliquota_ibs";
+            this.tb_aliquota_ibs.Size = new System.Drawing.Size(42, 20);
+            this.tb_aliquota_ibs.TabIndex = 296;
+            this.tb_aliquota_ibs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label90.Location = new System.Drawing.Point(91, 17);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(64, 12);
+            this.label90.TabIndex = 295;
+            this.label90.Text = "Classificação:";
+            // 
+            // tb_classificacao_ibscbs
+            // 
+            this.tb_classificacao_ibscbs.Location = new System.Drawing.Point(156, 13);
+            this.tb_classificacao_ibscbs.Name = "tb_classificacao_ibscbs";
+            this.tb_classificacao_ibscbs.Size = new System.Drawing.Size(50, 20);
+            this.tb_classificacao_ibscbs.TabIndex = 294;
+            this.tb_classificacao_ibscbs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label91.Location = new System.Drawing.Point(7, 17);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(26, 12);
+            this.label91.TabIndex = 293;
+            this.label91.Text = "CST:";
+            // 
+            // tb_cst_ibscbs
+            // 
+            this.tb_cst_ibscbs.Location = new System.Drawing.Point(32, 13);
+            this.tb_cst_ibscbs.Name = "tb_cst_ibscbs";
+            this.tb_cst_ibscbs.Size = new System.Drawing.Size(56, 20);
+            this.tb_cst_ibscbs.TabIndex = 292;
+            this.tb_cst_ibscbs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.tb_tipo_cofins);
@@ -7076,129 +7200,6 @@ namespace Evolucao
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "5949";
             this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.label88);
-            this.tabPage7.Controls.Add(this.tb_aliquota_cbs);
-            this.tabPage7.Controls.Add(this.label89);
-            this.tabPage7.Controls.Add(this.tb_aliquota_ibs);
-            this.tabPage7.Controls.Add(this.label90);
-            this.tabPage7.Controls.Add(this.tb_classificacao_ibscbs);
-            this.tabPage7.Controls.Add(this.label91);
-            this.tabPage7.Controls.Add(this.tb_cst_ibscbs);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(382, 46);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Reforma Trib";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label88.Location = new System.Drawing.Point(296, 17);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(37, 12);
-            this.label88.TabIndex = 299;
-            this.label88.Text = "% CBS:";
-            // 
-            // tb_aliquota_cbs
-            // 
-            this.tb_aliquota_cbs.Location = new System.Drawing.Point(333, 13);
-            this.tb_aliquota_cbs.Name = "tb_aliquota_cbs";
-            this.tb_aliquota_cbs.Size = new System.Drawing.Size(42, 20);
-            this.tb_aliquota_cbs.TabIndex = 298;
-            this.tb_aliquota_cbs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label89
-            // 
-            this.label89.AutoSize = true;
-            this.label89.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label89.Location = new System.Drawing.Point(211, 17);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(33, 12);
-            this.label89.TabIndex = 297;
-            this.label89.Text = "% IBS:";
-            // 
-            // tb_aliquota_ibs
-            // 
-            this.tb_aliquota_ibs.Location = new System.Drawing.Point(244, 13);
-            this.tb_aliquota_ibs.Name = "tb_aliquota_ibs";
-            this.tb_aliquota_ibs.Size = new System.Drawing.Size(42, 20);
-            this.tb_aliquota_ibs.TabIndex = 296;
-            this.tb_aliquota_ibs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label90.Location = new System.Drawing.Point(91, 17);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(64, 12);
-            this.label90.TabIndex = 295;
-            this.label90.Text = "Classificação:";
-            // 
-            // tb_classificacao_ibscbs
-            // 
-            this.tb_classificacao_ibscbs.Location = new System.Drawing.Point(156, 13);
-            this.tb_classificacao_ibscbs.Name = "tb_classificacao_ibscbs";
-            this.tb_classificacao_ibscbs.Size = new System.Drawing.Size(50, 20);
-            this.tb_classificacao_ibscbs.TabIndex = 294;
-            this.tb_classificacao_ibscbs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label91.Location = new System.Drawing.Point(7, 17);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(26, 12);
-            this.label91.TabIndex = 293;
-            this.label91.Text = "CST:";
-            // 
-            // tb_cst_ibscbs
-            // 
-            this.tb_cst_ibscbs.Location = new System.Drawing.Point(32, 13);
-            this.tb_cst_ibscbs.Name = "tb_cst_ibscbs";
-            this.tb_cst_ibscbs.Size = new System.Drawing.Size(56, 20);
-            this.tb_cst_ibscbs.TabIndex = 292;
-            this.tb_cst_ibscbs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // dataColumn123
-            // 
-            this.dataColumn123.ColumnName = "CST_IBSCBS_ITEM";
-            // 
-            // dataColumn124
-            // 
-            this.dataColumn124.ColumnName = "CCLASSTRIB_ITEM";
-            // 
-            // dataColumn125
-            // 
-            this.dataColumn125.ColumnName = "ALIQ_IBS_ITEM";
-            this.dataColumn125.DataType = typeof(double);
-            // 
-            // dataColumn126
-            // 
-            this.dataColumn126.ColumnName = "ALIQ_CBS_ITEM";
-            this.dataColumn126.DataType = typeof(double);
-            // 
-            // dataColumn127
-            // 
-            this.dataColumn127.ColumnName = "VALOR_IBS_ITEM";
-            this.dataColumn127.DataType = typeof(double);
-            // 
-            // dataColumn128
-            // 
-            this.dataColumn128.ColumnName = "VALOR_CBS_ITEM";
-            this.dataColumn128.DataType = typeof(double);
-            // 
-            // dataColumn129
-            // 
-            this.dataColumn129.ColumnName = "BC_IBSCBS_ITEM";
-            this.dataColumn129.DataType = typeof(double);
             // 
             // dgvItens_nota
             // 
@@ -8028,6 +8029,8 @@ namespace Evolucao
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.tabPage6.ResumeLayout(false);
@@ -8042,8 +8045,6 @@ namespace Evolucao
             ((System.ComponentModel.ISupportInitialize)(this.PEDIDOS_NF)).EndInit();
             this.statusStrip2.ResumeLayout(false);
             this.statusStrip2.PerformLayout();
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItens_nota)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
